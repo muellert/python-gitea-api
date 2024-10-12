@@ -800,4 +800,13 @@ Class | Method | HTTP request | Description
 
 ## Author
 
+The author, according to PyPI, is 张磊 (z461948964). He created the
+original API package, I had nothing to do with it.
+
+
+I, Toni Mueller, have only added the documentation bits in the 'docs'
+subdirectory.
+
+The only reason I opened the Github repo is because I could not find a
+source repo for the original work of the Author, ZHANG Lei.
 
