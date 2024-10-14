@@ -24,7 +24,6 @@ permissions:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -48,7 +47,6 @@ jobs:
       run: |
         # stop the build if there are Python syntax errors or undefined names
         cd docs && make html
-    - name: Publish the generated documentation
  # Deployment job
     - name: Upload pages artifact
       uses: actions/upload-pages-artifact@v3
