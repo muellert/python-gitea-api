@@ -46,8 +46,6 @@ class AdminApi(object):
         :param str username: username of user (required)
         :param UserBadgeOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -63,8 +61,6 @@ class AdminApi(object):
         :param str username: username of user (required)
         :param UserBadgeOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username', 'body']  # noqa: E501
@@ -133,8 +129,6 @@ class AdminApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -150,8 +144,6 @@ class AdminApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -219,8 +211,6 @@ class AdminApi(object):
         :param async_req bool
         :param CreateHookOption body: (required)
         :return: Hook
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -235,8 +225,6 @@ class AdminApi(object):
         :param async_req bool
         :param CreateHookOption body: (required)
         :return: Hook
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body']  # noqa: E501
@@ -307,8 +295,6 @@ class AdminApi(object):
         :param CreateOrgOption body: (required)
         :param str username: username of the user that will own the created organization (required)
         :return: Organization
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -324,8 +310,6 @@ class AdminApi(object):
         :param CreateOrgOption body: (required)
         :param str username: username of the user that will own the created organization (required)
         :return: Organization
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body', 'username']  # noqa: E501
@@ -402,8 +386,6 @@ class AdminApi(object):
         :param str username: username of the user (required)
         :param CreateKeyOption body:
         :return: PublicKey
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -419,8 +401,6 @@ class AdminApi(object):
         :param str username: username of the user (required)
         :param CreateKeyOption body:
         :return: PublicKey
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username', 'body']  # noqa: E501
@@ -493,8 +473,6 @@ class AdminApi(object):
         :param CreateRepoOption body: (required)
         :param str username: username of the user. This user will own the created repository (required)
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -510,8 +488,6 @@ class AdminApi(object):
         :param CreateRepoOption body: (required)
         :param str username: username of the user. This user will own the created repository (required)
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body', 'username']  # noqa: E501
@@ -587,8 +563,6 @@ class AdminApi(object):
         :param async_req bool
         :param CreateUserOption body:
         :return: User
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -603,8 +577,6 @@ class AdminApi(object):
         :param async_req bool
         :param CreateUserOption body:
         :return: User
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body']  # noqa: E501
@@ -671,8 +643,6 @@ class AdminApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Cron]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -688,8 +658,6 @@ class AdminApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Cron]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['page', 'limit']  # noqa: E501
@@ -753,8 +721,6 @@ class AdminApi(object):
         :param async_req bool
         :param str task: task to run (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -769,8 +735,6 @@ class AdminApi(object):
         :param async_req bool
         :param str task: task to run (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['task']  # noqa: E501
@@ -832,8 +796,6 @@ class AdminApi(object):
         :param async_req bool
         :param int id: id of the hook to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -848,8 +810,6 @@ class AdminApi(object):
         :param async_req bool
         :param int id: id of the hook to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['id']  # noqa: E501
@@ -912,8 +872,6 @@ class AdminApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -929,8 +887,6 @@ class AdminApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -999,8 +955,6 @@ class AdminApi(object):
         :param str username: username of user to delete (required)
         :param bool purge: purge the user from the system completely
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1016,8 +970,6 @@ class AdminApi(object):
         :param str username: username of user to delete (required)
         :param bool purge: purge the user from the system completely
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username', 'purge']  # noqa: E501
@@ -1082,8 +1034,6 @@ class AdminApi(object):
         :param str username: username of user (required)
         :param UserBadgeOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1099,8 +1049,6 @@ class AdminApi(object):
         :param str username: username of user (required)
         :param UserBadgeOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username', 'body']  # noqa: E501
@@ -1169,8 +1117,6 @@ class AdminApi(object):
         :param str username: username of user (required)
         :param int id: id of the key to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1186,8 +1132,6 @@ class AdminApi(object):
         :param str username: username of user (required)
         :param int id: id of the key to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username', 'id']  # noqa: E501
@@ -1256,8 +1200,6 @@ class AdminApi(object):
         :param int id: id of the hook to update (required)
         :param EditHookOption body:
         :return: Hook
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1273,8 +1215,6 @@ class AdminApi(object):
         :param int id: id of the hook to update (required)
         :param EditHookOption body:
         :return: Hook
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['id', 'body']  # noqa: E501
@@ -1347,8 +1287,6 @@ class AdminApi(object):
         :param str username: username of user to edit (required)
         :param EditUserOption body:
         :return: User
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1364,8 +1302,6 @@ class AdminApi(object):
         :param str username: username of user to edit (required)
         :param EditUserOption body:
         :return: User
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username', 'body']  # noqa: E501
@@ -1438,8 +1374,6 @@ class AdminApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Email]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1455,8 +1389,6 @@ class AdminApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Email]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['page', 'limit']  # noqa: E501
@@ -1521,8 +1453,6 @@ class AdminApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Organization]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1538,8 +1468,6 @@ class AdminApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Organization]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['page', 'limit']  # noqa: E501
@@ -1603,8 +1531,6 @@ class AdminApi(object):
         :param async_req bool
         :param int id: id of the hook to get (required)
         :return: Hook
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1619,8 +1545,6 @@ class AdminApi(object):
         :param async_req bool
         :param int id: id of the hook to get (required)
         :return: Hook
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['id']  # noqa: E501
@@ -1685,8 +1609,6 @@ class AdminApi(object):
 
         :param async_req bool
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1700,8 +1622,6 @@ class AdminApi(object):
 
         :param async_req bool
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = []  # noqa: E501
@@ -1758,8 +1678,6 @@ class AdminApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Hook]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1775,8 +1693,6 @@ class AdminApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Hook]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['page', 'limit']  # noqa: E501
@@ -1840,8 +1756,6 @@ class AdminApi(object):
         :param async_req bool
         :param str username: username of user (required)
         :return: list[Badge]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1856,8 +1770,6 @@ class AdminApi(object):
         :param async_req bool
         :param str username: username of user (required)
         :return: list[Badge]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username']  # noqa: E501
@@ -1924,8 +1836,6 @@ class AdminApi(object):
         :param RenameUserOption body: (required)
         :param str username: existing username of user (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1941,8 +1851,6 @@ class AdminApi(object):
         :param RenameUserOption body: (required)
         :param str username: existing username of user (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body', 'username']  # noqa: E501
@@ -2016,8 +1924,6 @@ class AdminApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Email]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2034,8 +1940,6 @@ class AdminApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Email]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['q', 'page', 'limit']  # noqa: E501
@@ -2104,8 +2008,6 @@ class AdminApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2123,8 +2025,6 @@ class AdminApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['source_id', 'login_name', 'page', 'limit']  # noqa: E501
@@ -2194,8 +2094,6 @@ class AdminApi(object):
         :param int limit: page size of results
         :param str pattern: pattern of repositories to search for
         :return: list[str]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2212,8 +2110,6 @@ class AdminApi(object):
         :param int limit: page size of results
         :param str pattern: pattern of repositories to search for
         :return: list[str]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['page', 'limit', 'pattern']  # noqa: E501

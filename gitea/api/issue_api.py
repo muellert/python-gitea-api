@@ -48,8 +48,6 @@ class IssueApi(object):
         :param int index: index of the issue (required)
         :param IssueLabelsOption body:
         :return: list[Label]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -67,8 +65,6 @@ class IssueApi(object):
         :param int index: index of the issue (required)
         :param IssueLabelsOption body:
         :return: list[Label]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'body']  # noqa: E501
@@ -155,8 +151,6 @@ class IssueApi(object):
         :param int index: index of the issue (required)
         :param str user: user to subscribe (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -174,8 +168,6 @@ class IssueApi(object):
         :param int index: index of the issue (required)
         :param str user: user to subscribe (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'user']  # noqa: E501
@@ -258,8 +250,6 @@ class IssueApi(object):
         :param int index: index of the issue (required)
         :param AddTimeOption body:
         :return: TrackedTime
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -277,8 +267,6 @@ class IssueApi(object):
         :param int index: index of the issue (required)
         :param AddTimeOption body:
         :return: TrackedTime
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'body']  # noqa: E501
@@ -364,8 +352,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
         :return: WatchInfo
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -382,8 +368,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
         :return: WatchInfo
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index']  # noqa: E501
@@ -463,8 +447,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -481,8 +463,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index']  # noqa: E501
@@ -559,8 +539,6 @@ class IssueApi(object):
         :param int index: index of the issue (required)
         :param CreateIssueCommentOption body:
         :return: Comment
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -578,8 +556,6 @@ class IssueApi(object):
         :param int index: index of the issue (required)
         :param CreateIssueCommentOption body:
         :return: Comment
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'body']  # noqa: E501
@@ -665,8 +641,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param CreateIssueOption body:
         :return: Issue
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -683,8 +657,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param CreateIssueOption body:
         :return: Issue
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'body']  # noqa: E501
@@ -766,8 +738,6 @@ class IssueApi(object):
         :param int index: index of the issue (required)
         :param str name: name of the attachment
         :return: Attachment
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -786,8 +756,6 @@ class IssueApi(object):
         :param int index: index of the issue (required)
         :param str name: name of the attachment
         :return: Attachment
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['attachment', 'owner', 'repo', 'index', 'name']  # noqa: E501
@@ -880,8 +848,6 @@ class IssueApi(object):
         :param str index: index of the issue (required)
         :param IssueMeta body:
         :return: Issue
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -899,8 +865,6 @@ class IssueApi(object):
         :param str index: index of the issue (required)
         :param IssueMeta body:
         :return: Issue
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'body']  # noqa: E501
@@ -988,8 +952,6 @@ class IssueApi(object):
         :param int id: id of the comment (required)
         :param str name: name of the attachment
         :return: Attachment
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1008,8 +970,6 @@ class IssueApi(object):
         :param int id: id of the comment (required)
         :param str name: name of the attachment
         :return: Attachment
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['attachment', 'owner', 'repo', 'id', 'name']  # noqa: E501
@@ -1102,8 +1062,6 @@ class IssueApi(object):
         :param str index: index of the issue (required)
         :param IssueMeta body:
         :return: Issue
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1121,8 +1079,6 @@ class IssueApi(object):
         :param str index: index of the issue (required)
         :param IssueMeta body:
         :return: Issue
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'body']  # noqa: E501
@@ -1208,8 +1164,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param CreateLabelOption body:
         :return: Label
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1226,8 +1180,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param CreateLabelOption body:
         :return: Label
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'body']  # noqa: E501
@@ -1307,8 +1259,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param CreateMilestoneOption body:
         :return: Milestone
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1325,8 +1275,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param CreateMilestoneOption body:
         :return: Milestone
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'body']  # noqa: E501
@@ -1406,8 +1354,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of issue to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1424,8 +1370,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of issue to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index']  # noqa: E501
@@ -1501,8 +1445,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int id: id of comment to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1519,8 +1461,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int id: id of comment to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id']  # noqa: E501
@@ -1597,8 +1537,6 @@ class IssueApi(object):
         :param int index: this parameter is ignored (required)
         :param int id: id of comment to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1616,8 +1554,6 @@ class IssueApi(object):
         :param int index: this parameter is ignored (required)
         :param int id: id of comment to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'id']  # noqa: E501
@@ -1700,8 +1636,6 @@ class IssueApi(object):
         :param int id: id of the comment to edit (required)
         :param EditReactionOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1719,8 +1653,6 @@ class IssueApi(object):
         :param int id: id of the comment to edit (required)
         :param EditReactionOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id', 'body']  # noqa: E501
@@ -1803,8 +1735,6 @@ class IssueApi(object):
         :param int index: index of the issue (required)
         :param int attachment_id: id of the attachment to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1822,8 +1752,6 @@ class IssueApi(object):
         :param int index: index of the issue (required)
         :param int attachment_id: id of the attachment to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'attachment_id']  # noqa: E501
@@ -1906,8 +1834,6 @@ class IssueApi(object):
         :param int id: id of the comment (required)
         :param int attachment_id: id of the attachment to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1925,8 +1851,6 @@ class IssueApi(object):
         :param int id: id of the comment (required)
         :param int attachment_id: id of the attachment to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id', 'attachment_id']  # noqa: E501
@@ -2009,8 +1933,6 @@ class IssueApi(object):
         :param int index: index of the issue (required)
         :param EditReactionOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2028,8 +1950,6 @@ class IssueApi(object):
         :param int index: index of the issue (required)
         :param EditReactionOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'body']  # noqa: E501
@@ -2111,8 +2031,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int id: id of the label to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2129,8 +2047,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int id: id of the label to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id']  # noqa: E501
@@ -2206,8 +2122,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param str id: the milestone to delete, identified by ID and if not available by name (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2224,8 +2138,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param str id: the milestone to delete, identified by ID and if not available by name (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id']  # noqa: E501
@@ -2301,8 +2213,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the issue to stop the stopwatch on (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2319,8 +2229,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the issue to stop the stopwatch on (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index']  # noqa: E501
@@ -2397,8 +2305,6 @@ class IssueApi(object):
         :param int index: index of the issue (required)
         :param str user: user witch unsubscribe (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2416,8 +2322,6 @@ class IssueApi(object):
         :param int index: index of the issue (required)
         :param str user: user witch unsubscribe (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'user']  # noqa: E501
@@ -2500,8 +2404,6 @@ class IssueApi(object):
         :param int index: index of the issue (required)
         :param int id: id of time to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2519,8 +2421,6 @@ class IssueApi(object):
         :param int index: index of the issue (required)
         :param int id: id of time to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'id']  # noqa: E501
@@ -2603,8 +2503,6 @@ class IssueApi(object):
         :param int id: id of the comment to edit (required)
         :param EditIssueCommentOption body:
         :return: Comment
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2622,8 +2520,6 @@ class IssueApi(object):
         :param int id: id of the comment to edit (required)
         :param EditIssueCommentOption body:
         :return: Comment
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id', 'body']  # noqa: E501
@@ -2711,8 +2607,6 @@ class IssueApi(object):
         :param int id: id of the comment to edit (required)
         :param EditIssueCommentOption body:
         :return: Comment
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2731,8 +2625,6 @@ class IssueApi(object):
         :param int id: id of the comment to edit (required)
         :param EditIssueCommentOption body:
         :return: Comment
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'id', 'body']  # noqa: E501
@@ -2825,8 +2717,6 @@ class IssueApi(object):
         :param int index: index of the issue to edit (required)
         :param EditIssueOption body:
         :return: Issue
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2844,8 +2734,6 @@ class IssueApi(object):
         :param int index: index of the issue to edit (required)
         :param EditIssueOption body:
         :return: Issue
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'body']  # noqa: E501
@@ -2933,8 +2821,6 @@ class IssueApi(object):
         :param int attachment_id: id of the attachment to edit (required)
         :param EditAttachmentOptions body:
         :return: Attachment
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2953,8 +2839,6 @@ class IssueApi(object):
         :param int attachment_id: id of the attachment to edit (required)
         :param EditAttachmentOptions body:
         :return: Attachment
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'attachment_id', 'body']  # noqa: E501
@@ -3048,8 +2932,6 @@ class IssueApi(object):
         :param int attachment_id: id of the attachment to edit (required)
         :param EditAttachmentOptions body:
         :return: Attachment
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3068,8 +2950,6 @@ class IssueApi(object):
         :param int attachment_id: id of the attachment to edit (required)
         :param EditAttachmentOptions body:
         :return: Attachment
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id', 'attachment_id', 'body']  # noqa: E501
@@ -3162,8 +3042,6 @@ class IssueApi(object):
         :param int index: index of the issue to create or update a deadline on (required)
         :param EditDeadlineOption body:
         :return: IssueDeadline
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3181,8 +3059,6 @@ class IssueApi(object):
         :param int index: index of the issue to create or update a deadline on (required)
         :param EditDeadlineOption body:
         :return: IssueDeadline
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'body']  # noqa: E501
@@ -3269,8 +3145,6 @@ class IssueApi(object):
         :param int id: id of the label to edit (required)
         :param EditLabelOption body:
         :return: Label
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3288,8 +3162,6 @@ class IssueApi(object):
         :param int id: id of the label to edit (required)
         :param EditLabelOption body:
         :return: Label
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id', 'body']  # noqa: E501
@@ -3376,8 +3248,6 @@ class IssueApi(object):
         :param str id: the milestone to edit, identified by ID and if not available by name (required)
         :param EditMilestoneOption body:
         :return: Milestone
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3395,8 +3265,6 @@ class IssueApi(object):
         :param str id: the milestone to edit, identified by ID and if not available by name (required)
         :param EditMilestoneOption body:
         :return: Milestone
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id', 'body']  # noqa: E501
@@ -3482,8 +3350,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int id: id of the comment (required)
         :return: Comment
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3500,8 +3366,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int id: id of the comment (required)
         :return: Comment
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id']  # noqa: E501
@@ -3581,8 +3445,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int id: id of the comment to edit (required)
         :return: list[Reaction]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3599,8 +3461,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int id: id of the comment to edit (required)
         :return: list[Reaction]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id']  # noqa: E501
@@ -3682,8 +3542,6 @@ class IssueApi(object):
         :param datetime since: if provided, only comments updated since the specified time are returned.
         :param datetime before: if provided, only comments updated before the provided time are returned.
         :return: list[Comment]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3702,8 +3560,6 @@ class IssueApi(object):
         :param datetime since: if provided, only comments updated since the specified time are returned.
         :param datetime before: if provided, only comments updated before the provided time are returned.
         :return: list[Comment]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'since', 'before']  # noqa: E501
@@ -3791,8 +3647,6 @@ class IssueApi(object):
         :param int limit: page size of results
         :param datetime before: if provided, only comments updated before the provided time are returned.
         :return: list[TimelineComment]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3813,8 +3667,6 @@ class IssueApi(object):
         :param int limit: page size of results
         :param datetime before: if provided, only comments updated before the provided time are returned.
         :return: list[TimelineComment]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'since', 'page', 'limit', 'before']  # noqa: E501
@@ -3902,8 +3754,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the issue to get (required)
         :return: Issue
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3920,8 +3770,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the issue to get (required)
         :return: Issue
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index']  # noqa: E501
@@ -4002,8 +3850,6 @@ class IssueApi(object):
         :param int index: index of the issue (required)
         :param int attachment_id: id of the attachment to get (required)
         :return: Attachment
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4021,8 +3867,6 @@ class IssueApi(object):
         :param int index: index of the issue (required)
         :param int attachment_id: id of the attachment to get (required)
         :return: Attachment
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'attachment_id']  # noqa: E501
@@ -4109,8 +3953,6 @@ class IssueApi(object):
         :param int id: id of the comment (required)
         :param int attachment_id: id of the attachment to get (required)
         :return: Attachment
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4128,8 +3970,6 @@ class IssueApi(object):
         :param int id: id of the comment (required)
         :param int attachment_id: id of the attachment to get (required)
         :return: Attachment
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id', 'attachment_id']  # noqa: E501
@@ -4217,8 +4057,6 @@ class IssueApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Reaction]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4237,8 +4075,6 @@ class IssueApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Reaction]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'page', 'limit']  # noqa: E501
@@ -4322,8 +4158,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int id: id of the label to get (required)
         :return: Label
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4340,8 +4174,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int id: id of the label to get (required)
         :return: Label
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id']  # noqa: E501
@@ -4421,8 +4253,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
         :return: list[Label]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4439,8 +4269,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
         :return: list[Label]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index']  # noqa: E501
@@ -4520,8 +4348,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param str id: the milestone to get, identified by ID and if not available by name (required)
         :return: Milestone
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4538,8 +4364,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param str id: the milestone to get, identified by ID and if not available by name (required)
         :return: Milestone
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id']  # noqa: E501
@@ -4622,8 +4446,6 @@ class IssueApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Milestone]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4643,8 +4465,6 @@ class IssueApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Milestone]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'state', 'name', 'page', 'limit']  # noqa: E501
@@ -4729,8 +4549,6 @@ class IssueApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Comment]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4750,8 +4568,6 @@ class IssueApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Comment]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'since', 'before', 'page', 'limit']  # noqa: E501
@@ -4835,8 +4651,6 @@ class IssueApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Issue]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4855,8 +4669,6 @@ class IssueApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Issue]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'page', 'limit']  # noqa: E501
@@ -4940,8 +4752,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
         :return: list[Attachment]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4958,8 +4768,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
         :return: list[Attachment]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index']  # noqa: E501
@@ -5039,8 +4847,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int id: id of the comment (required)
         :return: list[Attachment]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5057,8 +4863,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int id: id of the comment (required)
         :return: list[Attachment]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id']  # noqa: E501
@@ -5135,8 +4939,6 @@ class IssueApi(object):
 
         :param int limit: page size of results
         :return: list[Issue]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5155,8 +4957,6 @@ class IssueApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Issue]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'page', 'limit']  # noqa: E501
@@ -5251,8 +5051,6 @@ class IssueApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Issue]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5280,8 +5078,6 @@ class IssueApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Issue]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'state', 'labels', 'q', 'type', 'milestones', 'since', 'before', 'created_by', 'assigned_by', 'mentioned_by', 'page', 'limit']  # noqa: E501
@@ -5380,8 +5176,6 @@ class IssueApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Label]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5399,8 +5193,6 @@ class IssueApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Label]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'page', 'limit']  # noqa: E501
@@ -5479,8 +5271,6 @@ class IssueApi(object):
         :param int id: id of the comment to edit (required)
         :param EditReactionOption body:
         :return: Reaction
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5498,8 +5288,6 @@ class IssueApi(object):
         :param int id: id of the comment to edit (required)
         :param EditReactionOption body:
         :return: Reaction
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id', 'body']  # noqa: E501
@@ -5586,8 +5374,6 @@ class IssueApi(object):
         :param int index: index of the issue (required)
         :param EditReactionOption body:
         :return: Reaction
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5605,8 +5391,6 @@ class IssueApi(object):
         :param int index: index of the issue (required)
         :param EditReactionOption body:
         :return: Reaction
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'body']  # noqa: E501
@@ -5693,8 +5477,6 @@ class IssueApi(object):
         :param str index: index of the issue (required)
         :param IssueMeta body:
         :return: Issue
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5712,8 +5494,6 @@ class IssueApi(object):
         :param str index: index of the issue (required)
         :param IssueMeta body:
         :return: Issue
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'body']  # noqa: E501
@@ -5800,8 +5580,6 @@ class IssueApi(object):
         :param str index: index of the issue (required)
         :param IssueMeta body:
         :return: Issue
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5819,8 +5597,6 @@ class IssueApi(object):
         :param str index: index of the issue (required)
         :param IssueMeta body:
         :return: Issue
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'body']  # noqa: E501
@@ -5907,8 +5683,6 @@ class IssueApi(object):
         :param int index: index of the issue (required)
         :param int id: id of the label to remove (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5926,8 +5700,6 @@ class IssueApi(object):
         :param int index: index of the issue (required)
         :param int id: id of the label to remove (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'id']  # noqa: E501
@@ -6010,8 +5782,6 @@ class IssueApi(object):
         :param int index: index of the issue (required)
         :param IssueLabelsOption body:
         :return: list[Label]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -6029,8 +5799,6 @@ class IssueApi(object):
         :param int index: index of the issue (required)
         :param IssueLabelsOption body:
         :return: list[Label]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'body']  # noqa: E501
@@ -6116,8 +5884,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the issue to add tracked time to (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -6134,8 +5900,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the issue to add tracked time to (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index']  # noqa: E501
@@ -6225,8 +5989,6 @@ class IssueApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Issue]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -6257,8 +6019,6 @@ class IssueApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Issue]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['state', 'labels', 'milestones', 'q', 'priority_repo_id', 'type', 'since', 'before', 'assigned', 'created', 'mentioned', 'review_requested', 'reviewed', 'owner', 'team', 'page', 'limit']  # noqa: E501
@@ -6354,8 +6114,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the issue to create the stopwatch on (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -6372,8 +6130,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the issue to create the stopwatch on (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index']  # noqa: E501
@@ -6449,8 +6205,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the issue to stop the stopwatch on (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -6467,8 +6221,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the issue to stop the stopwatch on (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index']  # noqa: E501
@@ -6546,8 +6298,6 @@ class IssueApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -6566,8 +6316,6 @@ class IssueApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'page', 'limit']  # noqa: E501
@@ -6656,8 +6404,6 @@ class IssueApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[TrackedTime]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -6679,8 +6425,6 @@ class IssueApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[TrackedTime]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'user', 'since', 'before', 'page', 'limit']  # noqa: E501
@@ -6771,8 +6515,6 @@ class IssueApi(object):
         :param int index: index of issue (required)
         :param int position: the new position (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -6790,8 +6532,6 @@ class IssueApi(object):
         :param int index: index of issue (required)
         :param int position: the new position (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'position']  # noqa: E501
@@ -6873,8 +6613,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of issue to pin (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -6891,8 +6629,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of issue to pin (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index']  # noqa: E501
@@ -6968,8 +6704,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of issue to unpin (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -6986,8 +6720,6 @@ class IssueApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of issue to unpin (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index']  # noqa: E501

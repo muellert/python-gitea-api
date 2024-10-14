@@ -45,8 +45,6 @@ class UserApi(object):
         :param async_req bool
         :param CreateRepoOption body:
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -61,8 +59,6 @@ class UserApi(object):
         :param async_req bool
         :param CreateRepoOption body:
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body']  # noqa: E501
@@ -129,8 +125,6 @@ class UserApi(object):
         :param str variablename: name of the variable (required)
         :param CreateVariableOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -146,8 +140,6 @@ class UserApi(object):
         :param str variablename: name of the variable (required)
         :param CreateVariableOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['variablename', 'body']  # noqa: E501
@@ -215,8 +207,6 @@ class UserApi(object):
         :param async_req bool
         :param str secretname: name of the secret (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -231,8 +221,6 @@ class UserApi(object):
         :param async_req bool
         :param str secretname: name of the secret (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['secretname']  # noqa: E501
@@ -294,8 +282,6 @@ class UserApi(object):
         :param async_req bool
         :param str variablename: name of the variable (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -310,8 +296,6 @@ class UserApi(object):
         :param async_req bool
         :param str variablename: name of the variable (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['variablename']  # noqa: E501
@@ -372,8 +356,6 @@ class UserApi(object):
 
         :param async_req bool
         :return: list[UserSettings]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -387,8 +369,6 @@ class UserApi(object):
 
         :param async_req bool
         :return: list[UserSettings]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = []  # noqa: E501
@@ -448,8 +428,6 @@ class UserApi(object):
         :param async_req bool
         :param str variablename: name of the variable (required)
         :return: ActionVariable
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -464,8 +442,6 @@ class UserApi(object):
         :param async_req bool
         :param str variablename: name of the variable (required)
         :return: ActionVariable
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['variablename']  # noqa: E501
@@ -532,8 +508,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[ActionVariable]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -549,8 +523,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[ActionVariable]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['page', 'limit']  # noqa: E501
@@ -613,8 +585,6 @@ class UserApi(object):
 
         :param async_req bool
         :return: str
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -628,8 +598,6 @@ class UserApi(object):
 
         :param async_req bool
         :return: str
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = []  # noqa: E501
@@ -690,8 +658,6 @@ class UserApi(object):
         :param str secretname: name of the secret (required)
         :param CreateOrUpdateSecretOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -707,8 +673,6 @@ class UserApi(object):
         :param str secretname: name of the secret (required)
         :param CreateOrUpdateSecretOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['secretname', 'body']  # noqa: E501
@@ -776,8 +740,6 @@ class UserApi(object):
         :param async_req bool
         :param UserSettingsOptions body:
         :return: list[UserSettings]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -792,8 +754,6 @@ class UserApi(object):
         :param async_req bool
         :param UserSettingsOptions body:
         :return: list[UserSettings]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body']  # noqa: E501
@@ -860,8 +820,6 @@ class UserApi(object):
         :param str variablename: name of the variable (required)
         :param UpdateVariableOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -877,8 +835,6 @@ class UserApi(object):
         :param str variablename: name of the variable (required)
         :param UpdateVariableOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['variablename', 'body']  # noqa: E501
@@ -946,8 +902,6 @@ class UserApi(object):
         :param async_req bool
         :param CreateEmailOption body:
         :return: list[Email]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -962,8 +916,6 @@ class UserApi(object):
         :param async_req bool
         :param CreateEmailOption body:
         :return: list[Email]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body']  # noqa: E501
@@ -1030,8 +982,6 @@ class UserApi(object):
         :param str username: user to block (required)
         :param str note: optional note for the block
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1047,8 +997,6 @@ class UserApi(object):
         :param str username: user to block (required)
         :param str note: optional note for the block
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username', 'note']  # noqa: E501
@@ -1113,8 +1061,6 @@ class UserApi(object):
         :param str username: username of following user (required)
         :param str target: username of followed user (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1130,8 +1076,6 @@ class UserApi(object):
         :param str username: username of following user (required)
         :param str target: username of followed user (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username', 'target']  # noqa: E501
@@ -1199,8 +1143,6 @@ class UserApi(object):
         :param async_req bool
         :param str username: user to check (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1215,8 +1157,6 @@ class UserApi(object):
         :param async_req bool
         :param str username: user to check (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username']  # noqa: E501
@@ -1278,8 +1218,6 @@ class UserApi(object):
         :param async_req bool
         :param CreateHookOption body: (required)
         :return: Hook
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1294,8 +1232,6 @@ class UserApi(object):
         :param async_req bool
         :param CreateHookOption body: (required)
         :return: Hook
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body']  # noqa: E501
@@ -1365,8 +1301,6 @@ class UserApi(object):
         :param async_req bool
         :param CreateOAuth2ApplicationOptions body: (required)
         :return: OAuth2Application
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1381,8 +1315,6 @@ class UserApi(object):
         :param async_req bool
         :param CreateOAuth2ApplicationOptions body: (required)
         :return: OAuth2Application
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body']  # noqa: E501
@@ -1453,8 +1385,6 @@ class UserApi(object):
         :param str username: username of user (required)
         :param CreateAccessTokenOption body:
         :return: AccessToken
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1470,8 +1400,6 @@ class UserApi(object):
         :param str username: username of user (required)
         :param CreateAccessTokenOption body:
         :return: AccessToken
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username', 'body']  # noqa: E501
@@ -1543,8 +1471,6 @@ class UserApi(object):
         :param async_req bool
         :param str username: username of followed user (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1559,8 +1485,6 @@ class UserApi(object):
         :param async_req bool
         :param str username: username of followed user (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username']  # noqa: E501
@@ -1623,8 +1547,6 @@ class UserApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1640,8 +1562,6 @@ class UserApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -1709,8 +1629,6 @@ class UserApi(object):
         :param async_req bool
         :param str username: username of user to unfollow (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1725,8 +1643,6 @@ class UserApi(object):
         :param async_req bool
         :param str username: username of user to unfollow (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username']  # noqa: E501
@@ -1788,8 +1704,6 @@ class UserApi(object):
         :param async_req bool
         :param int id: id of key to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1804,8 +1718,6 @@ class UserApi(object):
         :param async_req bool
         :param int id: id of key to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['id']  # noqa: E501
@@ -1867,8 +1779,6 @@ class UserApi(object):
         :param async_req bool
         :param int id: id of key to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1883,8 +1793,6 @@ class UserApi(object):
         :param async_req bool
         :param int id: id of key to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['id']  # noqa: E501
@@ -1947,8 +1855,6 @@ class UserApi(object):
         :param str owner: owner of the repo to unstar (required)
         :param str repo: name of the repo to unstar (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1964,8 +1870,6 @@ class UserApi(object):
         :param str owner: owner of the repo to unstar (required)
         :param str repo: name of the repo to unstar (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -2033,8 +1937,6 @@ class UserApi(object):
         :param async_req bool
         :param int id: id of key to get (required)
         :return: GPGKey
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2049,8 +1951,6 @@ class UserApi(object):
         :param async_req bool
         :param int id: id of key to get (required)
         :return: GPGKey
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['id']  # noqa: E501
@@ -2116,8 +2016,6 @@ class UserApi(object):
         :param async_req bool
         :param int id: id of key to get (required)
         :return: PublicKey
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2132,8 +2030,6 @@ class UserApi(object):
         :param async_req bool
         :param int id: id of key to get (required)
         :return: PublicKey
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['id']  # noqa: E501
@@ -2200,8 +2096,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2217,8 +2111,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['page', 'limit']  # noqa: E501
@@ -2283,8 +2175,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2300,8 +2190,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['page', 'limit']  # noqa: E501
@@ -2366,8 +2254,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[GPGKey]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2383,8 +2269,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[GPGKey]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['page', 'limit']  # noqa: E501
@@ -2450,8 +2334,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[PublicKey]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2468,8 +2350,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[PublicKey]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['fingerprint', 'page', 'limit']  # noqa: E501
@@ -2536,8 +2416,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Repository]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2553,8 +2431,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Repository]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['page', 'limit']  # noqa: E501
@@ -2619,8 +2495,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Repository]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2636,8 +2510,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Repository]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['page', 'limit']  # noqa: E501
@@ -2702,8 +2574,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Repository]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2719,8 +2589,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Repository]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['page', 'limit']  # noqa: E501
@@ -2784,8 +2652,6 @@ class UserApi(object):
         :param async_req bool
         :param CreateGPGKeyOption body:
         :return: GPGKey
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2800,8 +2666,6 @@ class UserApi(object):
         :param async_req bool
         :param CreateGPGKeyOption body:
         :return: GPGKey
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body']  # noqa: E501
@@ -2867,8 +2731,6 @@ class UserApi(object):
         :param async_req bool
         :param CreateKeyOption body:
         :return: PublicKey
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2883,8 +2745,6 @@ class UserApi(object):
         :param async_req bool
         :param CreateKeyOption body:
         :return: PublicKey
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body']  # noqa: E501
@@ -2950,8 +2810,6 @@ class UserApi(object):
         :param async_req bool
         :param str username: username of user to follow (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2966,8 +2824,6 @@ class UserApi(object):
         :param async_req bool
         :param str username: username of user to follow (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username']  # noqa: E501
@@ -3030,8 +2886,6 @@ class UserApi(object):
         :param str owner: owner of the repo to star (required)
         :param str repo: name of the repo to star (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3047,8 +2901,6 @@ class UserApi(object):
         :param str owner: owner of the repo to star (required)
         :param str repo: name of the repo to star (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -3119,8 +2971,6 @@ class UserApi(object):
         :param datetime since: Only show times updated after the given time. This is a timestamp in RFC 3339 format
         :param datetime before: Only show times updated before the given time. This is a timestamp in RFC 3339 format
         :return: list[TrackedTime]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3138,8 +2988,6 @@ class UserApi(object):
         :param datetime since: Only show times updated after the given time. This is a timestamp in RFC 3339 format
         :param datetime before: Only show times updated before the given time. This is a timestamp in RFC 3339 format
         :return: list[TrackedTime]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['page', 'limit', 'since', 'before']  # noqa: E501
@@ -3208,8 +3056,6 @@ class UserApi(object):
         :param str username: username of user (required)
         :param str token: token to be deleted, identified by ID and if not available by name (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3225,8 +3071,6 @@ class UserApi(object):
         :param str username: username of user (required)
         :param str token: token to be deleted, identified by ID and if not available by name (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username', 'token']  # noqa: E501
@@ -3293,8 +3137,6 @@ class UserApi(object):
 
         :param async_req bool
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3308,8 +3150,6 @@ class UserApi(object):
 
         :param async_req bool
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = []  # noqa: E501
@@ -3365,8 +3205,6 @@ class UserApi(object):
         :param async_req bool
         :param DeleteEmailOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3381,8 +3219,6 @@ class UserApi(object):
         :param async_req bool
         :param DeleteEmailOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body']  # noqa: E501
@@ -3444,8 +3280,6 @@ class UserApi(object):
         :param async_req bool
         :param int id: id of the hook to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3460,8 +3294,6 @@ class UserApi(object):
         :param async_req bool
         :param int id: id of the hook to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['id']  # noqa: E501
@@ -3523,8 +3355,6 @@ class UserApi(object):
         :param async_req bool
         :param int id: token to be deleted (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3539,8 +3369,6 @@ class UserApi(object):
         :param async_req bool
         :param int id: token to be deleted (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['id']  # noqa: E501
@@ -3603,8 +3431,6 @@ class UserApi(object):
         :param int id: id of the hook to update (required)
         :param EditHookOption body:
         :return: Hook
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3620,8 +3446,6 @@ class UserApi(object):
         :param int id: id of the hook to update (required)
         :param EditHookOption body:
         :return: Hook
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['id', 'body']  # noqa: E501
@@ -3693,8 +3517,6 @@ class UserApi(object):
         :param async_req bool
         :param str username: username of user to get (required)
         :return: User
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3709,8 +3531,6 @@ class UserApi(object):
         :param async_req bool
         :param str username: username of user to get (required)
         :return: User
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username']  # noqa: E501
@@ -3775,8 +3595,6 @@ class UserApi(object):
 
         :param async_req bool
         :return: User
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3790,8 +3608,6 @@ class UserApi(object):
 
         :param async_req bool
         :return: User
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = []  # noqa: E501
@@ -3851,8 +3667,6 @@ class UserApi(object):
         :param async_req bool
         :param str username: username of user to get (required)
         :return: list[UserHeatmapData]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3867,8 +3681,6 @@ class UserApi(object):
         :param async_req bool
         :param str username: username of user to get (required)
         :return: list[UserHeatmapData]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username']  # noqa: E501
@@ -3934,8 +3746,6 @@ class UserApi(object):
         :param async_req bool
         :param int id: id of the hook to get (required)
         :return: Hook
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3950,8 +3760,6 @@ class UserApi(object):
         :param async_req bool
         :param int id: id of the hook to get (required)
         :return: Hook
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['id']  # noqa: E501
@@ -4017,8 +3825,6 @@ class UserApi(object):
         :param async_req bool
         :param int id: Application ID to be found (required)
         :return: OAuth2Application
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4033,8 +3839,6 @@ class UserApi(object):
         :param async_req bool
         :param int id: Application ID to be found (required)
         :return: OAuth2Application
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['id']  # noqa: E501
@@ -4101,8 +3905,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[OAuth2Application]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4118,8 +3920,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[OAuth2Application]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['page', 'limit']  # noqa: E501
@@ -4182,8 +3982,6 @@ class UserApi(object):
 
         :param async_req bool
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4197,8 +3995,6 @@ class UserApi(object):
 
         :param async_req bool
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = []  # noqa: E501
@@ -4255,8 +4051,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[StopWatch]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4272,8 +4066,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[StopWatch]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['page', 'limit']  # noqa: E501
@@ -4339,8 +4131,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[AccessToken]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4357,8 +4147,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[AccessToken]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username', 'page', 'limit']  # noqa: E501
@@ -4432,8 +4220,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Activity]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4452,8 +4238,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Activity]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username', 'only_performed_by', '_date', 'page', 'limit']  # noqa: E501
@@ -4528,8 +4312,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4545,8 +4327,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['page', 'limit']  # noqa: E501
@@ -4609,8 +4389,6 @@ class UserApi(object):
 
         :param async_req bool
         :return: list[Email]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4624,8 +4402,6 @@ class UserApi(object):
 
         :param async_req bool
         :return: list[Email]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = []  # noqa: E501
@@ -4687,8 +4463,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4705,8 +4479,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username', 'page', 'limit']  # noqa: E501
@@ -4778,8 +4550,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4796,8 +4566,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username', 'page', 'limit']  # noqa: E501
@@ -4869,8 +4637,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[GPGKey]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4887,8 +4653,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[GPGKey]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username', 'page', 'limit']  # noqa: E501
@@ -4959,8 +4723,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Hook]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4976,8 +4738,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Hook]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['page', 'limit']  # noqa: E501
@@ -5044,8 +4804,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[PublicKey]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5063,8 +4821,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[PublicKey]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username', 'fingerprint', 'page', 'limit']  # noqa: E501
@@ -5138,8 +4894,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Repository]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5156,8 +4910,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Repository]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username', 'page', 'limit']  # noqa: E501
@@ -5229,8 +4981,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Repository]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5247,8 +4997,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Repository]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username', 'page', 'limit']  # noqa: E501
@@ -5320,8 +5068,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Repository]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5338,8 +5084,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Repository]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username', 'page', 'limit']  # noqa: E501
@@ -5410,8 +5154,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Team]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5427,8 +5169,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Team]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['page', 'limit']  # noqa: E501
@@ -5495,8 +5235,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: InlineResponse2001
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5514,8 +5252,6 @@ class UserApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: InlineResponse2001
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['q', 'uid', 'page', 'limit']  # noqa: E501
@@ -5583,8 +5319,6 @@ class UserApi(object):
         :param async_req bool
         :param str username: user to unblock (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5599,8 +5333,6 @@ class UserApi(object):
         :param async_req bool
         :param str username: user to unblock (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username']  # noqa: E501
@@ -5662,8 +5394,6 @@ class UserApi(object):
         :param async_req bool
         :param UpdateUserAvatarOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5678,8 +5408,6 @@ class UserApi(object):
         :param async_req bool
         :param UpdateUserAvatarOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body']  # noqa: E501
@@ -5742,8 +5470,6 @@ class UserApi(object):
         :param CreateOAuth2ApplicationOptions body: (required)
         :param int id: application to be updated (required)
         :return: OAuth2Application
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5759,8 +5485,6 @@ class UserApi(object):
         :param CreateOAuth2ApplicationOptions body: (required)
         :param int id: application to be updated (required)
         :return: OAuth2Application
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body', 'id']  # noqa: E501
@@ -5835,8 +5559,6 @@ class UserApi(object):
 
         :param async_req bool
         :return: GPGKey
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5850,8 +5572,6 @@ class UserApi(object):
 
         :param async_req bool
         :return: GPGKey
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = []  # noqa: E501

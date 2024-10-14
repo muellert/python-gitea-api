@@ -45,8 +45,6 @@ class MiscellaneousApi(object):
         :param async_req bool
         :param str name: name of the template (required)
         :return: GitignoreTemplateInfo
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -61,8 +59,6 @@ class MiscellaneousApi(object):
         :param async_req bool
         :param str name: name of the template (required)
         :return: GitignoreTemplateInfo
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['name']  # noqa: E501
@@ -128,8 +124,6 @@ class MiscellaneousApi(object):
         :param async_req bool
         :param str name: name of the template (required)
         :return: list[LabelTemplate]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -144,8 +138,6 @@ class MiscellaneousApi(object):
         :param async_req bool
         :param str name: name of the template (required)
         :return: list[LabelTemplate]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['name']  # noqa: E501
@@ -211,8 +203,6 @@ class MiscellaneousApi(object):
         :param async_req bool
         :param str name: name of the license (required)
         :return: LicenseTemplateInfo
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -227,8 +217,6 @@ class MiscellaneousApi(object):
         :param async_req bool
         :param str name: name of the license (required)
         :return: LicenseTemplateInfo
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['name']  # noqa: E501
@@ -293,8 +281,6 @@ class MiscellaneousApi(object):
 
         :param async_req bool
         :return: NodeInfo
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -308,8 +294,6 @@ class MiscellaneousApi(object):
 
         :param async_req bool
         :return: NodeInfo
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = []  # noqa: E501
@@ -368,8 +352,6 @@ class MiscellaneousApi(object):
 
         :param async_req bool
         :return: str
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -383,8 +365,6 @@ class MiscellaneousApi(object):
 
         :param async_req bool
         :return: str
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = []  # noqa: E501
@@ -443,8 +423,6 @@ class MiscellaneousApi(object):
 
         :param async_req bool
         :return: ServerVersion
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -458,8 +436,6 @@ class MiscellaneousApi(object):
 
         :param async_req bool
         :return: ServerVersion
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = []  # noqa: E501
@@ -518,8 +494,6 @@ class MiscellaneousApi(object):
 
         :param async_req bool
         :return: list[str]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -533,8 +507,6 @@ class MiscellaneousApi(object):
 
         :param async_req bool
         :return: list[str]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = []  # noqa: E501
@@ -593,8 +565,6 @@ class MiscellaneousApi(object):
 
         :param async_req bool
         :return: list[str]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -608,8 +578,6 @@ class MiscellaneousApi(object):
 
         :param async_req bool
         :return: list[str]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = []  # noqa: E501
@@ -668,8 +636,6 @@ class MiscellaneousApi(object):
 
         :param async_req bool
         :return: list[LicensesTemplateListEntry]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -683,8 +649,6 @@ class MiscellaneousApi(object):
 
         :param async_req bool
         :return: list[LicensesTemplateListEntry]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = []  # noqa: E501
@@ -744,8 +708,6 @@ class MiscellaneousApi(object):
         :param async_req bool
         :param MarkdownOption body:
         :return: str
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -760,8 +722,6 @@ class MiscellaneousApi(object):
         :param async_req bool
         :param MarkdownOption body:
         :return: str
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body']  # noqa: E501
@@ -827,8 +787,6 @@ class MiscellaneousApi(object):
         :param async_req bool
         :param str body: Request body to render (required)
         :return: str
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -843,8 +801,6 @@ class MiscellaneousApi(object):
         :param async_req bool
         :param str body: Request body to render (required)
         :return: str
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body']  # noqa: E501
@@ -914,8 +870,6 @@ class MiscellaneousApi(object):
         :param async_req bool
         :param MarkupOption body:
         :return: str
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -930,8 +884,6 @@ class MiscellaneousApi(object):
         :param async_req bool
         :param MarkupOption body:
         :return: str
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body']  # noqa: E501

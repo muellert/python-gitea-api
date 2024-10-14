@@ -46,8 +46,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo to transfer (required)
         :param str repo: name of the repo to transfer (required)
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -63,8 +61,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo to transfer (required)
         :param str repo: name of the repo to transfer (required)
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -136,8 +132,6 @@ class RepositoryApi(object):
         :param async_req bool
         :param CreateRepoOption body:
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -152,8 +146,6 @@ class RepositoryApi(object):
         :param async_req bool
         :param CreateRepoOption body:
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body']  # noqa: E501
@@ -221,8 +213,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo to fork (required)
         :param CreateForkOption body:
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -239,8 +229,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo to fork (required)
         :param CreateForkOption body:
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'body']  # noqa: E501
@@ -321,8 +309,6 @@ class RepositoryApi(object):
         :param str variablename: name of the variable (required)
         :param CreateVariableOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -340,8 +326,6 @@ class RepositoryApi(object):
         :param str variablename: name of the variable (required)
         :param CreateVariableOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'variablename', 'body']  # noqa: E501
@@ -423,8 +407,6 @@ class RepositoryApi(object):
         :param str repo: name of the repository (required)
         :param str secretname: name of the secret (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -441,8 +423,6 @@ class RepositoryApi(object):
         :param str repo: name of the repository (required)
         :param str secretname: name of the secret (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'secretname']  # noqa: E501
@@ -518,8 +498,6 @@ class RepositoryApi(object):
         :param str repo: name of the repository (required)
         :param str variablename: name of the variable (required)
         :return: ActionVariable
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -536,8 +514,6 @@ class RepositoryApi(object):
         :param str repo: name of the repository (required)
         :param str variablename: name of the variable (required)
         :return: ActionVariable
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'variablename']  # noqa: E501
@@ -617,8 +593,6 @@ class RepositoryApi(object):
         :param str template_repo: name of the template repository (required)
         :param GenerateRepoOption body:
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -635,8 +609,6 @@ class RepositoryApi(object):
         :param str template_repo: name of the template repository (required)
         :param GenerateRepoOption body:
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['template_owner', 'template_repo', 'body']  # noqa: E501
@@ -716,8 +688,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str sha: sha of the tag. The Git tags API only supports annotated tag objects, not lightweight tags. (required)
         :return: AnnotatedTag
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -734,8 +704,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str sha: sha of the tag. The Git tags API only supports annotated tag objects, not lightweight tags. (required)
         :return: AnnotatedTag
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'sha']  # noqa: E501
@@ -815,8 +783,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str sha: sha of the commit (required)
         :return: GitBlobResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -833,8 +799,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str sha: sha of the commit (required)
         :return: GitBlobResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'sha']  # noqa: E501
@@ -914,8 +878,6 @@ class RepositoryApi(object):
         :param str repo: name of the repository (required)
         :param str variablename: name of the variable (required)
         :return: ActionVariable
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -932,8 +894,6 @@ class RepositoryApi(object):
         :param str repo: name of the repository (required)
         :param str variablename: name of the variable (required)
         :return: ActionVariable
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'variablename']  # noqa: E501
@@ -1014,8 +974,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[ActionVariable]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1033,8 +991,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[ActionVariable]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'page', 'limit']  # noqa: E501
@@ -1115,8 +1071,6 @@ class RepositoryApi(object):
         :param int page: page number; the 'truncated' field in the response will be true if there are still more items after this page, false if the last page
         :param int per_page: number of items per page
         :return: GitTreeResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1136,8 +1090,6 @@ class RepositoryApi(object):
         :param int page: page number; the 'truncated' field in the response will be true if there are still more items after this page, false if the last page
         :param int per_page: number of items per page
         :return: GitTreeResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'sha', 'recursive', 'page', 'per_page']  # noqa: E501
@@ -1224,8 +1176,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Repository]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1243,8 +1193,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Repository]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'page', 'limit']  # noqa: E501
@@ -1321,8 +1269,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo to transfer (required)
         :param str repo: name of the repo to transfer (required)
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1338,8 +1284,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo to transfer (required)
         :param str repo: name of the repo to transfer (required)
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -1414,8 +1358,6 @@ class RepositoryApi(object):
         :param str collaborator: username of the collaborator to add (required)
         :param AddCollaboratorOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1433,8 +1375,6 @@ class RepositoryApi(object):
         :param str collaborator: username of the collaborator to add (required)
         :param AddCollaboratorOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'collaborator', 'body']  # noqa: E501
@@ -1516,8 +1456,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param CreatePushMirrorOption body:
         :return: PushMirror
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1534,8 +1472,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param CreatePushMirrorOption body:
         :return: PushMirror
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'body']  # noqa: E501
@@ -1615,8 +1551,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str team: team name (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1633,8 +1567,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str team: team name (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'team']  # noqa: E501
@@ -1710,8 +1642,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str topic: name of the topic to add (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1728,8 +1658,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str topic: name of the topic to add (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'topic']  # noqa: E501
@@ -1805,8 +1733,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: FileResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1823,8 +1749,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: FileResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body', 'owner', 'repo']  # noqa: E501
@@ -1908,8 +1832,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the pull request to merge (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1926,8 +1848,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the pull request to merge (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index']  # noqa: E501
@@ -2003,8 +1923,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: FilesResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2021,8 +1939,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: FilesResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body', 'owner', 'repo']  # noqa: E501
@@ -2106,8 +2022,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str collaborator: username of the collaborator (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2124,8 +2038,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str collaborator: username of the collaborator (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'collaborator']  # noqa: E501
@@ -2201,8 +2113,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str team: team name (required)
         :return: Team
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2219,8 +2129,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str team: team name (required)
         :return: Team
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'team']  # noqa: E501
@@ -2300,8 +2208,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str basehead: compare two branches or commits (required)
         :return: Compare
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2318,8 +2224,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str basehead: compare two branches or commits (required)
         :return: Compare
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'basehead']  # noqa: E501
@@ -2399,8 +2303,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param CreateBranchRepoOption body:
         :return: Branch
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2417,8 +2319,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param CreateBranchRepoOption body:
         :return: Branch
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'body']  # noqa: E501
@@ -2498,8 +2398,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param CreateBranchProtectionOption body:
         :return: BranchProtection
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2516,8 +2414,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param CreateBranchProtectionOption body:
         :return: BranchProtection
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'body']  # noqa: E501
@@ -2598,8 +2494,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str filepath: path of the file to create (required)
         :return: FileResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2617,8 +2511,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str filepath: path of the file to create (required)
         :return: FileResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body', 'owner', 'repo', 'filepath']  # noqa: E501
@@ -2708,8 +2600,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param CreateHookOption body:
         :return: Hook
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2726,8 +2616,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param CreateHookOption body:
         :return: Hook
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'body']  # noqa: E501
@@ -2807,8 +2695,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param CreateKeyOption body:
         :return: DeployKey
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2825,8 +2711,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param CreateKeyOption body:
         :return: DeployKey
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'body']  # noqa: E501
@@ -2906,8 +2790,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param CreatePullRequestOption body:
         :return: PullRequest
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2924,8 +2806,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param CreatePullRequestOption body:
         :return: PullRequest
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'body']  # noqa: E501
@@ -3006,8 +2886,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the pull request (required)
         :return: PullReview
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3025,8 +2903,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the pull request (required)
         :return: PullReview
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body', 'owner', 'repo', 'index']  # noqa: E501
@@ -3117,8 +2993,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the pull request (required)
         :return: list[PullReview]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3136,8 +3010,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the pull request (required)
         :return: list[PullReview]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body', 'owner', 'repo', 'index']  # noqa: E501
@@ -3227,8 +3099,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param CreateReleaseOption body:
         :return: Release
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3245,8 +3115,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param CreateReleaseOption body:
         :return: Release
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'body']  # noqa: E501
@@ -3328,8 +3196,6 @@ class RepositoryApi(object):
         :param str attachment:
         :param str name: name of the attachment
         :return: Attachment
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3348,8 +3214,6 @@ class RepositoryApi(object):
         :param str attachment:
         :param str name: name of the attachment
         :return: Attachment
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id', 'attachment', 'name']  # noqa: E501
@@ -3441,8 +3305,6 @@ class RepositoryApi(object):
         :param IdAssetsBody2 body:
         :param str name: name of the attachment
         :return: Attachment
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3461,8 +3323,6 @@ class RepositoryApi(object):
         :param IdAssetsBody2 body:
         :param str name: name of the attachment
         :return: Attachment
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id', 'body', 'name']  # noqa: E501
@@ -3553,8 +3413,6 @@ class RepositoryApi(object):
         :param str sha: sha of the commit (required)
         :param CreateStatusOption body:
         :return: CommitStatus
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3572,8 +3430,6 @@ class RepositoryApi(object):
         :param str sha: sha of the commit (required)
         :param CreateStatusOption body:
         :return: CommitStatus
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'sha', 'body']  # noqa: E501
@@ -3659,8 +3515,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param CreateTagOption body:
         :return: Tag
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3677,8 +3531,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param CreateTagOption body:
         :return: Tag
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'body']  # noqa: E501
@@ -3758,8 +3610,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param CreateWikiPageOptions body:
         :return: WikiPage
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3776,8 +3626,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param CreateWikiPageOptions body:
         :return: WikiPage
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'body']  # noqa: E501
@@ -3856,8 +3704,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo to delete (required)
         :param str repo: name of the repo to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3873,8 +3719,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo to delete (required)
         :param str repo: name of the repo to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -3943,8 +3787,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3960,8 +3802,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -4031,8 +3871,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str branch: branch to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4049,8 +3887,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str branch: branch to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'branch']  # noqa: E501
@@ -4126,8 +3962,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str name: name of protected branch (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4144,8 +3978,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str name: name of protected branch (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'name']  # noqa: E501
@@ -4221,8 +4053,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str collaborator: username of the collaborator to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4239,8 +4069,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str collaborator: username of the collaborator to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'collaborator']  # noqa: E501
@@ -4317,8 +4145,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str filepath: path of the file to delete (required)
         :return: FileDeleteResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4336,8 +4162,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str filepath: path of the file to delete (required)
         :return: FileDeleteResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body', 'owner', 'repo', 'filepath']  # noqa: E501
@@ -4427,8 +4251,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str id: id of the hook to get (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4445,8 +4267,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str id: id of the hook to get (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id']  # noqa: E501
@@ -4522,8 +4342,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param int id: id of the hook to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4540,8 +4358,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param int id: id of the hook to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id']  # noqa: E501
@@ -4617,8 +4433,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param int id: id of the key to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4635,8 +4449,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param int id: id of the key to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id']  # noqa: E501
@@ -4713,8 +4525,6 @@ class RepositoryApi(object):
         :param int index: index of the pull request (required)
         :param int id: id of the review (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4732,8 +4542,6 @@ class RepositoryApi(object):
         :param int index: index of the pull request (required)
         :param int id: id of the review (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'id']  # noqa: E501
@@ -4816,8 +4624,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the pull request (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4835,8 +4641,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the pull request (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body', 'owner', 'repo', 'index']  # noqa: E501
@@ -4922,8 +4726,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str name: remote name of the pushMirror (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4940,8 +4742,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str name: remote name of the pushMirror (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'name']  # noqa: E501
@@ -5017,8 +4817,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param int id: id of the release to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5035,8 +4833,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param int id: id of the release to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id']  # noqa: E501
@@ -5113,8 +4909,6 @@ class RepositoryApi(object):
         :param int id: id of the release (required)
         :param int attachment_id: id of the attachment to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5132,8 +4926,6 @@ class RepositoryApi(object):
         :param int id: id of the release (required)
         :param int attachment_id: id of the attachment to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id', 'attachment_id']  # noqa: E501
@@ -5215,8 +5007,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str tag: tag name of the release to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5233,8 +5023,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str tag: tag name of the release to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'tag']  # noqa: E501
@@ -5310,8 +5098,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str tag: name of tag to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5328,8 +5114,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str tag: name of tag to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'tag']  # noqa: E501
@@ -5405,8 +5189,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str team: team name (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5423,8 +5205,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str team: team name (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'team']  # noqa: E501
@@ -5500,8 +5280,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str topic: name of the topic to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5518,8 +5296,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str topic: name of the topic to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'topic']  # noqa: E501
@@ -5595,8 +5371,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str page_name: name of the page (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5613,8 +5387,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str page_name: name of the page (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'page_name']  # noqa: E501
@@ -5692,8 +5464,6 @@ class RepositoryApi(object):
         :param int index: index of the pull request (required)
         :param int id: id of the review (required)
         :return: PullReview
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5712,8 +5482,6 @@ class RepositoryApi(object):
         :param int index: index of the pull request (required)
         :param int id: id of the review (required)
         :return: PullReview
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body', 'owner', 'repo', 'index', 'id']  # noqa: E501
@@ -5810,8 +5578,6 @@ class RepositoryApi(object):
         :param str sha: SHA of the commit to get (required)
         :param str diff_type: whether the output is diff or patch (required)
         :return: str
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5829,8 +5595,6 @@ class RepositoryApi(object):
         :param str sha: SHA of the commit to get (required)
         :param str diff_type: whether the output is diff or patch (required)
         :return: str
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'sha', 'diff_type']  # noqa: E501
@@ -5918,8 +5682,6 @@ class RepositoryApi(object):
         :param str diff_type: whether the output is diff or patch (required)
         :param bool binary: whether to include binary file changes. if true, the diff is applicable with `git apply`
         :return: str
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5938,8 +5700,6 @@ class RepositoryApi(object):
         :param str diff_type: whether the output is diff or patch (required)
         :param bool binary: whether to include binary file changes. if true, the diff is applicable with `git apply`
         :return: str
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'diff_type', 'binary']  # noqa: E501
@@ -6027,8 +5787,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo to edit (required)
         :param EditRepoOption body: Properties of a repo that you can edit
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -6045,8 +5803,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo to edit (required)
         :param EditRepoOption body: Properties of a repo that you can edit
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'body']  # noqa: E501
@@ -6127,8 +5883,6 @@ class RepositoryApi(object):
         :param str name: name of protected branch (required)
         :param EditBranchProtectionOption body:
         :return: BranchProtection
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -6146,8 +5900,6 @@ class RepositoryApi(object):
         :param str name: name of protected branch (required)
         :param EditBranchProtectionOption body:
         :return: BranchProtection
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'name', 'body']  # noqa: E501
@@ -6234,8 +5986,6 @@ class RepositoryApi(object):
         :param str id: id of the hook to get (required)
         :param EditGitHookOption body:
         :return: GitHook
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -6253,8 +6003,6 @@ class RepositoryApi(object):
         :param str id: id of the hook to get (required)
         :param EditGitHookOption body:
         :return: GitHook
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id', 'body']  # noqa: E501
@@ -6341,8 +6089,6 @@ class RepositoryApi(object):
         :param int id: index of the hook (required)
         :param EditHookOption body:
         :return: Hook
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -6360,8 +6106,6 @@ class RepositoryApi(object):
         :param int id: index of the hook (required)
         :param EditHookOption body:
         :return: Hook
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id', 'body']  # noqa: E501
@@ -6448,8 +6192,6 @@ class RepositoryApi(object):
         :param int index: index of the pull request to edit (required)
         :param EditPullRequestOption body:
         :return: PullRequest
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -6467,8 +6209,6 @@ class RepositoryApi(object):
         :param int index: index of the pull request to edit (required)
         :param EditPullRequestOption body:
         :return: PullRequest
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'body']  # noqa: E501
@@ -6555,8 +6295,6 @@ class RepositoryApi(object):
         :param int id: id of the release to edit (required)
         :param EditReleaseOption body:
         :return: Release
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -6574,8 +6312,6 @@ class RepositoryApi(object):
         :param int id: id of the release to edit (required)
         :param EditReleaseOption body:
         :return: Release
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id', 'body']  # noqa: E501
@@ -6663,8 +6399,6 @@ class RepositoryApi(object):
         :param int attachment_id: id of the attachment to edit (required)
         :param EditAttachmentOptions body:
         :return: Attachment
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -6683,8 +6417,6 @@ class RepositoryApi(object):
         :param int attachment_id: id of the attachment to edit (required)
         :param EditAttachmentOptions body:
         :return: Attachment
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id', 'attachment_id', 'body']  # noqa: E501
@@ -6777,8 +6509,6 @@ class RepositoryApi(object):
         :param str page_name: name of the page (required)
         :param CreateWikiPageOptions body:
         :return: WikiPage
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -6796,8 +6526,6 @@ class RepositoryApi(object):
         :param str page_name: name of the page (required)
         :param CreateWikiPageOptions body:
         :return: WikiPage
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'page_name', 'body']  # noqa: E501
@@ -6882,8 +6610,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -6899,8 +6625,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -6981,8 +6705,6 @@ class RepositoryApi(object):
         :param int limit: page size of results (ignored if used with 'path')
         :param str _not: commits that match the given specifier will not be listed.
         :return: list[Commit]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -7006,8 +6728,6 @@ class RepositoryApi(object):
         :param int limit: page size of results (ignored if used with 'path')
         :param str _not: commits that match the given specifier will not be listed.
         :return: list[Commit]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'sha', 'path', 'stat', 'verification', 'files', 'page', 'limit', '_not']  # noqa: E501
@@ -7097,8 +6817,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str archive: the git reference for download with attached archive format (e.g. master.zip) (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -7115,8 +6833,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str archive: the git reference for download with attached archive format (e.g. master.zip) (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'archive']  # noqa: E501
@@ -7191,8 +6907,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -7208,8 +6922,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -7283,8 +6995,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str branch: branch to get (required)
         :return: Branch
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -7301,8 +7011,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str branch: branch to get (required)
         :return: Branch
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'branch']  # noqa: E501
@@ -7382,8 +7090,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str name: name of protected branch (required)
         :return: BranchProtection
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -7400,8 +7106,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str name: name of protected branch (required)
         :return: BranchProtection
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'name']  # noqa: E501
@@ -7479,8 +7183,6 @@ class RepositoryApi(object):
         :param async_req bool
         :param int id: id of the repo to get (required)
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -7495,8 +7197,6 @@ class RepositoryApi(object):
         :param async_req bool
         :param int id: id of the repo to get (required)
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['id']  # noqa: E501
@@ -7566,8 +7266,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: CombinedStatus
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -7586,8 +7284,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: CombinedStatus
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'ref', 'page', 'limit']  # noqa: E501
@@ -7671,8 +7367,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str sha: SHA of the commit to get (required)
         :return: PullRequest
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -7689,8 +7383,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str sha: SHA of the commit to get (required)
         :return: PullRequest
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'sha']  # noqa: E501
@@ -7771,8 +7463,6 @@ class RepositoryApi(object):
         :param str filepath: path of the dir, file, symlink or submodule in the repo (required)
         :param str ref: The name of the commit/branch/tag. Default the repository’s default branch (usually master)
         :return: ContentsResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -7790,8 +7480,6 @@ class RepositoryApi(object):
         :param str filepath: path of the dir, file, symlink or submodule in the repo (required)
         :param str ref: The name of the commit/branch/tag. Default the repository’s default branch (usually master)
         :return: ContentsResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'filepath', 'ref']  # noqa: E501
@@ -7873,8 +7561,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str ref: The name of the commit/branch/tag. Default the repository’s default branch (usually master)
         :return: list[ContentsResponse]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -7891,8 +7577,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str ref: The name of the commit/branch/tag. Default the repository’s default branch (usually master)
         :return: list[ContentsResponse]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'ref']  # noqa: E501
@@ -7969,8 +7653,6 @@ class RepositoryApi(object):
         :param str filepath: filepath of file to get (required)
         :param str ref: The name of the commit/branch/tag. Default the repository’s default branch (usually master)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -7988,8 +7670,6 @@ class RepositoryApi(object):
         :param str filepath: filepath of file to get (required)
         :param str ref: The name of the commit/branch/tag. Default the repository’s default branch (usually master)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'filepath', 'ref']  # noqa: E501
@@ -8067,8 +7747,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str id: id of the hook to get (required)
         :return: GitHook
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -8085,8 +7763,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str id: id of the hook to get (required)
         :return: GitHook
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id']  # noqa: E501
@@ -8166,8 +7842,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param int id: id of the hook to get (required)
         :return: Hook
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -8184,8 +7858,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param int id: id of the hook to get (required)
         :return: Hook
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id']  # noqa: E501
@@ -8264,8 +7936,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: IssueConfig
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -8281,8 +7951,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: IssueConfig
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -8355,8 +8023,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[IssueTemplate]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -8372,8 +8038,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[IssueTemplate]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -8447,8 +8111,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param int id: id of the key to get (required)
         :return: DeployKey
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -8465,8 +8127,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param int id: id of the key to get (required)
         :return: DeployKey
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id']  # noqa: E501
@@ -8545,8 +8205,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: dict(str, int)
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -8562,8 +8220,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: dict(str, int)
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -8636,8 +8292,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: Release
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -8653,8 +8307,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: Release
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -8730,8 +8382,6 @@ class RepositoryApi(object):
         :param bool verification: include verification for every commit (disable for speedup, default 'true')
         :param bool files: include a list of affected files for every commit (disable for speedup, default 'true')
         :return: Note
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -8750,8 +8400,6 @@ class RepositoryApi(object):
         :param bool verification: include verification for every commit (disable for speedup, default 'true')
         :param bool files: include a list of affected files for every commit (disable for speedup, default 'true')
         :return: Note
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'sha', 'verification', 'files']  # noqa: E501
@@ -8835,8 +8483,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the pull request to get (required)
         :return: PullRequest
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -8853,8 +8499,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the pull request to get (required)
         :return: PullRequest
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index']  # noqa: E501
@@ -8935,8 +8579,6 @@ class RepositoryApi(object):
         :param str base: base of the pull request to get (required)
         :param str head: head of the pull request to get (required)
         :return: PullRequest
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -8954,8 +8596,6 @@ class RepositoryApi(object):
         :param str base: base of the pull request to get (required)
         :param str head: head of the pull request to get (required)
         :return: PullRequest
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'base', 'head']  # noqa: E501
@@ -9045,8 +8685,6 @@ class RepositoryApi(object):
         :param bool verification: include verification for every commit (disable for speedup, default 'true')
         :param bool files: include a list of affected files for every commit (disable for speedup, default 'true')
         :return: list[Commit]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -9067,8 +8705,6 @@ class RepositoryApi(object):
         :param bool verification: include verification for every commit (disable for speedup, default 'true')
         :param bool files: include a list of affected files for every commit (disable for speedup, default 'true')
         :return: list[Commit]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'page', 'limit', 'verification', 'files']  # noqa: E501
@@ -9160,8 +8796,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[ChangedFile]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -9182,8 +8816,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[ChangedFile]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'skip_to', 'whitespace', 'page', 'limit']  # noqa: E501
@@ -9272,8 +8904,6 @@ class RepositoryApi(object):
         :param int index: index of the pull request (required)
         :param int id: id of the review (required)
         :return: PullReview
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -9291,8 +8921,6 @@ class RepositoryApi(object):
         :param int index: index of the pull request (required)
         :param int id: id of the review (required)
         :return: PullReview
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'id']  # noqa: E501
@@ -9379,8 +9007,6 @@ class RepositoryApi(object):
         :param int index: index of the pull request (required)
         :param int id: id of the review (required)
         :return: list[PullReviewComment]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -9398,8 +9024,6 @@ class RepositoryApi(object):
         :param int index: index of the pull request (required)
         :param int id: id of the review (required)
         :return: list[PullReviewComment]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'id']  # noqa: E501
@@ -9485,8 +9109,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str name: remote name of push mirror (required)
         :return: PushMirror
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -9503,8 +9125,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str name: remote name of push mirror (required)
         :return: PushMirror
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'name']  # noqa: E501
@@ -9585,8 +9205,6 @@ class RepositoryApi(object):
         :param str filepath: filepath of the file to get (required)
         :param str ref: The name of the commit/branch/tag. Default the repository’s default branch (usually master)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -9604,8 +9222,6 @@ class RepositoryApi(object):
         :param str filepath: filepath of the file to get (required)
         :param str ref: The name of the commit/branch/tag. Default the repository’s default branch (usually master)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'filepath', 'ref']  # noqa: E501
@@ -9684,8 +9300,6 @@ class RepositoryApi(object):
         :param str filepath: filepath of the file to get (required)
         :param str ref: The name of the commit/branch/tag. Default the repository’s default branch (usually master)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -9703,8 +9317,6 @@ class RepositoryApi(object):
         :param str filepath: filepath of the file to get (required)
         :param str ref: The name of the commit/branch/tag. Default the repository’s default branch (usually master)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'filepath', 'ref']  # noqa: E501
@@ -9782,8 +9394,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param int id: id of the release to get (required)
         :return: Release
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -9800,8 +9410,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param int id: id of the release to get (required)
         :return: Release
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id']  # noqa: E501
@@ -9882,8 +9490,6 @@ class RepositoryApi(object):
         :param int id: id of the release (required)
         :param int attachment_id: id of the attachment to get (required)
         :return: Attachment
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -9901,8 +9507,6 @@ class RepositoryApi(object):
         :param int id: id of the release (required)
         :param int attachment_id: id of the attachment to get (required)
         :return: Attachment
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id', 'attachment_id']  # noqa: E501
@@ -9988,8 +9592,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str tag: tag name of the release to get (required)
         :return: Release
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -10006,8 +9608,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str tag: tag name of the release to get (required)
         :return: Release
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'tag']  # noqa: E501
@@ -10087,8 +9687,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str collaborator: username of the collaborator (required)
         :return: RepoCollaboratorPermission
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -10105,8 +9703,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str collaborator: username of the collaborator (required)
         :return: RepoCollaboratorPermission
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'collaborator']  # noqa: E501
@@ -10185,8 +9781,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -10202,8 +9796,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -10276,8 +9868,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -10293,8 +9883,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -10367,8 +9955,6 @@ class RepositoryApi(object):
         :param bool verification: include verification for every commit (disable for speedup, default 'true')
         :param bool files: include a list of affected files for every commit (disable for speedup, default 'true')
         :return: Commit
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -10388,8 +9974,6 @@ class RepositoryApi(object):
         :param bool verification: include verification for every commit (disable for speedup, default 'true')
         :param bool files: include a list of affected files for every commit (disable for speedup, default 'true')
         :return: Commit
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'sha', 'stat', 'verification', 'files']  # noqa: E501
@@ -10475,8 +10059,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str tag: name of tag (required)
         :return: Tag
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -10493,8 +10075,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str tag: name of tag (required)
         :return: Tag
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'tag']  # noqa: E501
@@ -10574,8 +10154,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str page_name: name of the page (required)
         :return: WikiPage
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -10592,8 +10170,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str page_name: name of the page (required)
         :return: WikiPage
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'page_name']  # noqa: E501
@@ -10674,8 +10250,6 @@ class RepositoryApi(object):
         :param str page_name: name of the page (required)
         :param int page: page number of results to return (1-based)
         :return: WikiCommitList
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -10693,8 +10267,6 @@ class RepositoryApi(object):
         :param str page_name: name of the page (required)
         :param int page: page number of results to return (1-based)
         :return: WikiCommitList
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'page_name', 'page']  # noqa: E501
@@ -10777,8 +10349,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[WikiPageMetaData]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -10796,8 +10366,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[WikiPageMetaData]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'page', 'limit']  # noqa: E501
@@ -10876,8 +10444,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Secret]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -10895,8 +10461,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Secret]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'page', 'limit']  # noqa: E501
@@ -10976,8 +10540,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Activity]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -10996,8 +10558,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Activity]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', '_date', 'page', 'limit']  # noqa: E501
@@ -11076,8 +10636,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[Reference]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -11093,8 +10651,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[Reference]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -11167,8 +10723,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[BranchProtection]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -11184,8 +10738,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[BranchProtection]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -11260,8 +10812,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Branch]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -11279,8 +10829,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Branch]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'page', 'limit']  # noqa: E501
@@ -11359,8 +10907,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -11378,8 +10924,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'page', 'limit']  # noqa: E501
@@ -11456,8 +11000,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[GitHook]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -11473,8 +11015,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[GitHook]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -11548,8 +11088,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str ref: part or full name of the ref (required)
         :return: list[Reference]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -11566,8 +11104,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str ref: part or full name of the ref (required)
         :return: list[Reference]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'ref']  # noqa: E501
@@ -11648,8 +11184,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Hook]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -11667,8 +11201,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Hook]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'page', 'limit']  # noqa: E501
@@ -11749,8 +11281,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[DeployKey]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -11770,8 +11300,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[DeployKey]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'key_id', 'fingerprint', 'page', 'limit']  # noqa: E501
@@ -11852,8 +11380,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[Issue]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -11869,8 +11395,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[Issue]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -11943,8 +11467,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[PullRequest]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -11960,8 +11482,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[PullRequest]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -12040,8 +11560,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[PullRequest]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -12063,8 +11581,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[PullRequest]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'state', 'sort', 'milestone', 'labels', 'page', 'limit']  # noqa: E501
@@ -12153,8 +11669,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[PullReview]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -12173,8 +11687,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[PullReview]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'page', 'limit']  # noqa: E501
@@ -12259,8 +11771,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[PushMirror]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -12278,8 +11788,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[PushMirror]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'page', 'limit']  # noqa: E501
@@ -12357,8 +11865,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param int id: id of the release (required)
         :return: list[Attachment]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -12375,8 +11881,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param int id: id of the release (required)
         :return: list[Attachment]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id']  # noqa: E501
@@ -12459,8 +11963,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Release]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -12480,8 +11982,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Release]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'draft', 'pre_release', 'page', 'limit']  # noqa: E501
@@ -12564,8 +12064,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -12583,8 +12081,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'page', 'limit']  # noqa: E501
@@ -12666,8 +12162,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[CommitStatus]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -12688,8 +12182,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[CommitStatus]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'sha', 'sort', 'state', 'page', 'limit']  # noqa: E501
@@ -12781,8 +12273,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[CommitStatus]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -12803,8 +12293,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[CommitStatus]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'ref', 'sort', 'state', 'page', 'limit']  # noqa: E501
@@ -12893,8 +12381,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -12912,8 +12398,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'page', 'limit']  # noqa: E501
@@ -12992,8 +12476,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results, default maximum page size is 50
         :return: list[Tag]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -13011,8 +12493,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results, default maximum page size is 50
         :return: list[Tag]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'page', 'limit']  # noqa: E501
@@ -13089,8 +12569,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[Team]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -13106,8 +12584,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[Team]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -13182,8 +12658,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: TopicName
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -13201,8 +12675,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: TopicName
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'page', 'limit']  # noqa: E501
@@ -13281,8 +12753,6 @@ class RepositoryApi(object):
         :param int index: index of the pull request to merge (required)
         :param MergePullRequestOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -13300,8 +12770,6 @@ class RepositoryApi(object):
         :param int index: index of the pull request to merge (required)
         :param MergePullRequestOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'body']  # noqa: E501
@@ -13381,8 +12849,6 @@ class RepositoryApi(object):
         :param async_req bool
         :param MigrateRepoOptions body:
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -13397,8 +12863,6 @@ class RepositoryApi(object):
         :param async_req bool
         :param MigrateRepoOptions body:
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body']  # noqa: E501
@@ -13465,8 +12929,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo to sync (required)
         :param str repo: name of the repo to sync (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -13482,8 +12944,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo to sync (required)
         :param str repo: name of the repo to sync (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -13552,8 +13012,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: NewIssuePinsAllowed
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -13569,8 +13027,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: NewIssuePinsAllowed
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -13644,8 +13100,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the pull request (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -13662,8 +13116,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param int index: index of the pull request (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index']  # noqa: E501
@@ -13738,8 +13190,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo to sync (required)
         :param str repo: name of the repo to sync (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -13755,8 +13205,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo to sync (required)
         :param str repo: name of the repo to sync (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -13840,8 +13288,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: SearchResults
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -13872,8 +13318,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: SearchResults
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['q', 'topic', 'include_desc', 'uid', 'priority_owner_id', 'team_id', 'starred_by', 'private', 'is_private', 'template', 'archived', 'mode', 'exclusive', 'sort', 'order', 'page', 'limit']  # noqa: E501
@@ -13968,8 +13412,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: str
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -13985,8 +13427,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: str
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -14062,8 +13502,6 @@ class RepositoryApi(object):
         :param int index: index of the pull request (required)
         :param int id: id of the review (required)
         :return: PullReview
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -14082,8 +13520,6 @@ class RepositoryApi(object):
         :param int index: index of the pull request (required)
         :param int id: id of the review (required)
         :return: PullReview
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body', 'owner', 'repo', 'index', 'id']  # noqa: E501
@@ -14180,8 +13616,6 @@ class RepositoryApi(object):
         :param int id: id of the hook to test (required)
         :param str ref: The name of the commit/branch/tag, indicates which commit will be loaded to the webhook payload.
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -14199,8 +13633,6 @@ class RepositoryApi(object):
         :param int id: id of the hook to test (required)
         :param str ref: The name of the commit/branch/tag, indicates which commit will be loaded to the webhook payload.
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'id', 'ref']  # noqa: E501
@@ -14282,8 +13714,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[TrackedTime]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -14304,8 +13734,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[TrackedTime]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'user', 'since', 'before', 'page', 'limit']  # noqa: E501
@@ -14389,8 +13817,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo to transfer (required)
         :param str repo: name of the repo to transfer (required)
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -14407,8 +13833,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo to transfer (required)
         :param str repo: name of the repo to transfer (required)
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body', 'owner', 'repo']  # noqa: E501
@@ -14493,8 +13917,6 @@ class RepositoryApi(object):
         :param int index: index of the pull request (required)
         :param int id: id of the review (required)
         :return: PullReview
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -14512,8 +13934,6 @@ class RepositoryApi(object):
         :param int index: index of the pull request (required)
         :param int id: id of the review (required)
         :return: PullReview
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'id']  # noqa: E501
@@ -14599,8 +14019,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param UpdateRepoAvatarOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -14617,8 +14035,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param UpdateRepoAvatarOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'body']  # noqa: E501
@@ -14695,8 +14111,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str filepath: path of the file to update (required)
         :return: FileResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -14714,8 +14128,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str filepath: path of the file to update (required)
         :return: FileResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body', 'owner', 'repo', 'filepath']  # noqa: E501
@@ -14806,8 +14218,6 @@ class RepositoryApi(object):
         :param int index: index of the pull request to get (required)
         :param str style: how to update pull request
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -14825,8 +14235,6 @@ class RepositoryApi(object):
         :param int index: index of the pull request to get (required)
         :param str style: how to update pull request
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'index', 'style']  # noqa: E501
@@ -14904,8 +14312,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param RepoTopicOptions body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -14922,8 +14328,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param RepoTopicOptions body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'body']  # noqa: E501
@@ -14998,8 +14402,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: IssueConfigValidation
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -15015,8 +14417,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: IssueConfigValidation
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -15090,8 +14490,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[TopicResponse]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -15108,8 +14506,6 @@ class RepositoryApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[TopicResponse]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['q', 'page', 'limit']  # noqa: E501
@@ -15182,8 +14578,6 @@ class RepositoryApi(object):
         :param str secretname: name of the secret (required)
         :param CreateOrUpdateSecretOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -15201,8 +14595,6 @@ class RepositoryApi(object):
         :param str secretname: name of the secret (required)
         :param CreateOrUpdateSecretOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'secretname', 'body']  # noqa: E501
@@ -15285,8 +14677,6 @@ class RepositoryApi(object):
         :param str variablename: name of the variable (required)
         :param UpdateVariableOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -15304,8 +14694,6 @@ class RepositoryApi(object):
         :param str variablename: name of the variable (required)
         :param UpdateVariableOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'variablename', 'body']  # noqa: E501
@@ -15386,8 +14774,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: WatchInfo
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -15403,8 +14789,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: WatchInfo
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -15477,8 +14861,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -15494,8 +14876,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -15564,8 +14944,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: WatchInfo
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -15581,8 +14959,6 @@ class RepositoryApi(object):
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: WatchInfo
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo']  # noqa: E501
@@ -15656,8 +15032,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str user: username of user (required)
         :return: list[TrackedTime]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -15674,8 +15048,6 @@ class RepositoryApi(object):
         :param str repo: name of the repo (required)
         :param str user: username of user (required)
         :return: list[TrackedTime]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'user']  # noqa: E501

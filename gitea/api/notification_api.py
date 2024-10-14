@@ -51,8 +51,6 @@ class NotificationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[NotificationThread]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -73,8 +71,6 @@ class NotificationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[NotificationThread]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['all', 'status_types', 'subject_type', 'since', 'before', 'page', 'limit']  # noqa: E501
@@ -158,8 +154,6 @@ class NotificationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[NotificationThread]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -182,8 +176,6 @@ class NotificationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[NotificationThread]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'all', 'status_types', 'subject_type', 'since', 'before', 'page', 'limit']  # noqa: E501
@@ -271,8 +263,6 @@ class NotificationApi(object):
         :param async_req bool
         :param str id: id of notification thread (required)
         :return: NotificationThread
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -287,8 +277,6 @@ class NotificationApi(object):
         :param async_req bool
         :param str id: id of notification thread (required)
         :return: NotificationThread
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['id']  # noqa: E501
@@ -353,8 +341,6 @@ class NotificationApi(object):
 
         :param async_req bool
         :return: NotificationCount
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -373,8 +359,6 @@ class NotificationApi(object):
 
         :param async_req bool
         :return: NotificationCount
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = []  # noqa: E501
@@ -442,8 +426,6 @@ class NotificationApi(object):
         :param list[str] status_types: Mark notifications with the provided status types. Options are: unread, read and/or pinned. Defaults to unread.
         :param str to_status: Status to mark notifications as, Defaults to read.
         :return: list[NotificationThread]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -466,8 +448,6 @@ class NotificationApi(object):
         :param list[str] status_types: Mark notifications with the provided status types. Options are: unread, read and/or pinned. Defaults to unread.
         :param str to_status: Status to mark notifications as, Defaults to read.
         :return: list[NotificationThread]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['last_read_at', 'all', 'status_types', 'to_status']  # noqa: E501
@@ -546,8 +526,6 @@ class NotificationApi(object):
         :param str to_status: Status to mark notifications as. Defaults to read.
         :param datetime last_read_at: Describes the last point that notifications were checked. Anything updated since this time will not be updated.
         :return: list[NotificationThread]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -572,8 +550,6 @@ class NotificationApi(object):
         :param str to_status: Status to mark notifications as. Defaults to read.
         :param datetime last_read_at: Describes the last point that notifications were checked. Anything updated since this time will not be updated.
         :return: list[NotificationThread]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'repo', 'all', 'status_types', 'to_status', 'last_read_at']  # noqa: E501
@@ -660,8 +636,6 @@ class NotificationApi(object):
         :param str id: id of notification thread (required)
         :param str to_status: Status to mark notifications as
         :return: NotificationThread
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -682,8 +656,6 @@ class NotificationApi(object):
         :param str id: id of notification thread (required)
         :param str to_status: Status to mark notifications as
         :return: NotificationThread
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['id', 'to_status']  # noqa: E501

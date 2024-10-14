@@ -44,8 +44,6 @@ class SettingsApi(object):
 
         :param async_req bool
         :return: GeneralAPISettings
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -59,8 +57,6 @@ class SettingsApi(object):
 
         :param async_req bool
         :return: GeneralAPISettings
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = []  # noqa: E501
@@ -119,8 +115,6 @@ class SettingsApi(object):
 
         :param async_req bool
         :return: GeneralAttachmentSettings
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -134,8 +128,6 @@ class SettingsApi(object):
 
         :param async_req bool
         :return: GeneralAttachmentSettings
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = []  # noqa: E501
@@ -194,8 +186,6 @@ class SettingsApi(object):
 
         :param async_req bool
         :return: GeneralRepoSettings
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -209,8 +199,6 @@ class SettingsApi(object):
 
         :param async_req bool
         :return: GeneralRepoSettings
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = []  # noqa: E501
@@ -269,8 +257,6 @@ class SettingsApi(object):
 
         :param async_req bool
         :return: GeneralUISettings
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -284,8 +270,6 @@ class SettingsApi(object):
 
         :param async_req bool
         :return: GeneralUISettings
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = []  # noqa: E501

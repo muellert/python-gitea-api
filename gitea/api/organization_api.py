@@ -41,8 +41,6 @@ class OrganizationApi(object):
         :param str org: name of organization (required)
         :param CreateRepoOption body:
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -58,8 +56,6 @@ class OrganizationApi(object):
         :param str org: name of organization (required)
         :param CreateRepoOption body:
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'body']  # noqa: E501
@@ -132,8 +128,6 @@ class OrganizationApi(object):
         :param str org: name of organization (required)
         :param CreateRepoOption body:
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -149,8 +143,6 @@ class OrganizationApi(object):
         :param str org: name of organization (required)
         :param CreateRepoOption body:
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'body']  # noqa: E501
@@ -224,8 +216,6 @@ class OrganizationApi(object):
         :param str variablename: name of the variable (required)
         :param CreateVariableOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -242,8 +232,6 @@ class OrganizationApi(object):
         :param str variablename: name of the variable (required)
         :param CreateVariableOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'variablename', 'body']  # noqa: E501
@@ -318,8 +306,6 @@ class OrganizationApi(object):
         :param str org: name of organization (required)
         :param str secretname: name of the secret (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -335,8 +321,6 @@ class OrganizationApi(object):
         :param str org: name of organization (required)
         :param str secretname: name of the secret (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'secretname']  # noqa: E501
@@ -405,8 +389,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param str variablename: name of the variable (required)
         :return: ActionVariable
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -422,8 +404,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param str variablename: name of the variable (required)
         :return: ActionVariable
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'variablename']  # noqa: E501
@@ -496,8 +476,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param str variablename: name of the variable (required)
         :return: ActionVariable
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -513,8 +491,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param str variablename: name of the variable (required)
         :return: ActionVariable
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'variablename']  # noqa: E501
@@ -588,8 +564,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[ActionVariable]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -606,8 +580,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[ActionVariable]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'page', 'limit']  # noqa: E501
@@ -678,8 +650,6 @@ class OrganizationApi(object):
         :param int id: id of the team (required)
         :param str username: username of the user to add (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -695,8 +665,6 @@ class OrganizationApi(object):
         :param int id: id of the team (required)
         :param str username: username of the user to add (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['id', 'username']  # noqa: E501
@@ -766,8 +734,6 @@ class OrganizationApi(object):
         :param str org: organization that owns the repo to add (required)
         :param str repo: name of the repo to add (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -784,8 +750,6 @@ class OrganizationApi(object):
         :param str org: organization that owns the repo to add (required)
         :param str repo: name of the repo to add (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['id', 'org', 'repo']  # noqa: E501
@@ -860,8 +824,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param str username: username of the user (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -877,8 +839,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param str username: username of the user (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'username']  # noqa: E501
@@ -946,8 +906,6 @@ class OrganizationApi(object):
         :param async_req bool
         :param CreateOrgOption body: (required)
         :return: Organization
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -962,8 +920,6 @@ class OrganizationApi(object):
         :param async_req bool
         :param CreateOrgOption body: (required)
         :return: Organization
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body']  # noqa: E501
@@ -1034,8 +990,6 @@ class OrganizationApi(object):
         :param CreateHookOption body: (required)
         :param str org: name of the organization (required)
         :return: Hook
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1051,8 +1005,6 @@ class OrganizationApi(object):
         :param CreateHookOption body: (required)
         :param str org: name of the organization (required)
         :return: Hook
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body', 'org']  # noqa: E501
@@ -1129,8 +1081,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param CreateLabelOption body:
         :return: Label
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1146,8 +1096,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param CreateLabelOption body:
         :return: Label
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'body']  # noqa: E501
@@ -1220,8 +1168,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param CreateTeamOption body:
         :return: Team
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1237,8 +1183,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param CreateTeamOption body:
         :return: Team
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'body']  # noqa: E501
@@ -1310,8 +1254,6 @@ class OrganizationApi(object):
         :param async_req bool
         :param str org: organization that is to be deleted (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1326,8 +1268,6 @@ class OrganizationApi(object):
         :param async_req bool
         :param str org: organization that is to be deleted (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org']  # noqa: E501
@@ -1389,8 +1329,6 @@ class OrganizationApi(object):
         :param async_req bool
         :param str org: name of the organization (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1405,8 +1343,6 @@ class OrganizationApi(object):
         :param async_req bool
         :param str org: name of the organization (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org']  # noqa: E501
@@ -1469,8 +1405,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param int id: id of the hook to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1486,8 +1420,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param int id: id of the hook to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'id']  # noqa: E501
@@ -1556,8 +1488,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param int id: id of the label to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1573,8 +1503,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param int id: id of the label to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'id']  # noqa: E501
@@ -1643,8 +1571,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param str username: username of the user (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1660,8 +1586,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param str username: username of the user (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'username']  # noqa: E501
@@ -1729,8 +1653,6 @@ class OrganizationApi(object):
         :param async_req bool
         :param int id: id of the team to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1745,8 +1667,6 @@ class OrganizationApi(object):
         :param async_req bool
         :param int id: id of the team to delete (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['id']  # noqa: E501
@@ -1809,8 +1729,6 @@ class OrganizationApi(object):
         :param EditOrgOption body: (required)
         :param str org: name of the organization to edit (required)
         :return: Organization
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1826,8 +1744,6 @@ class OrganizationApi(object):
         :param EditOrgOption body: (required)
         :param str org: name of the organization to edit (required)
         :return: Organization
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['body', 'org']  # noqa: E501
@@ -1905,8 +1821,6 @@ class OrganizationApi(object):
         :param int id: id of the hook to update (required)
         :param EditHookOption body:
         :return: Hook
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -1923,8 +1837,6 @@ class OrganizationApi(object):
         :param int id: id of the hook to update (required)
         :param EditHookOption body:
         :return: Hook
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'id', 'body']  # noqa: E501
@@ -2004,8 +1916,6 @@ class OrganizationApi(object):
         :param int id: id of the label to edit (required)
         :param EditLabelOption body:
         :return: Label
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2022,8 +1932,6 @@ class OrganizationApi(object):
         :param int id: id of the label to edit (required)
         :param EditLabelOption body:
         :return: Label
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'id', 'body']  # noqa: E501
@@ -2102,8 +2010,6 @@ class OrganizationApi(object):
         :param int id: id of the team to edit (required)
         :param EditTeamOption body:
         :return: Team
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2119,8 +2025,6 @@ class OrganizationApi(object):
         :param int id: id of the team to edit (required)
         :param EditTeamOption body:
         :return: Team
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['id', 'body']  # noqa: E501
@@ -2192,8 +2096,6 @@ class OrganizationApi(object):
         :param async_req bool
         :param str org: name of the organization to get (required)
         :return: Organization
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2208,8 +2110,6 @@ class OrganizationApi(object):
         :param async_req bool
         :param str org: name of the organization to get (required)
         :return: Organization
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org']  # noqa: E501
@@ -2276,8 +2176,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Organization]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2293,8 +2191,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Organization]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['page', 'limit']  # noqa: E501
@@ -2359,8 +2255,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param int id: id of the hook to get (required)
         :return: Hook
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2376,8 +2270,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param int id: id of the hook to get (required)
         :return: Hook
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'id']  # noqa: E501
@@ -2450,8 +2342,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param int id: id of the label to get (required)
         :return: Label
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2467,8 +2357,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param int id: id of the label to get (required)
         :return: Label
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'id']  # noqa: E501
@@ -2540,8 +2428,6 @@ class OrganizationApi(object):
         :param async_req bool
         :param str org: name of the organization (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2556,8 +2442,6 @@ class OrganizationApi(object):
         :param async_req bool
         :param str org: name of the organization (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org']  # noqa: E501
@@ -2619,8 +2503,6 @@ class OrganizationApi(object):
         :param async_req bool
         :param int id: id of the team to get (required)
         :return: Team
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2635,8 +2517,6 @@ class OrganizationApi(object):
         :param async_req bool
         :param int id: id of the team to get (required)
         :return: Team
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['id']  # noqa: E501
@@ -2703,8 +2583,6 @@ class OrganizationApi(object):
         :param str username: username of user (required)
         :param str org: name of the organization (required)
         :return: OrganizationPermissions
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2720,8 +2598,6 @@ class OrganizationApi(object):
         :param str username: username of user (required)
         :param str org: name of the organization (required)
         :return: OrganizationPermissions
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username', 'org']  # noqa: E501
@@ -2794,8 +2670,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param str username: username of the user (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2811,8 +2685,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param str username: username of the user (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'username']  # noqa: E501
@@ -2881,8 +2753,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param str username: username of the user (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2898,8 +2768,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param str username: username of the user (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'username']  # noqa: E501
@@ -2969,8 +2837,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Secret]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -2987,8 +2853,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Secret]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'page', 'limit']  # noqa: E501
@@ -3061,8 +2925,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Activity]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3080,8 +2942,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Activity]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', '_date', 'page', 'limit']  # noqa: E501
@@ -3154,8 +3014,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Organization]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3171,8 +3029,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Organization]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['page', 'limit']  # noqa: E501
@@ -3238,8 +3094,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Hook]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3256,8 +3110,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Hook]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'page', 'limit']  # noqa: E501
@@ -3329,8 +3181,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Label]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3347,8 +3197,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Label]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'page', 'limit']  # noqa: E501
@@ -3420,8 +3268,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3438,8 +3284,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'page', 'limit']  # noqa: E501
@@ -3511,8 +3355,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3529,8 +3371,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'page', 'limit']  # noqa: E501
@@ -3602,8 +3442,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Repository]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3620,8 +3458,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Repository]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'page', 'limit']  # noqa: E501
@@ -3694,8 +3530,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Activity]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3713,8 +3547,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Activity]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['id', '_date', 'page', 'limit']  # noqa: E501
@@ -3787,8 +3619,6 @@ class OrganizationApi(object):
         :param int id: id of the team (required)
         :param str username: username of the member to list (required)
         :return: User
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3804,8 +3634,6 @@ class OrganizationApi(object):
         :param int id: id of the team (required)
         :param str username: username of the member to list (required)
         :return: User
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['id', 'username']  # noqa: E501
@@ -3879,8 +3707,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3897,8 +3723,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['id', 'page', 'limit']  # noqa: E501
@@ -3970,8 +3794,6 @@ class OrganizationApi(object):
         :param str org: organization that owns the repo to list (required)
         :param str repo: name of the repo to list (required)
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -3988,8 +3810,6 @@ class OrganizationApi(object):
         :param str org: organization that owns the repo to list (required)
         :param str repo: name of the repo to list (required)
         :return: Repository
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['id', 'org', 'repo']  # noqa: E501
@@ -4069,8 +3889,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Repository]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4087,8 +3905,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Repository]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['id', 'page', 'limit']  # noqa: E501
@@ -4160,8 +3976,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Team]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4178,8 +3992,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Team]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'page', 'limit']  # noqa: E501
@@ -4251,8 +4063,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Organization]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4269,8 +4079,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Organization]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['username', 'page', 'limit']  # noqa: E501
@@ -4341,8 +4149,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param str username: username of the user (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4358,8 +4164,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param str username: username of the user (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'username']  # noqa: E501
@@ -4428,8 +4232,6 @@ class OrganizationApi(object):
         :param int id: id of the team (required)
         :param str username: username of the user to remove (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4445,8 +4247,6 @@ class OrganizationApi(object):
         :param int id: id of the team (required)
         :param str username: username of the user to remove (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['id', 'username']  # noqa: E501
@@ -4517,8 +4317,6 @@ class OrganizationApi(object):
         :param str org: organization that owns the repo to remove (required)
         :param str repo: name of the repo to remove (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4536,8 +4334,6 @@ class OrganizationApi(object):
         :param str org: organization that owns the repo to remove (required)
         :param str repo: name of the repo to remove (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['id', 'org', 'repo']  # noqa: E501
@@ -4612,8 +4408,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param UpdateUserAvatarOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4629,8 +4423,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param UpdateUserAvatarOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'body']  # noqa: E501
@@ -4700,8 +4492,6 @@ class OrganizationApi(object):
         :param str username: user to block (required)
         :param str note: optional note for the block
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4718,8 +4508,6 @@ class OrganizationApi(object):
         :param str username: user to block (required)
         :param str note: optional note for the block
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'username', 'note']  # noqa: E501
@@ -4790,8 +4578,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param str username: user to check (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4807,8 +4593,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param str username: user to check (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'username']  # noqa: E501
@@ -4878,8 +4662,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4896,8 +4678,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'page', 'limit']  # noqa: E501
@@ -4968,8 +4748,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param str username: user to unblock (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -4985,8 +4763,6 @@ class OrganizationApi(object):
         :param str org: name of the organization (required)
         :param str username: user to unblock (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'username']  # noqa: E501
@@ -5058,8 +4834,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: InlineResponse200
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5078,8 +4852,6 @@ class OrganizationApi(object):
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: InlineResponse200
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'q', 'include_desc', 'page', 'limit']  # noqa: E501
@@ -5155,8 +4927,6 @@ class OrganizationApi(object):
         :param str secretname: name of the secret (required)
         :param CreateOrUpdateSecretOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5173,8 +4943,6 @@ class OrganizationApi(object):
         :param str secretname: name of the secret (required)
         :param CreateOrUpdateSecretOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'secretname', 'body']  # noqa: E501
@@ -5250,8 +5018,6 @@ class OrganizationApi(object):
         :param str variablename: name of the variable (required)
         :param UpdateVariableOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -5268,8 +5034,6 @@ class OrganizationApi(object):
         :param str variablename: name of the variable (required)
         :param UpdateVariableOption body:
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['org', 'variablename', 'body']  # noqa: E501

@@ -48,8 +48,6 @@ class PackageApi(object):
         :param str name: name of the package (required)
         :param str version: version of the package (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -67,8 +65,6 @@ class PackageApi(object):
         :param str name: name of the package (required)
         :param str version: version of the package (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'type', 'name', 'version']  # noqa: E501
@@ -151,8 +147,6 @@ class PackageApi(object):
         :param str name: name of the package (required)
         :param str version: version of the package (required)
         :return: Package
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -170,8 +164,6 @@ class PackageApi(object):
         :param str name: name of the package (required)
         :param str version: version of the package (required)
         :return: Package
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'type', 'name', 'version']  # noqa: E501
@@ -258,8 +250,6 @@ class PackageApi(object):
         :param str name: name of the package (required)
         :param str version: version of the package (required)
         :return: list[PackageFile]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -277,8 +267,6 @@ class PackageApi(object):
         :param str name: name of the package (required)
         :param str version: version of the package (required)
         :return: list[PackageFile]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'type', 'name', 'version']  # noqa: E501
@@ -366,8 +354,6 @@ class PackageApi(object):
         :param str type: package type filter
         :param str q: name filter
         :return: list[Package]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -386,8 +372,6 @@ class PackageApi(object):
         :param str type: package type filter
         :param str q: name filter
         :return: list[Package]
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['owner', 'page', 'limit', 'type', 'q']  # noqa: E501

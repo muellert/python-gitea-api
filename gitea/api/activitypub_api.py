@@ -45,8 +45,6 @@ class ActivitypubApi(object):
         :param async_req bool
         :param int user_id: user ID of the user (required)
         :return: ActivityPub
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -61,8 +59,6 @@ class ActivitypubApi(object):
         :param async_req bool
         :param int user_id: user ID of the user (required)
         :return: ActivityPub
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['user_id']  # noqa: E501
@@ -128,8 +124,6 @@ class ActivitypubApi(object):
         :param async_req bool
         :param int user_id: user ID of the user (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
@@ -144,8 +138,6 @@ class ActivitypubApi(object):
         :param async_req bool
         :param int user_id: user ID of the user (required)
         :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
         """
 
         all_params = ['user_id']  # noqa: E501
