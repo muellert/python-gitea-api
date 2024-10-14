@@ -804,9 +804,11 @@ The author, according to PyPI, is 张磊 (z461948964). He created the
 original API package, I had nothing to do with it.
 
 
-I, Toni Mueller, have only added the documentation bits in the 'docs'
-subdirectory.
+I, Toni Mueller, have only added and modified the documentation bits in
+the 'docs' subdirectory, and removed some auto-generated cruft from the
+code.
 
 The only reason I opened the Github repo is because I could not find a
-source repo for the original work of the Author, ZHANG Lei.
+source repo for the original work of the Author, ZHANG Lei. If you are
+the author, please contact me. Thank you!
 
