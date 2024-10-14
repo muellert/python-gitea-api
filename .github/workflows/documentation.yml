@@ -15,7 +15,6 @@ on:
     paths:
       - "gitea/**"
       - "README.md"
-  pull_request:
 
 jobs:
   build:
