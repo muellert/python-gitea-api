@@ -42,7 +42,7 @@ class SettingsApi(object):
     def get_general_api_settings(self, **kwargs):  # noqa: E501
         """Get instance's global settings for api  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: GeneralAPISettings
         """
         kwargs['_return_http_data_only'] = True
@@ -55,7 +55,7 @@ class SettingsApi(object):
     def get_general_api_settings_with_http_info(self, **kwargs):  # noqa: E501
         """Get instance's global settings for api  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: GeneralAPISettings
         """
 
@@ -113,7 +113,7 @@ class SettingsApi(object):
     def get_general_attachment_settings(self, **kwargs):  # noqa: E501
         """Get instance's global settings for Attachment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: GeneralAttachmentSettings
         """
         kwargs['_return_http_data_only'] = True
@@ -126,7 +126,7 @@ class SettingsApi(object):
     def get_general_attachment_settings_with_http_info(self, **kwargs):  # noqa: E501
         """Get instance's global settings for Attachment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: GeneralAttachmentSettings
         """
 
@@ -184,7 +184,7 @@ class SettingsApi(object):
     def get_general_repository_settings(self, **kwargs):  # noqa: E501
         """Get instance's global settings for repositories  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: GeneralRepoSettings
         """
         kwargs['_return_http_data_only'] = True
@@ -197,7 +197,7 @@ class SettingsApi(object):
     def get_general_repository_settings_with_http_info(self, **kwargs):  # noqa: E501
         """Get instance's global settings for repositories  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: GeneralRepoSettings
         """
 
@@ -255,7 +255,7 @@ class SettingsApi(object):
     def get_general_ui_settings(self, **kwargs):  # noqa: E501
         """Get instance's global settings for ui  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: GeneralUISettings
         """
         kwargs['_return_http_data_only'] = True
@@ -268,7 +268,7 @@ class SettingsApi(object):
     def get_general_ui_settings_with_http_info(self, **kwargs):  # noqa: E501
         """Get instance's global settings for ui  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: GeneralUISettings
         """
 

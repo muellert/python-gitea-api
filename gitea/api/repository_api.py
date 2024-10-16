@@ -42,7 +42,7 @@ class RepositoryApi(object):
     def accept_repo_transfer(self, owner, repo, **kwargs):  # noqa: E501
         """Accept a repo transfer  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo to transfer (required)
         :param str repo: name of the repo to transfer (required)
         :return: Repository
@@ -57,7 +57,7 @@ class RepositoryApi(object):
     def accept_repo_transfer_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Accept a repo transfer  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo to transfer (required)
         :param str repo: name of the repo to transfer (required)
         :return: Repository
@@ -129,7 +129,7 @@ class RepositoryApi(object):
     def create_current_user_repo(self, **kwargs):  # noqa: E501
         """Create a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateRepoOption body:
         :return: Repository
         """
@@ -143,7 +143,7 @@ class RepositoryApi(object):
     def create_current_user_repo_with_http_info(self, **kwargs):  # noqa: E501
         """Create a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateRepoOption body:
         :return: Repository
         """
@@ -208,7 +208,7 @@ class RepositoryApi(object):
     def create_fork(self, owner, repo, **kwargs):  # noqa: E501
         """Fork a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo to fork (required)
         :param str repo: name of the repo to fork (required)
         :param CreateForkOption body:
@@ -224,7 +224,7 @@ class RepositoryApi(object):
     def create_fork_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Fork a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo to fork (required)
         :param str repo: name of the repo to fork (required)
         :param CreateForkOption body:
@@ -303,7 +303,7 @@ class RepositoryApi(object):
     def create_repo_variable(self, owner, repo, variablename, **kwargs):  # noqa: E501
         """Create a repo-level variable  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: name of the owner (required)
         :param str repo: name of the repository (required)
         :param str variablename: name of the variable (required)
@@ -320,7 +320,7 @@ class RepositoryApi(object):
     def create_repo_variable_with_http_info(self, owner, repo, variablename, **kwargs):  # noqa: E501
         """Create a repo-level variable  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: name of the owner (required)
         :param str repo: name of the repository (required)
         :param str variablename: name of the variable (required)
@@ -402,7 +402,7 @@ class RepositoryApi(object):
     def delete_repo_secret(self, owner, repo, secretname, **kwargs):  # noqa: E501
         """Delete a secret in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repository (required)
         :param str repo: name of the repository (required)
         :param str secretname: name of the secret (required)
@@ -418,7 +418,7 @@ class RepositoryApi(object):
     def delete_repo_secret_with_http_info(self, owner, repo, secretname, **kwargs):  # noqa: E501
         """Delete a secret in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repository (required)
         :param str repo: name of the repository (required)
         :param str secretname: name of the secret (required)
@@ -493,7 +493,7 @@ class RepositoryApi(object):
     def delete_repo_variable(self, owner, repo, variablename, **kwargs):  # noqa: E501
         """Delete a repo-level variable  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: name of the owner (required)
         :param str repo: name of the repository (required)
         :param str variablename: name of the variable (required)
@@ -509,7 +509,7 @@ class RepositoryApi(object):
     def delete_repo_variable_with_http_info(self, owner, repo, variablename, **kwargs):  # noqa: E501
         """Delete a repo-level variable  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: name of the owner (required)
         :param str repo: name of the repository (required)
         :param str variablename: name of the variable (required)
@@ -588,7 +588,7 @@ class RepositoryApi(object):
     def generate_repo(self, template_owner, template_repo, **kwargs):  # noqa: E501
         """Create a repository using a template  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str template_owner: name of the template repository owner (required)
         :param str template_repo: name of the template repository (required)
         :param GenerateRepoOption body:
@@ -604,7 +604,7 @@ class RepositoryApi(object):
     def generate_repo_with_http_info(self, template_owner, template_repo, **kwargs):  # noqa: E501
         """Create a repository using a template  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str template_owner: name of the template repository owner (required)
         :param str template_repo: name of the template repository (required)
         :param GenerateRepoOption body:
@@ -683,7 +683,7 @@ class RepositoryApi(object):
     def get_annotated_tag(self, owner, repo, sha, **kwargs):  # noqa: E501
         """Gets the tag object of an annotated tag (not lightweight tags)  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str sha: sha of the tag. The Git tags API only supports annotated tag objects, not lightweight tags. (required)
@@ -699,7 +699,7 @@ class RepositoryApi(object):
     def get_annotated_tag_with_http_info(self, owner, repo, sha, **kwargs):  # noqa: E501
         """Gets the tag object of an annotated tag (not lightweight tags)  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str sha: sha of the tag. The Git tags API only supports annotated tag objects, not lightweight tags. (required)
@@ -778,7 +778,7 @@ class RepositoryApi(object):
     def get_blob(self, owner, repo, sha, **kwargs):  # noqa: E501
         """Gets the blob of a repository.  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str sha: sha of the commit (required)
@@ -794,7 +794,7 @@ class RepositoryApi(object):
     def get_blob_with_http_info(self, owner, repo, sha, **kwargs):  # noqa: E501
         """Gets the blob of a repository.  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str sha: sha of the commit (required)
@@ -873,7 +873,7 @@ class RepositoryApi(object):
     def get_repo_variable(self, owner, repo, variablename, **kwargs):  # noqa: E501
         """Get a repo-level variable  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: name of the owner (required)
         :param str repo: name of the repository (required)
         :param str variablename: name of the variable (required)
@@ -889,7 +889,7 @@ class RepositoryApi(object):
     def get_repo_variable_with_http_info(self, owner, repo, variablename, **kwargs):  # noqa: E501
         """Get a repo-level variable  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: name of the owner (required)
         :param str repo: name of the repository (required)
         :param str variablename: name of the variable (required)
@@ -968,7 +968,7 @@ class RepositoryApi(object):
     def get_repo_variables_list(self, owner, repo, **kwargs):  # noqa: E501
         """Get repo-level variables list  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: name of the owner (required)
         :param str repo: name of the repository (required)
         :param int page: page number of results to return (1-based)
@@ -985,7 +985,7 @@ class RepositoryApi(object):
     def get_repo_variables_list_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Get repo-level variables list  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: name of the owner (required)
         :param str repo: name of the repository (required)
         :param int page: page number of results to return (1-based)
@@ -1063,7 +1063,7 @@ class RepositoryApi(object):
     def get_tree(self, owner, repo, sha, **kwargs):  # noqa: E501
         """Gets the tree of a repository.  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str sha: sha of the commit (required)
@@ -1082,7 +1082,7 @@ class RepositoryApi(object):
     def get_tree_with_http_info(self, owner, repo, sha, **kwargs):  # noqa: E501
         """Gets the tree of a repository.  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str sha: sha of the commit (required)
@@ -1170,7 +1170,7 @@ class RepositoryApi(object):
     def list_forks(self, owner, repo, **kwargs):  # noqa: E501
         """List a repository's forks  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int page: page number of results to return (1-based)
@@ -1187,7 +1187,7 @@ class RepositoryApi(object):
     def list_forks_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """List a repository's forks  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int page: page number of results to return (1-based)
@@ -1265,7 +1265,7 @@ class RepositoryApi(object):
     def reject_repo_transfer(self, owner, repo, **kwargs):  # noqa: E501
         """Reject a repo transfer  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo to transfer (required)
         :param str repo: name of the repo to transfer (required)
         :return: Repository
@@ -1280,7 +1280,7 @@ class RepositoryApi(object):
     def reject_repo_transfer_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Reject a repo transfer  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo to transfer (required)
         :param str repo: name of the repo to transfer (required)
         :return: Repository
@@ -1352,7 +1352,7 @@ class RepositoryApi(object):
     def repo_add_collaborator(self, owner, repo, collaborator, **kwargs):  # noqa: E501
         """Add a collaborator to a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str collaborator: username of the collaborator to add (required)
@@ -1369,7 +1369,7 @@ class RepositoryApi(object):
     def repo_add_collaborator_with_http_info(self, owner, repo, collaborator, **kwargs):  # noqa: E501
         """Add a collaborator to a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str collaborator: username of the collaborator to add (required)
@@ -1451,7 +1451,7 @@ class RepositoryApi(object):
     def repo_add_push_mirror(self, owner, repo, **kwargs):  # noqa: E501
         """add a push mirror to the repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param CreatePushMirrorOption body:
@@ -1467,7 +1467,7 @@ class RepositoryApi(object):
     def repo_add_push_mirror_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """add a push mirror to the repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param CreatePushMirrorOption body:
@@ -1546,7 +1546,7 @@ class RepositoryApi(object):
     def repo_add_team(self, owner, repo, team, **kwargs):  # noqa: E501
         """Add a team to a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str team: team name (required)
@@ -1562,7 +1562,7 @@ class RepositoryApi(object):
     def repo_add_team_with_http_info(self, owner, repo, team, **kwargs):  # noqa: E501
         """Add a team to a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str team: team name (required)
@@ -1637,7 +1637,7 @@ class RepositoryApi(object):
     def repo_add_topic(self, owner, repo, topic, **kwargs):  # noqa: E501
         """Add a topic to a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str topic: name of the topic to add (required)
@@ -1653,7 +1653,7 @@ class RepositoryApi(object):
     def repo_add_topic_with_http_info(self, owner, repo, topic, **kwargs):  # noqa: E501
         """Add a topic to a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str topic: name of the topic to add (required)
@@ -1728,7 +1728,7 @@ class RepositoryApi(object):
     def repo_apply_diff_patch(self, body, owner, repo, **kwargs):  # noqa: E501
         """Apply diff patch to repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param UpdateFileOptions body: (required)
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
@@ -1744,7 +1744,7 @@ class RepositoryApi(object):
     def repo_apply_diff_patch_with_http_info(self, body, owner, repo, **kwargs):  # noqa: E501
         """Apply diff patch to repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param UpdateFileOptions body: (required)
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
@@ -1827,7 +1827,7 @@ class RepositoryApi(object):
     def repo_cancel_scheduled_auto_merge(self, owner, repo, index, **kwargs):  # noqa: E501
         """Cancel the scheduled auto merge for the given pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the pull request to merge (required)
@@ -1843,7 +1843,7 @@ class RepositoryApi(object):
     def repo_cancel_scheduled_auto_merge_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Cancel the scheduled auto merge for the given pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the pull request to merge (required)
@@ -1918,7 +1918,7 @@ class RepositoryApi(object):
     def repo_change_files(self, body, owner, repo, **kwargs):  # noqa: E501
         """Modify multiple files in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param ChangeFilesOptions body: (required)
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
@@ -1934,7 +1934,7 @@ class RepositoryApi(object):
     def repo_change_files_with_http_info(self, body, owner, repo, **kwargs):  # noqa: E501
         """Modify multiple files in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param ChangeFilesOptions body: (required)
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
@@ -2017,7 +2017,7 @@ class RepositoryApi(object):
     def repo_check_collaborator(self, owner, repo, collaborator, **kwargs):  # noqa: E501
         """Check if a user is a collaborator of a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str collaborator: username of the collaborator (required)
@@ -2033,7 +2033,7 @@ class RepositoryApi(object):
     def repo_check_collaborator_with_http_info(self, owner, repo, collaborator, **kwargs):  # noqa: E501
         """Check if a user is a collaborator of a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str collaborator: username of the collaborator (required)
@@ -2108,7 +2108,7 @@ class RepositoryApi(object):
     def repo_check_team(self, owner, repo, team, **kwargs):  # noqa: E501
         """Check if a team is assigned to a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str team: team name (required)
@@ -2124,7 +2124,7 @@ class RepositoryApi(object):
     def repo_check_team_with_http_info(self, owner, repo, team, **kwargs):  # noqa: E501
         """Check if a team is assigned to a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str team: team name (required)
@@ -2203,7 +2203,7 @@ class RepositoryApi(object):
     def repo_compare_diff(self, owner, repo, basehead, **kwargs):  # noqa: E501
         """Get commit comparison information  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str basehead: compare two branches or commits (required)
@@ -2219,7 +2219,7 @@ class RepositoryApi(object):
     def repo_compare_diff_with_http_info(self, owner, repo, basehead, **kwargs):  # noqa: E501
         """Get commit comparison information  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str basehead: compare two branches or commits (required)
@@ -2298,7 +2298,7 @@ class RepositoryApi(object):
     def repo_create_branch(self, owner, repo, **kwargs):  # noqa: E501
         """Create a branch  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param CreateBranchRepoOption body:
@@ -2314,7 +2314,7 @@ class RepositoryApi(object):
     def repo_create_branch_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Create a branch  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param CreateBranchRepoOption body:
@@ -2393,7 +2393,7 @@ class RepositoryApi(object):
     def repo_create_branch_protection(self, owner, repo, **kwargs):  # noqa: E501
         """Create a branch protections for a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param CreateBranchProtectionOption body:
@@ -2409,7 +2409,7 @@ class RepositoryApi(object):
     def repo_create_branch_protection_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Create a branch protections for a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param CreateBranchProtectionOption body:
@@ -2488,7 +2488,7 @@ class RepositoryApi(object):
     def repo_create_file(self, body, owner, repo, filepath, **kwargs):  # noqa: E501
         """Create a file in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateFileOptions body: (required)
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
@@ -2505,7 +2505,7 @@ class RepositoryApi(object):
     def repo_create_file_with_http_info(self, body, owner, repo, filepath, **kwargs):  # noqa: E501
         """Create a file in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateFileOptions body: (required)
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
@@ -2595,7 +2595,7 @@ class RepositoryApi(object):
     def repo_create_hook(self, owner, repo, **kwargs):  # noqa: E501
         """Create a hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param CreateHookOption body:
@@ -2611,7 +2611,7 @@ class RepositoryApi(object):
     def repo_create_hook_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Create a hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param CreateHookOption body:
@@ -2690,7 +2690,7 @@ class RepositoryApi(object):
     def repo_create_key(self, owner, repo, **kwargs):  # noqa: E501
         """Add a key to a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param CreateKeyOption body:
@@ -2706,7 +2706,7 @@ class RepositoryApi(object):
     def repo_create_key_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Add a key to a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param CreateKeyOption body:
@@ -2785,7 +2785,7 @@ class RepositoryApi(object):
     def repo_create_pull_request(self, owner, repo, **kwargs):  # noqa: E501
         """Create a pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param CreatePullRequestOption body:
@@ -2801,7 +2801,7 @@ class RepositoryApi(object):
     def repo_create_pull_request_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Create a pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param CreatePullRequestOption body:
@@ -2880,7 +2880,7 @@ class RepositoryApi(object):
     def repo_create_pull_review(self, body, owner, repo, index, **kwargs):  # noqa: E501
         """Create a review to an pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreatePullReviewOptions body: (required)
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
@@ -2897,7 +2897,7 @@ class RepositoryApi(object):
     def repo_create_pull_review_with_http_info(self, body, owner, repo, index, **kwargs):  # noqa: E501
         """Create a review to an pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreatePullReviewOptions body: (required)
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
@@ -2987,7 +2987,7 @@ class RepositoryApi(object):
     def repo_create_pull_review_requests(self, body, owner, repo, index, **kwargs):  # noqa: E501
         """create review requests for a pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param PullReviewRequestOptions body: (required)
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
@@ -3004,7 +3004,7 @@ class RepositoryApi(object):
     def repo_create_pull_review_requests_with_http_info(self, body, owner, repo, index, **kwargs):  # noqa: E501
         """create review requests for a pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param PullReviewRequestOptions body: (required)
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
@@ -3094,7 +3094,7 @@ class RepositoryApi(object):
     def repo_create_release(self, owner, repo, **kwargs):  # noqa: E501
         """Create a release  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param CreateReleaseOption body:
@@ -3110,7 +3110,7 @@ class RepositoryApi(object):
     def repo_create_release_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Create a release  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param CreateReleaseOption body:
@@ -3189,7 +3189,7 @@ class RepositoryApi(object):
     def repo_create_release_attachment(self, owner, repo, id, **kwargs):  # noqa: E501
         """Create a release attachment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the release (required)
@@ -3207,7 +3207,7 @@ class RepositoryApi(object):
     def repo_create_release_attachment_with_http_info(self, owner, repo, id, **kwargs):  # noqa: E501
         """Create a release attachment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the release (required)
@@ -3298,7 +3298,7 @@ class RepositoryApi(object):
     def repo_create_release_attachment(self, owner, repo, id, **kwargs):  # noqa: E501
         """Create a release attachment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the release (required)
@@ -3316,7 +3316,7 @@ class RepositoryApi(object):
     def repo_create_release_attachment_with_http_info(self, owner, repo, id, **kwargs):  # noqa: E501
         """Create a release attachment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the release (required)
@@ -3407,7 +3407,7 @@ class RepositoryApi(object):
     def repo_create_status(self, owner, repo, sha, **kwargs):  # noqa: E501
         """Create a commit status  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str sha: sha of the commit (required)
@@ -3424,7 +3424,7 @@ class RepositoryApi(object):
     def repo_create_status_with_http_info(self, owner, repo, sha, **kwargs):  # noqa: E501
         """Create a commit status  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str sha: sha of the commit (required)
@@ -3510,7 +3510,7 @@ class RepositoryApi(object):
     def repo_create_tag(self, owner, repo, **kwargs):  # noqa: E501
         """Create a new git tag in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param CreateTagOption body:
@@ -3526,7 +3526,7 @@ class RepositoryApi(object):
     def repo_create_tag_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Create a new git tag in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param CreateTagOption body:
@@ -3605,7 +3605,7 @@ class RepositoryApi(object):
     def repo_create_wiki_page(self, owner, repo, **kwargs):  # noqa: E501
         """Create a wiki page  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param CreateWikiPageOptions body:
@@ -3621,7 +3621,7 @@ class RepositoryApi(object):
     def repo_create_wiki_page_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Create a wiki page  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param CreateWikiPageOptions body:
@@ -3700,7 +3700,7 @@ class RepositoryApi(object):
     def repo_delete(self, owner, repo, **kwargs):  # noqa: E501
         """Delete a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo to delete (required)
         :param str repo: name of the repo to delete (required)
         :return: None
@@ -3715,7 +3715,7 @@ class RepositoryApi(object):
     def repo_delete_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Delete a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo to delete (required)
         :param str repo: name of the repo to delete (required)
         :return: None
@@ -3783,7 +3783,7 @@ class RepositoryApi(object):
     def repo_delete_avatar(self, owner, repo, **kwargs):  # noqa: E501
         """Delete avatar  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: None
@@ -3798,7 +3798,7 @@ class RepositoryApi(object):
     def repo_delete_avatar_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Delete avatar  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: None
@@ -3866,7 +3866,7 @@ class RepositoryApi(object):
     def repo_delete_branch(self, owner, repo, branch, **kwargs):  # noqa: E501
         """Delete a specific branch from a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str branch: branch to delete (required)
@@ -3882,7 +3882,7 @@ class RepositoryApi(object):
     def repo_delete_branch_with_http_info(self, owner, repo, branch, **kwargs):  # noqa: E501
         """Delete a specific branch from a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str branch: branch to delete (required)
@@ -3957,7 +3957,7 @@ class RepositoryApi(object):
     def repo_delete_branch_protection(self, owner, repo, name, **kwargs):  # noqa: E501
         """Delete a specific branch protection for the repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str name: name of protected branch (required)
@@ -3973,7 +3973,7 @@ class RepositoryApi(object):
     def repo_delete_branch_protection_with_http_info(self, owner, repo, name, **kwargs):  # noqa: E501
         """Delete a specific branch protection for the repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str name: name of protected branch (required)
@@ -4048,7 +4048,7 @@ class RepositoryApi(object):
     def repo_delete_collaborator(self, owner, repo, collaborator, **kwargs):  # noqa: E501
         """Delete a collaborator from a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str collaborator: username of the collaborator to delete (required)
@@ -4064,7 +4064,7 @@ class RepositoryApi(object):
     def repo_delete_collaborator_with_http_info(self, owner, repo, collaborator, **kwargs):  # noqa: E501
         """Delete a collaborator from a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str collaborator: username of the collaborator to delete (required)
@@ -4139,7 +4139,7 @@ class RepositoryApi(object):
     def repo_delete_file(self, body, owner, repo, filepath, **kwargs):  # noqa: E501
         """Delete a file in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param DeleteFileOptions body: (required)
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
@@ -4156,7 +4156,7 @@ class RepositoryApi(object):
     def repo_delete_file_with_http_info(self, body, owner, repo, filepath, **kwargs):  # noqa: E501
         """Delete a file in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param DeleteFileOptions body: (required)
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
@@ -4246,7 +4246,7 @@ class RepositoryApi(object):
     def repo_delete_git_hook(self, owner, repo, id, **kwargs):  # noqa: E501
         """Delete a Git hook in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str id: id of the hook to get (required)
@@ -4262,7 +4262,7 @@ class RepositoryApi(object):
     def repo_delete_git_hook_with_http_info(self, owner, repo, id, **kwargs):  # noqa: E501
         """Delete a Git hook in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str id: id of the hook to get (required)
@@ -4337,7 +4337,7 @@ class RepositoryApi(object):
     def repo_delete_hook(self, owner, repo, id, **kwargs):  # noqa: E501
         """Delete a hook in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the hook to delete (required)
@@ -4353,7 +4353,7 @@ class RepositoryApi(object):
     def repo_delete_hook_with_http_info(self, owner, repo, id, **kwargs):  # noqa: E501
         """Delete a hook in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the hook to delete (required)
@@ -4428,7 +4428,7 @@ class RepositoryApi(object):
     def repo_delete_key(self, owner, repo, id, **kwargs):  # noqa: E501
         """Delete a key from a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the key to delete (required)
@@ -4444,7 +4444,7 @@ class RepositoryApi(object):
     def repo_delete_key_with_http_info(self, owner, repo, id, **kwargs):  # noqa: E501
         """Delete a key from a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the key to delete (required)
@@ -4519,7 +4519,7 @@ class RepositoryApi(object):
     def repo_delete_pull_review(self, owner, repo, index, id, **kwargs):  # noqa: E501
         """Delete a specific review from a pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the pull request (required)
@@ -4536,7 +4536,7 @@ class RepositoryApi(object):
     def repo_delete_pull_review_with_http_info(self, owner, repo, index, id, **kwargs):  # noqa: E501
         """Delete a specific review from a pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the pull request (required)
@@ -4618,7 +4618,7 @@ class RepositoryApi(object):
     def repo_delete_pull_review_requests(self, body, owner, repo, index, **kwargs):  # noqa: E501
         """cancel review requests for a pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param PullReviewRequestOptions body: (required)
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
@@ -4635,7 +4635,7 @@ class RepositoryApi(object):
     def repo_delete_pull_review_requests_with_http_info(self, body, owner, repo, index, **kwargs):  # noqa: E501
         """cancel review requests for a pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param PullReviewRequestOptions body: (required)
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
@@ -4721,7 +4721,7 @@ class RepositoryApi(object):
     def repo_delete_push_mirror(self, owner, repo, name, **kwargs):  # noqa: E501
         """deletes a push mirror from a repository by remoteName  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str name: remote name of the pushMirror (required)
@@ -4737,7 +4737,7 @@ class RepositoryApi(object):
     def repo_delete_push_mirror_with_http_info(self, owner, repo, name, **kwargs):  # noqa: E501
         """deletes a push mirror from a repository by remoteName  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str name: remote name of the pushMirror (required)
@@ -4812,7 +4812,7 @@ class RepositoryApi(object):
     def repo_delete_release(self, owner, repo, id, **kwargs):  # noqa: E501
         """Delete a release  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the release to delete (required)
@@ -4828,7 +4828,7 @@ class RepositoryApi(object):
     def repo_delete_release_with_http_info(self, owner, repo, id, **kwargs):  # noqa: E501
         """Delete a release  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the release to delete (required)
@@ -4903,7 +4903,7 @@ class RepositoryApi(object):
     def repo_delete_release_attachment(self, owner, repo, id, attachment_id, **kwargs):  # noqa: E501
         """Delete a release attachment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the release (required)
@@ -4920,7 +4920,7 @@ class RepositoryApi(object):
     def repo_delete_release_attachment_with_http_info(self, owner, repo, id, attachment_id, **kwargs):  # noqa: E501
         """Delete a release attachment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the release (required)
@@ -5002,7 +5002,7 @@ class RepositoryApi(object):
     def repo_delete_release_by_tag(self, owner, repo, tag, **kwargs):  # noqa: E501
         """Delete a release by tag name  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str tag: tag name of the release to delete (required)
@@ -5018,7 +5018,7 @@ class RepositoryApi(object):
     def repo_delete_release_by_tag_with_http_info(self, owner, repo, tag, **kwargs):  # noqa: E501
         """Delete a release by tag name  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str tag: tag name of the release to delete (required)
@@ -5093,7 +5093,7 @@ class RepositoryApi(object):
     def repo_delete_tag(self, owner, repo, tag, **kwargs):  # noqa: E501
         """Delete a repository's tag by name  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str tag: name of tag to delete (required)
@@ -5109,7 +5109,7 @@ class RepositoryApi(object):
     def repo_delete_tag_with_http_info(self, owner, repo, tag, **kwargs):  # noqa: E501
         """Delete a repository's tag by name  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str tag: name of tag to delete (required)
@@ -5184,7 +5184,7 @@ class RepositoryApi(object):
     def repo_delete_team(self, owner, repo, team, **kwargs):  # noqa: E501
         """Delete a team from a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str team: team name (required)
@@ -5200,7 +5200,7 @@ class RepositoryApi(object):
     def repo_delete_team_with_http_info(self, owner, repo, team, **kwargs):  # noqa: E501
         """Delete a team from a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str team: team name (required)
@@ -5275,7 +5275,7 @@ class RepositoryApi(object):
     def repo_delete_topic(self, owner, repo, topic, **kwargs):  # noqa: E501
         """Delete a topic from a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str topic: name of the topic to delete (required)
@@ -5291,7 +5291,7 @@ class RepositoryApi(object):
     def repo_delete_topic_with_http_info(self, owner, repo, topic, **kwargs):  # noqa: E501
         """Delete a topic from a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str topic: name of the topic to delete (required)
@@ -5366,7 +5366,7 @@ class RepositoryApi(object):
     def repo_delete_wiki_page(self, owner, repo, page_name, **kwargs):  # noqa: E501
         """Delete a wiki page  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str page_name: name of the page (required)
@@ -5382,7 +5382,7 @@ class RepositoryApi(object):
     def repo_delete_wiki_page_with_http_info(self, owner, repo, page_name, **kwargs):  # noqa: E501
         """Delete a wiki page  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str page_name: name of the page (required)
@@ -5457,7 +5457,7 @@ class RepositoryApi(object):
     def repo_dismiss_pull_review(self, body, owner, repo, index, id, **kwargs):  # noqa: E501
         """Dismiss a review for a pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param DismissPullReviewOptions body: (required)
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
@@ -5475,7 +5475,7 @@ class RepositoryApi(object):
     def repo_dismiss_pull_review_with_http_info(self, body, owner, repo, index, id, **kwargs):  # noqa: E501
         """Dismiss a review for a pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param DismissPullReviewOptions body: (required)
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
@@ -5572,7 +5572,7 @@ class RepositoryApi(object):
     def repo_download_commit_diff_or_patch(self, owner, repo, sha, diff_type, **kwargs):  # noqa: E501
         """Get a commit's diff or patch  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str sha: SHA of the commit to get (required)
@@ -5589,7 +5589,7 @@ class RepositoryApi(object):
     def repo_download_commit_diff_or_patch_with_http_info(self, owner, repo, sha, diff_type, **kwargs):  # noqa: E501
         """Get a commit's diff or patch  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str sha: SHA of the commit to get (required)
@@ -5675,7 +5675,7 @@ class RepositoryApi(object):
     def repo_download_pull_diff_or_patch(self, owner, repo, index, diff_type, **kwargs):  # noqa: E501
         """Get a pull request diff or patch  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the pull request to get (required)
@@ -5693,7 +5693,7 @@ class RepositoryApi(object):
     def repo_download_pull_diff_or_patch_with_http_info(self, owner, repo, index, diff_type, **kwargs):  # noqa: E501
         """Get a pull request diff or patch  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the pull request to get (required)
@@ -5782,7 +5782,7 @@ class RepositoryApi(object):
     def repo_edit(self, owner, repo, **kwargs):  # noqa: E501
         """Edit a repository's properties. Only fields that are set will be changed.  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo to edit (required)
         :param str repo: name of the repo to edit (required)
         :param EditRepoOption body: Properties of a repo that you can edit
@@ -5798,7 +5798,7 @@ class RepositoryApi(object):
     def repo_edit_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Edit a repository's properties. Only fields that are set will be changed.  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo to edit (required)
         :param str repo: name of the repo to edit (required)
         :param EditRepoOption body: Properties of a repo that you can edit
@@ -5877,7 +5877,7 @@ class RepositoryApi(object):
     def repo_edit_branch_protection(self, owner, repo, name, **kwargs):  # noqa: E501
         """Edit a branch protections for a repository. Only fields that are set will be changed  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str name: name of protected branch (required)
@@ -5894,7 +5894,7 @@ class RepositoryApi(object):
     def repo_edit_branch_protection_with_http_info(self, owner, repo, name, **kwargs):  # noqa: E501
         """Edit a branch protections for a repository. Only fields that are set will be changed  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str name: name of protected branch (required)
@@ -5980,7 +5980,7 @@ class RepositoryApi(object):
     def repo_edit_git_hook(self, owner, repo, id, **kwargs):  # noqa: E501
         """Edit a Git hook in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str id: id of the hook to get (required)
@@ -5997,7 +5997,7 @@ class RepositoryApi(object):
     def repo_edit_git_hook_with_http_info(self, owner, repo, id, **kwargs):  # noqa: E501
         """Edit a Git hook in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str id: id of the hook to get (required)
@@ -6083,7 +6083,7 @@ class RepositoryApi(object):
     def repo_edit_hook(self, owner, repo, id, **kwargs):  # noqa: E501
         """Edit a hook in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: index of the hook (required)
@@ -6100,7 +6100,7 @@ class RepositoryApi(object):
     def repo_edit_hook_with_http_info(self, owner, repo, id, **kwargs):  # noqa: E501
         """Edit a hook in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: index of the hook (required)
@@ -6186,7 +6186,7 @@ class RepositoryApi(object):
     def repo_edit_pull_request(self, owner, repo, index, **kwargs):  # noqa: E501
         """Update a pull request. If using deadline only the date will be taken into account, and time of day ignored.  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the pull request to edit (required)
@@ -6203,7 +6203,7 @@ class RepositoryApi(object):
     def repo_edit_pull_request_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Update a pull request. If using deadline only the date will be taken into account, and time of day ignored.  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the pull request to edit (required)
@@ -6289,7 +6289,7 @@ class RepositoryApi(object):
     def repo_edit_release(self, owner, repo, id, **kwargs):  # noqa: E501
         """Update a release  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the release to edit (required)
@@ -6306,7 +6306,7 @@ class RepositoryApi(object):
     def repo_edit_release_with_http_info(self, owner, repo, id, **kwargs):  # noqa: E501
         """Update a release  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the release to edit (required)
@@ -6392,7 +6392,7 @@ class RepositoryApi(object):
     def repo_edit_release_attachment(self, owner, repo, id, attachment_id, **kwargs):  # noqa: E501
         """Edit a release attachment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the release (required)
@@ -6410,7 +6410,7 @@ class RepositoryApi(object):
     def repo_edit_release_attachment_with_http_info(self, owner, repo, id, attachment_id, **kwargs):  # noqa: E501
         """Edit a release attachment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the release (required)
@@ -6503,7 +6503,7 @@ class RepositoryApi(object):
     def repo_edit_wiki_page(self, owner, repo, page_name, **kwargs):  # noqa: E501
         """Edit a wiki page  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str page_name: name of the page (required)
@@ -6520,7 +6520,7 @@ class RepositoryApi(object):
     def repo_edit_wiki_page_with_http_info(self, owner, repo, page_name, **kwargs):  # noqa: E501
         """Edit a wiki page  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str page_name: name of the page (required)
@@ -6606,7 +6606,7 @@ class RepositoryApi(object):
     def repo_get(self, owner, repo, **kwargs):  # noqa: E501
         """Get a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: Repository
@@ -6621,7 +6621,7 @@ class RepositoryApi(object):
     def repo_get_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Get a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: Repository
@@ -6693,7 +6693,7 @@ class RepositoryApi(object):
     def repo_get_all_commits(self, owner, repo, **kwargs):  # noqa: E501
         """Get a list of all commits from a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str sha: SHA or branch to start listing commits from (usually 'master')
@@ -6716,7 +6716,7 @@ class RepositoryApi(object):
     def repo_get_all_commits_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Get a list of all commits from a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str sha: SHA or branch to start listing commits from (usually 'master')
@@ -6812,7 +6812,7 @@ class RepositoryApi(object):
     def repo_get_archive(self, owner, repo, archive, **kwargs):  # noqa: E501
         """Get an archive of a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str archive: the git reference for download with attached archive format (e.g. master.zip) (required)
@@ -6828,7 +6828,7 @@ class RepositoryApi(object):
     def repo_get_archive_with_http_info(self, owner, repo, archive, **kwargs):  # noqa: E501
         """Get an archive of a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str archive: the git reference for download with attached archive format (e.g. master.zip) (required)
@@ -6903,7 +6903,7 @@ class RepositoryApi(object):
     def repo_get_assignees(self, owner, repo, **kwargs):  # noqa: E501
         """Return all users that have write access and can be assigned to issues  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[User]
@@ -6918,7 +6918,7 @@ class RepositoryApi(object):
     def repo_get_assignees_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Return all users that have write access and can be assigned to issues  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[User]
@@ -6990,7 +6990,7 @@ class RepositoryApi(object):
     def repo_get_branch(self, owner, repo, branch, **kwargs):  # noqa: E501
         """Retrieve a specific branch from a repository, including its effective branch protection  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str branch: branch to get (required)
@@ -7006,7 +7006,7 @@ class RepositoryApi(object):
     def repo_get_branch_with_http_info(self, owner, repo, branch, **kwargs):  # noqa: E501
         """Retrieve a specific branch from a repository, including its effective branch protection  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str branch: branch to get (required)
@@ -7085,7 +7085,7 @@ class RepositoryApi(object):
     def repo_get_branch_protection(self, owner, repo, name, **kwargs):  # noqa: E501
         """Get a specific branch protection for the repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str name: name of protected branch (required)
@@ -7101,7 +7101,7 @@ class RepositoryApi(object):
     def repo_get_branch_protection_with_http_info(self, owner, repo, name, **kwargs):  # noqa: E501
         """Get a specific branch protection for the repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str name: name of protected branch (required)
@@ -7180,7 +7180,7 @@ class RepositoryApi(object):
     def repo_get_by_id(self, id, **kwargs):  # noqa: E501
         """Get a repository by id  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the repo to get (required)
         :return: Repository
         """
@@ -7194,7 +7194,7 @@ class RepositoryApi(object):
     def repo_get_by_id_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a repository by id  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the repo to get (required)
         :return: Repository
         """
@@ -7259,7 +7259,7 @@ class RepositoryApi(object):
     def repo_get_combined_status_by_ref(self, owner, repo, ref, **kwargs):  # noqa: E501
         """Get a commit's combined status, by branch/tag/commit reference  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str ref: name of branch/tag/commit (required)
@@ -7277,7 +7277,7 @@ class RepositoryApi(object):
     def repo_get_combined_status_by_ref_with_http_info(self, owner, repo, ref, **kwargs):  # noqa: E501
         """Get a commit's combined status, by branch/tag/commit reference  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str ref: name of branch/tag/commit (required)
@@ -7362,7 +7362,7 @@ class RepositoryApi(object):
     def repo_get_commit_pull_request(self, owner, repo, sha, **kwargs):  # noqa: E501
         """Get the pull request of the commit  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str sha: SHA of the commit to get (required)
@@ -7378,7 +7378,7 @@ class RepositoryApi(object):
     def repo_get_commit_pull_request_with_http_info(self, owner, repo, sha, **kwargs):  # noqa: E501
         """Get the pull request of the commit  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str sha: SHA of the commit to get (required)
@@ -7457,7 +7457,7 @@ class RepositoryApi(object):
     def repo_get_contents(self, owner, repo, filepath, **kwargs):  # noqa: E501
         """Gets the metadata and contents (if a file) of an entry in a repository, or a list of entries if a dir  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str filepath: path of the dir, file, symlink or submodule in the repo (required)
@@ -7474,7 +7474,7 @@ class RepositoryApi(object):
     def repo_get_contents_with_http_info(self, owner, repo, filepath, **kwargs):  # noqa: E501
         """Gets the metadata and contents (if a file) of an entry in a repository, or a list of entries if a dir  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str filepath: path of the dir, file, symlink or submodule in the repo (required)
@@ -7556,7 +7556,7 @@ class RepositoryApi(object):
     def repo_get_contents_list(self, owner, repo, **kwargs):  # noqa: E501
         """Gets the metadata of all the entries of the root dir  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str ref: The name of the commit/branch/tag. Default the repository’s default branch (usually master)
@@ -7572,7 +7572,7 @@ class RepositoryApi(object):
     def repo_get_contents_list_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Gets the metadata of all the entries of the root dir  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str ref: The name of the commit/branch/tag. Default the repository’s default branch (usually master)
@@ -7647,7 +7647,7 @@ class RepositoryApi(object):
     def repo_get_editor_config(self, owner, repo, filepath, **kwargs):  # noqa: E501
         """Get the EditorConfig definitions of a file in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str filepath: filepath of file to get (required)
@@ -7664,7 +7664,7 @@ class RepositoryApi(object):
     def repo_get_editor_config_with_http_info(self, owner, repo, filepath, **kwargs):  # noqa: E501
         """Get the EditorConfig definitions of a file in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str filepath: filepath of file to get (required)
@@ -7742,7 +7742,7 @@ class RepositoryApi(object):
     def repo_get_git_hook(self, owner, repo, id, **kwargs):  # noqa: E501
         """Get a Git hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str id: id of the hook to get (required)
@@ -7758,7 +7758,7 @@ class RepositoryApi(object):
     def repo_get_git_hook_with_http_info(self, owner, repo, id, **kwargs):  # noqa: E501
         """Get a Git hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str id: id of the hook to get (required)
@@ -7837,7 +7837,7 @@ class RepositoryApi(object):
     def repo_get_hook(self, owner, repo, id, **kwargs):  # noqa: E501
         """Get a hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the hook to get (required)
@@ -7853,7 +7853,7 @@ class RepositoryApi(object):
     def repo_get_hook_with_http_info(self, owner, repo, id, **kwargs):  # noqa: E501
         """Get a hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the hook to get (required)
@@ -7932,7 +7932,7 @@ class RepositoryApi(object):
     def repo_get_issue_config(self, owner, repo, **kwargs):  # noqa: E501
         """Returns the issue config for a repo  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: IssueConfig
@@ -7947,7 +7947,7 @@ class RepositoryApi(object):
     def repo_get_issue_config_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Returns the issue config for a repo  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: IssueConfig
@@ -8019,7 +8019,7 @@ class RepositoryApi(object):
     def repo_get_issue_templates(self, owner, repo, **kwargs):  # noqa: E501
         """Get available issue templates for a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[IssueTemplate]
@@ -8034,7 +8034,7 @@ class RepositoryApi(object):
     def repo_get_issue_templates_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Get available issue templates for a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[IssueTemplate]
@@ -8106,7 +8106,7 @@ class RepositoryApi(object):
     def repo_get_key(self, owner, repo, id, **kwargs):  # noqa: E501
         """Get a repository's key by id  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the key to get (required)
@@ -8122,7 +8122,7 @@ class RepositoryApi(object):
     def repo_get_key_with_http_info(self, owner, repo, id, **kwargs):  # noqa: E501
         """Get a repository's key by id  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the key to get (required)
@@ -8201,7 +8201,7 @@ class RepositoryApi(object):
     def repo_get_languages(self, owner, repo, **kwargs):  # noqa: E501
         """Get languages and number of bytes of code written  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: dict(str, int)
@@ -8216,7 +8216,7 @@ class RepositoryApi(object):
     def repo_get_languages_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Get languages and number of bytes of code written  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: dict(str, int)
@@ -8288,7 +8288,7 @@ class RepositoryApi(object):
     def repo_get_latest_release(self, owner, repo, **kwargs):  # noqa: E501
         """Gets the most recent non-prerelease, non-draft release of a repository, sorted by created_at  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: Release
@@ -8303,7 +8303,7 @@ class RepositoryApi(object):
     def repo_get_latest_release_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Gets the most recent non-prerelease, non-draft release of a repository, sorted by created_at  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: Release
@@ -8375,7 +8375,7 @@ class RepositoryApi(object):
     def repo_get_note(self, owner, repo, sha, **kwargs):  # noqa: E501
         """Get a note corresponding to a single commit from a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str sha: a git ref or commit sha (required)
@@ -8393,7 +8393,7 @@ class RepositoryApi(object):
     def repo_get_note_with_http_info(self, owner, repo, sha, **kwargs):  # noqa: E501
         """Get a note corresponding to a single commit from a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str sha: a git ref or commit sha (required)
@@ -8478,7 +8478,7 @@ class RepositoryApi(object):
     def repo_get_pull_request(self, owner, repo, index, **kwargs):  # noqa: E501
         """Get a pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the pull request to get (required)
@@ -8494,7 +8494,7 @@ class RepositoryApi(object):
     def repo_get_pull_request_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Get a pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the pull request to get (required)
@@ -8573,7 +8573,7 @@ class RepositoryApi(object):
     def repo_get_pull_request_by_base_head(self, owner, repo, base, head, **kwargs):  # noqa: E501
         """Get a pull request by base and head  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str base: base of the pull request to get (required)
@@ -8590,7 +8590,7 @@ class RepositoryApi(object):
     def repo_get_pull_request_by_base_head_with_http_info(self, owner, repo, base, head, **kwargs):  # noqa: E501
         """Get a pull request by base and head  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str base: base of the pull request to get (required)
@@ -8676,7 +8676,7 @@ class RepositoryApi(object):
     def repo_get_pull_request_commits(self, owner, repo, index, **kwargs):  # noqa: E501
         """Get commits for a pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the pull request to get (required)
@@ -8696,7 +8696,7 @@ class RepositoryApi(object):
     def repo_get_pull_request_commits_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Get commits for a pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the pull request to get (required)
@@ -8787,7 +8787,7 @@ class RepositoryApi(object):
     def repo_get_pull_request_files(self, owner, repo, index, **kwargs):  # noqa: E501
         """Get changed files for a pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the pull request to get (required)
@@ -8807,7 +8807,7 @@ class RepositoryApi(object):
     def repo_get_pull_request_files_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Get changed files for a pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the pull request to get (required)
@@ -8898,7 +8898,7 @@ class RepositoryApi(object):
     def repo_get_pull_review(self, owner, repo, index, id, **kwargs):  # noqa: E501
         """Get a specific review for a pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the pull request (required)
@@ -8915,7 +8915,7 @@ class RepositoryApi(object):
     def repo_get_pull_review_with_http_info(self, owner, repo, index, id, **kwargs):  # noqa: E501
         """Get a specific review for a pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the pull request (required)
@@ -9001,7 +9001,7 @@ class RepositoryApi(object):
     def repo_get_pull_review_comments(self, owner, repo, index, id, **kwargs):  # noqa: E501
         """Get a specific review for a pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the pull request (required)
@@ -9018,7 +9018,7 @@ class RepositoryApi(object):
     def repo_get_pull_review_comments_with_http_info(self, owner, repo, index, id, **kwargs):  # noqa: E501
         """Get a specific review for a pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the pull request (required)
@@ -9104,7 +9104,7 @@ class RepositoryApi(object):
     def repo_get_push_mirror_by_remote_name(self, owner, repo, name, **kwargs):  # noqa: E501
         """Get push mirror of the repository by remoteName  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str name: remote name of push mirror (required)
@@ -9120,7 +9120,7 @@ class RepositoryApi(object):
     def repo_get_push_mirror_by_remote_name_with_http_info(self, owner, repo, name, **kwargs):  # noqa: E501
         """Get push mirror of the repository by remoteName  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str name: remote name of push mirror (required)
@@ -9199,7 +9199,7 @@ class RepositoryApi(object):
     def repo_get_raw_file(self, owner, repo, filepath, **kwargs):  # noqa: E501
         """Get a file from a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str filepath: filepath of the file to get (required)
@@ -9216,7 +9216,7 @@ class RepositoryApi(object):
     def repo_get_raw_file_with_http_info(self, owner, repo, filepath, **kwargs):  # noqa: E501
         """Get a file from a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str filepath: filepath of the file to get (required)
@@ -9294,7 +9294,7 @@ class RepositoryApi(object):
     def repo_get_raw_file_or_lfs(self, owner, repo, filepath, **kwargs):  # noqa: E501
         """Get a file or it's LFS object from a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str filepath: filepath of the file to get (required)
@@ -9311,7 +9311,7 @@ class RepositoryApi(object):
     def repo_get_raw_file_or_lfs_with_http_info(self, owner, repo, filepath, **kwargs):  # noqa: E501
         """Get a file or it's LFS object from a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str filepath: filepath of the file to get (required)
@@ -9389,7 +9389,7 @@ class RepositoryApi(object):
     def repo_get_release(self, owner, repo, id, **kwargs):  # noqa: E501
         """Get a release  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the release to get (required)
@@ -9405,7 +9405,7 @@ class RepositoryApi(object):
     def repo_get_release_with_http_info(self, owner, repo, id, **kwargs):  # noqa: E501
         """Get a release  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the release to get (required)
@@ -9484,7 +9484,7 @@ class RepositoryApi(object):
     def repo_get_release_attachment(self, owner, repo, id, attachment_id, **kwargs):  # noqa: E501
         """Get a release attachment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the release (required)
@@ -9501,7 +9501,7 @@ class RepositoryApi(object):
     def repo_get_release_attachment_with_http_info(self, owner, repo, id, attachment_id, **kwargs):  # noqa: E501
         """Get a release attachment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the release (required)
@@ -9587,7 +9587,7 @@ class RepositoryApi(object):
     def repo_get_release_by_tag(self, owner, repo, tag, **kwargs):  # noqa: E501
         """Get a release by tag name  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str tag: tag name of the release to get (required)
@@ -9603,7 +9603,7 @@ class RepositoryApi(object):
     def repo_get_release_by_tag_with_http_info(self, owner, repo, tag, **kwargs):  # noqa: E501
         """Get a release by tag name  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str tag: tag name of the release to get (required)
@@ -9682,7 +9682,7 @@ class RepositoryApi(object):
     def repo_get_repo_permissions(self, owner, repo, collaborator, **kwargs):  # noqa: E501
         """Get repository permissions for a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str collaborator: username of the collaborator (required)
@@ -9698,7 +9698,7 @@ class RepositoryApi(object):
     def repo_get_repo_permissions_with_http_info(self, owner, repo, collaborator, **kwargs):  # noqa: E501
         """Get repository permissions for a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str collaborator: username of the collaborator (required)
@@ -9777,7 +9777,7 @@ class RepositoryApi(object):
     def repo_get_reviewers(self, owner, repo, **kwargs):  # noqa: E501
         """Return all users that can be requested to review in this repo  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[User]
@@ -9792,7 +9792,7 @@ class RepositoryApi(object):
     def repo_get_reviewers_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Return all users that can be requested to review in this repo  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[User]
@@ -9864,7 +9864,7 @@ class RepositoryApi(object):
     def repo_get_runner_registration_token(self, owner, repo, **kwargs):  # noqa: E501
         """Get a repository's actions runner registration token  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: None
@@ -9879,7 +9879,7 @@ class RepositoryApi(object):
     def repo_get_runner_registration_token_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Get a repository's actions runner registration token  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: None
@@ -9947,7 +9947,7 @@ class RepositoryApi(object):
     def repo_get_single_commit(self, owner, repo, sha, **kwargs):  # noqa: E501
         """Get a single commit from a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str sha: a git ref or commit sha (required)
@@ -9966,7 +9966,7 @@ class RepositoryApi(object):
     def repo_get_single_commit_with_http_info(self, owner, repo, sha, **kwargs):  # noqa: E501
         """Get a single commit from a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str sha: a git ref or commit sha (required)
@@ -10054,7 +10054,7 @@ class RepositoryApi(object):
     def repo_get_tag(self, owner, repo, tag, **kwargs):  # noqa: E501
         """Get the tag of a repository by tag name  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str tag: name of tag (required)
@@ -10070,7 +10070,7 @@ class RepositoryApi(object):
     def repo_get_tag_with_http_info(self, owner, repo, tag, **kwargs):  # noqa: E501
         """Get the tag of a repository by tag name  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str tag: name of tag (required)
@@ -10149,7 +10149,7 @@ class RepositoryApi(object):
     def repo_get_wiki_page(self, owner, repo, page_name, **kwargs):  # noqa: E501
         """Get a wiki page  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str page_name: name of the page (required)
@@ -10165,7 +10165,7 @@ class RepositoryApi(object):
     def repo_get_wiki_page_with_http_info(self, owner, repo, page_name, **kwargs):  # noqa: E501
         """Get a wiki page  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str page_name: name of the page (required)
@@ -10244,7 +10244,7 @@ class RepositoryApi(object):
     def repo_get_wiki_page_revisions(self, owner, repo, page_name, **kwargs):  # noqa: E501
         """Get revisions of a wiki page  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str page_name: name of the page (required)
@@ -10261,7 +10261,7 @@ class RepositoryApi(object):
     def repo_get_wiki_page_revisions_with_http_info(self, owner, repo, page_name, **kwargs):  # noqa: E501
         """Get revisions of a wiki page  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str page_name: name of the page (required)
@@ -10343,7 +10343,7 @@ class RepositoryApi(object):
     def repo_get_wiki_pages(self, owner, repo, **kwargs):  # noqa: E501
         """Get all wiki pages  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int page: page number of results to return (1-based)
@@ -10360,7 +10360,7 @@ class RepositoryApi(object):
     def repo_get_wiki_pages_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Get all wiki pages  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int page: page number of results to return (1-based)
@@ -10438,7 +10438,7 @@ class RepositoryApi(object):
     def repo_list_actions_secrets(self, owner, repo, **kwargs):  # noqa: E501
         """List an repo's actions secrets  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repository (required)
         :param str repo: name of the repository (required)
         :param int page: page number of results to return (1-based)
@@ -10455,7 +10455,7 @@ class RepositoryApi(object):
     def repo_list_actions_secrets_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """List an repo's actions secrets  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repository (required)
         :param str repo: name of the repository (required)
         :param int page: page number of results to return (1-based)
@@ -10533,7 +10533,7 @@ class RepositoryApi(object):
     def repo_list_activity_feeds(self, owner, repo, **kwargs):  # noqa: E501
         """List a repository's activity feeds  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param date _date: the date of the activities to be found
@@ -10551,7 +10551,7 @@ class RepositoryApi(object):
     def repo_list_activity_feeds_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """List a repository's activity feeds  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param date _date: the date of the activities to be found
@@ -10632,7 +10632,7 @@ class RepositoryApi(object):
     def repo_list_all_git_refs(self, owner, repo, **kwargs):  # noqa: E501
         """Get specified ref or filtered repository's refs  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[Reference]
@@ -10647,7 +10647,7 @@ class RepositoryApi(object):
     def repo_list_all_git_refs_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Get specified ref or filtered repository's refs  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[Reference]
@@ -10719,7 +10719,7 @@ class RepositoryApi(object):
     def repo_list_branch_protection(self, owner, repo, **kwargs):  # noqa: E501
         """List branch protections for a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[BranchProtection]
@@ -10734,7 +10734,7 @@ class RepositoryApi(object):
     def repo_list_branch_protection_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """List branch protections for a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[BranchProtection]
@@ -10806,7 +10806,7 @@ class RepositoryApi(object):
     def repo_list_branches(self, owner, repo, **kwargs):  # noqa: E501
         """List a repository's branches  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int page: page number of results to return (1-based)
@@ -10823,7 +10823,7 @@ class RepositoryApi(object):
     def repo_list_branches_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """List a repository's branches  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int page: page number of results to return (1-based)
@@ -10901,7 +10901,7 @@ class RepositoryApi(object):
     def repo_list_collaborators(self, owner, repo, **kwargs):  # noqa: E501
         """List a repository's collaborators  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int page: page number of results to return (1-based)
@@ -10918,7 +10918,7 @@ class RepositoryApi(object):
     def repo_list_collaborators_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """List a repository's collaborators  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int page: page number of results to return (1-based)
@@ -10996,7 +10996,7 @@ class RepositoryApi(object):
     def repo_list_git_hooks(self, owner, repo, **kwargs):  # noqa: E501
         """List the Git hooks in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[GitHook]
@@ -11011,7 +11011,7 @@ class RepositoryApi(object):
     def repo_list_git_hooks_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """List the Git hooks in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[GitHook]
@@ -11083,7 +11083,7 @@ class RepositoryApi(object):
     def repo_list_git_refs(self, owner, repo, ref, **kwargs):  # noqa: E501
         """Get specified ref or filtered repository's refs  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str ref: part or full name of the ref (required)
@@ -11099,7 +11099,7 @@ class RepositoryApi(object):
     def repo_list_git_refs_with_http_info(self, owner, repo, ref, **kwargs):  # noqa: E501
         """Get specified ref or filtered repository's refs  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str ref: part or full name of the ref (required)
@@ -11178,7 +11178,7 @@ class RepositoryApi(object):
     def repo_list_hooks(self, owner, repo, **kwargs):  # noqa: E501
         """List the hooks in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int page: page number of results to return (1-based)
@@ -11195,7 +11195,7 @@ class RepositoryApi(object):
     def repo_list_hooks_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """List the hooks in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int page: page number of results to return (1-based)
@@ -11273,7 +11273,7 @@ class RepositoryApi(object):
     def repo_list_keys(self, owner, repo, **kwargs):  # noqa: E501
         """List a repository's keys  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int key_id: the key_id to search for
@@ -11292,7 +11292,7 @@ class RepositoryApi(object):
     def repo_list_keys_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """List a repository's keys  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int key_id: the key_id to search for
@@ -11376,7 +11376,7 @@ class RepositoryApi(object):
     def repo_list_pinned_issues(self, owner, repo, **kwargs):  # noqa: E501
         """List a repo's pinned issues  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[Issue]
@@ -11391,7 +11391,7 @@ class RepositoryApi(object):
     def repo_list_pinned_issues_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """List a repo's pinned issues  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[Issue]
@@ -11463,7 +11463,7 @@ class RepositoryApi(object):
     def repo_list_pinned_pull_requests(self, owner, repo, **kwargs):  # noqa: E501
         """List a repo's pinned pull requests  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[PullRequest]
@@ -11478,7 +11478,7 @@ class RepositoryApi(object):
     def repo_list_pinned_pull_requests_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """List a repo's pinned pull requests  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[PullRequest]
@@ -11550,7 +11550,7 @@ class RepositoryApi(object):
     def repo_list_pull_requests(self, owner, repo, **kwargs):  # noqa: E501
         """List a repo's pull requests  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str state: State of pull request: open or closed (optional)
@@ -11571,7 +11571,7 @@ class RepositoryApi(object):
     def repo_list_pull_requests_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """List a repo's pull requests  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str state: State of pull request: open or closed (optional)
@@ -11662,7 +11662,7 @@ class RepositoryApi(object):
     def repo_list_pull_reviews(self, owner, repo, index, **kwargs):  # noqa: E501
         """List all reviews for a pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the pull request (required)
@@ -11680,7 +11680,7 @@ class RepositoryApi(object):
     def repo_list_pull_reviews_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """List all reviews for a pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the pull request (required)
@@ -11765,7 +11765,7 @@ class RepositoryApi(object):
     def repo_list_push_mirrors(self, owner, repo, **kwargs):  # noqa: E501
         """Get all push mirrors of the repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int page: page number of results to return (1-based)
@@ -11782,7 +11782,7 @@ class RepositoryApi(object):
     def repo_list_push_mirrors_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Get all push mirrors of the repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int page: page number of results to return (1-based)
@@ -11860,7 +11860,7 @@ class RepositoryApi(object):
     def repo_list_release_attachments(self, owner, repo, id, **kwargs):  # noqa: E501
         """List release's attachments  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the release (required)
@@ -11876,7 +11876,7 @@ class RepositoryApi(object):
     def repo_list_release_attachments_with_http_info(self, owner, repo, id, **kwargs):  # noqa: E501
         """List release's attachments  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the release (required)
@@ -11955,7 +11955,7 @@ class RepositoryApi(object):
     def repo_list_releases(self, owner, repo, **kwargs):  # noqa: E501
         """List a repo's releases  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param bool draft: filter (exclude / include) drafts, if you dont have repo write access none will show
@@ -11974,7 +11974,7 @@ class RepositoryApi(object):
     def repo_list_releases_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """List a repo's releases  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param bool draft: filter (exclude / include) drafts, if you dont have repo write access none will show
@@ -12058,7 +12058,7 @@ class RepositoryApi(object):
     def repo_list_stargazers(self, owner, repo, **kwargs):  # noqa: E501
         """List a repo's stargazers  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int page: page number of results to return (1-based)
@@ -12075,7 +12075,7 @@ class RepositoryApi(object):
     def repo_list_stargazers_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """List a repo's stargazers  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int page: page number of results to return (1-based)
@@ -12153,7 +12153,7 @@ class RepositoryApi(object):
     def repo_list_statuses(self, owner, repo, sha, **kwargs):  # noqa: E501
         """Get a commit's statuses  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str sha: sha of the commit (required)
@@ -12173,7 +12173,7 @@ class RepositoryApi(object):
     def repo_list_statuses_with_http_info(self, owner, repo, sha, **kwargs):  # noqa: E501
         """Get a commit's statuses  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str sha: sha of the commit (required)
@@ -12264,7 +12264,7 @@ class RepositoryApi(object):
     def repo_list_statuses_by_ref(self, owner, repo, ref, **kwargs):  # noqa: E501
         """Get a commit's statuses, by branch/tag/commit reference  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str ref: name of branch/tag/commit (required)
@@ -12284,7 +12284,7 @@ class RepositoryApi(object):
     def repo_list_statuses_by_ref_with_http_info(self, owner, repo, ref, **kwargs):  # noqa: E501
         """Get a commit's statuses, by branch/tag/commit reference  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str ref: name of branch/tag/commit (required)
@@ -12375,7 +12375,7 @@ class RepositoryApi(object):
     def repo_list_subscribers(self, owner, repo, **kwargs):  # noqa: E501
         """List a repo's watchers  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int page: page number of results to return (1-based)
@@ -12392,7 +12392,7 @@ class RepositoryApi(object):
     def repo_list_subscribers_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """List a repo's watchers  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int page: page number of results to return (1-based)
@@ -12470,7 +12470,7 @@ class RepositoryApi(object):
     def repo_list_tags(self, owner, repo, **kwargs):  # noqa: E501
         """List a repository's tags  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int page: page number of results to return (1-based)
@@ -12487,7 +12487,7 @@ class RepositoryApi(object):
     def repo_list_tags_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """List a repository's tags  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int page: page number of results to return (1-based)
@@ -12565,7 +12565,7 @@ class RepositoryApi(object):
     def repo_list_teams(self, owner, repo, **kwargs):  # noqa: E501
         """List a repository's teams  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[Team]
@@ -12580,7 +12580,7 @@ class RepositoryApi(object):
     def repo_list_teams_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """List a repository's teams  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: list[Team]
@@ -12652,7 +12652,7 @@ class RepositoryApi(object):
     def repo_list_topics(self, owner, repo, **kwargs):  # noqa: E501
         """Get list of topics that a repository has  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int page: page number of results to return (1-based)
@@ -12669,7 +12669,7 @@ class RepositoryApi(object):
     def repo_list_topics_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Get list of topics that a repository has  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int page: page number of results to return (1-based)
@@ -12747,7 +12747,7 @@ class RepositoryApi(object):
     def repo_merge_pull_request(self, owner, repo, index, **kwargs):  # noqa: E501
         """Merge a pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the pull request to merge (required)
@@ -12764,7 +12764,7 @@ class RepositoryApi(object):
     def repo_merge_pull_request_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Merge a pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the pull request to merge (required)
@@ -12846,7 +12846,7 @@ class RepositoryApi(object):
     def repo_migrate(self, **kwargs):  # noqa: E501
         """Migrate a remote git repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param MigrateRepoOptions body:
         :return: Repository
         """
@@ -12860,7 +12860,7 @@ class RepositoryApi(object):
     def repo_migrate_with_http_info(self, **kwargs):  # noqa: E501
         """Migrate a remote git repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param MigrateRepoOptions body:
         :return: Repository
         """
@@ -12925,7 +12925,7 @@ class RepositoryApi(object):
     def repo_mirror_sync(self, owner, repo, **kwargs):  # noqa: E501
         """Sync a mirrored repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo to sync (required)
         :param str repo: name of the repo to sync (required)
         :return: None
@@ -12940,7 +12940,7 @@ class RepositoryApi(object):
     def repo_mirror_sync_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Sync a mirrored repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo to sync (required)
         :param str repo: name of the repo to sync (required)
         :return: None
@@ -13008,7 +13008,7 @@ class RepositoryApi(object):
     def repo_new_pin_allowed(self, owner, repo, **kwargs):  # noqa: E501
         """Returns if new Issue Pins are allowed  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: NewIssuePinsAllowed
@@ -13023,7 +13023,7 @@ class RepositoryApi(object):
     def repo_new_pin_allowed_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Returns if new Issue Pins are allowed  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: NewIssuePinsAllowed
@@ -13095,7 +13095,7 @@ class RepositoryApi(object):
     def repo_pull_request_is_merged(self, owner, repo, index, **kwargs):  # noqa: E501
         """Check if a pull request has been merged  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the pull request (required)
@@ -13111,7 +13111,7 @@ class RepositoryApi(object):
     def repo_pull_request_is_merged_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Check if a pull request has been merged  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the pull request (required)
@@ -13186,7 +13186,7 @@ class RepositoryApi(object):
     def repo_push_mirror_sync(self, owner, repo, **kwargs):  # noqa: E501
         """Sync all push mirrored repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo to sync (required)
         :param str repo: name of the repo to sync (required)
         :return: None
@@ -13201,7 +13201,7 @@ class RepositoryApi(object):
     def repo_push_mirror_sync_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Sync all push mirrored repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo to sync (required)
         :param str repo: name of the repo to sync (required)
         :return: None
@@ -13269,7 +13269,7 @@ class RepositoryApi(object):
     def repo_search(self, **kwargs):  # noqa: E501
         """Search for repositories  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str q: keyword
         :param bool topic: Limit search to repositories with keyword as topic
         :param bool include_desc: include search of keyword within repository description
@@ -13299,7 +13299,7 @@ class RepositoryApi(object):
     def repo_search_with_http_info(self, **kwargs):  # noqa: E501
         """Search for repositories  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str q: keyword
         :param bool topic: Limit search to repositories with keyword as topic
         :param bool include_desc: include search of keyword within repository description
@@ -13408,7 +13408,7 @@ class RepositoryApi(object):
     def repo_signing_key(self, owner, repo, **kwargs):  # noqa: E501
         """Get signing-key.gpg for given repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: str
@@ -13423,7 +13423,7 @@ class RepositoryApi(object):
     def repo_signing_key_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Get signing-key.gpg for given repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: str
@@ -13495,7 +13495,7 @@ class RepositoryApi(object):
     def repo_submit_pull_review(self, body, owner, repo, index, id, **kwargs):  # noqa: E501
         """Submit a pending review to an pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param SubmitPullReviewOptions body: (required)
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
@@ -13513,7 +13513,7 @@ class RepositoryApi(object):
     def repo_submit_pull_review_with_http_info(self, body, owner, repo, index, id, **kwargs):  # noqa: E501
         """Submit a pending review to an pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param SubmitPullReviewOptions body: (required)
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
@@ -13610,7 +13610,7 @@ class RepositoryApi(object):
     def repo_test_hook(self, owner, repo, id, **kwargs):  # noqa: E501
         """Test a push webhook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the hook to test (required)
@@ -13627,7 +13627,7 @@ class RepositoryApi(object):
     def repo_test_hook_with_http_info(self, owner, repo, id, **kwargs):  # noqa: E501
         """Test a push webhook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the hook to test (required)
@@ -13705,7 +13705,7 @@ class RepositoryApi(object):
     def repo_tracked_times(self, owner, repo, **kwargs):  # noqa: E501
         """List a repo's tracked times  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str user: optional filter by user (available for issue managers)
@@ -13725,7 +13725,7 @@ class RepositoryApi(object):
     def repo_tracked_times_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """List a repo's tracked times  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str user: optional filter by user (available for issue managers)
@@ -13812,7 +13812,7 @@ class RepositoryApi(object):
     def repo_transfer(self, body, owner, repo, **kwargs):  # noqa: E501
         """Transfer a repo ownership  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param TransferRepoOption body: Transfer Options (required)
         :param str owner: owner of the repo to transfer (required)
         :param str repo: name of the repo to transfer (required)
@@ -13828,7 +13828,7 @@ class RepositoryApi(object):
     def repo_transfer_with_http_info(self, body, owner, repo, **kwargs):  # noqa: E501
         """Transfer a repo ownership  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param TransferRepoOption body: Transfer Options (required)
         :param str owner: owner of the repo to transfer (required)
         :param str repo: name of the repo to transfer (required)
@@ -13911,7 +13911,7 @@ class RepositoryApi(object):
     def repo_un_dismiss_pull_review(self, owner, repo, index, id, **kwargs):  # noqa: E501
         """Cancel to dismiss a review for a pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the pull request (required)
@@ -13928,7 +13928,7 @@ class RepositoryApi(object):
     def repo_un_dismiss_pull_review_with_http_info(self, owner, repo, index, id, **kwargs):  # noqa: E501
         """Cancel to dismiss a review for a pull request  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the pull request (required)
@@ -14014,7 +14014,7 @@ class RepositoryApi(object):
     def repo_update_avatar(self, owner, repo, **kwargs):  # noqa: E501
         """Update avatar  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param UpdateRepoAvatarOption body:
@@ -14030,7 +14030,7 @@ class RepositoryApi(object):
     def repo_update_avatar_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Update avatar  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param UpdateRepoAvatarOption body:
@@ -14105,7 +14105,7 @@ class RepositoryApi(object):
     def repo_update_file(self, body, owner, repo, filepath, **kwargs):  # noqa: E501
         """Update a file in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param UpdateFileOptions body: (required)
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
@@ -14122,7 +14122,7 @@ class RepositoryApi(object):
     def repo_update_file_with_http_info(self, body, owner, repo, filepath, **kwargs):  # noqa: E501
         """Update a file in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param UpdateFileOptions body: (required)
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
@@ -14212,7 +14212,7 @@ class RepositoryApi(object):
     def repo_update_pull_request(self, owner, repo, index, **kwargs):  # noqa: E501
         """Merge PR's baseBranch into headBranch  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the pull request to get (required)
@@ -14229,7 +14229,7 @@ class RepositoryApi(object):
     def repo_update_pull_request_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Merge PR's baseBranch into headBranch  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the pull request to get (required)
@@ -14307,7 +14307,7 @@ class RepositoryApi(object):
     def repo_update_topics(self, owner, repo, **kwargs):  # noqa: E501
         """Replace list of topics for a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param RepoTopicOptions body:
@@ -14323,7 +14323,7 @@ class RepositoryApi(object):
     def repo_update_topics_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Replace list of topics for a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param RepoTopicOptions body:
@@ -14398,7 +14398,7 @@ class RepositoryApi(object):
     def repo_validate_issue_config(self, owner, repo, **kwargs):  # noqa: E501
         """Returns the validation information for a issue config  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: IssueConfigValidation
@@ -14413,7 +14413,7 @@ class RepositoryApi(object):
     def repo_validate_issue_config_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Returns the validation information for a issue config  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: IssueConfigValidation
@@ -14485,7 +14485,7 @@ class RepositoryApi(object):
     def topic_search(self, q, **kwargs):  # noqa: E501
         """search topics via keyword  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str q: keywords to search (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -14501,7 +14501,7 @@ class RepositoryApi(object):
     def topic_search_with_http_info(self, q, **kwargs):  # noqa: E501
         """search topics via keyword  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str q: keywords to search (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -14572,7 +14572,7 @@ class RepositoryApi(object):
     def update_repo_secret(self, owner, repo, secretname, **kwargs):  # noqa: E501
         """Create or Update a secret value in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repository (required)
         :param str repo: name of the repository (required)
         :param str secretname: name of the secret (required)
@@ -14589,7 +14589,7 @@ class RepositoryApi(object):
     def update_repo_secret_with_http_info(self, owner, repo, secretname, **kwargs):  # noqa: E501
         """Create or Update a secret value in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repository (required)
         :param str repo: name of the repository (required)
         :param str secretname: name of the secret (required)
@@ -14671,7 +14671,7 @@ class RepositoryApi(object):
     def update_repo_variable(self, owner, repo, variablename, **kwargs):  # noqa: E501
         """Update a repo-level variable  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: name of the owner (required)
         :param str repo: name of the repository (required)
         :param str variablename: name of the variable (required)
@@ -14688,7 +14688,7 @@ class RepositoryApi(object):
     def update_repo_variable_with_http_info(self, owner, repo, variablename, **kwargs):  # noqa: E501
         """Update a repo-level variable  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: name of the owner (required)
         :param str repo: name of the repository (required)
         :param str variablename: name of the variable (required)
@@ -14770,7 +14770,7 @@ class RepositoryApi(object):
     def user_current_check_subscription(self, owner, repo, **kwargs):  # noqa: E501
         """Check if the current user is watching a repo  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: WatchInfo
@@ -14785,7 +14785,7 @@ class RepositoryApi(object):
     def user_current_check_subscription_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Check if the current user is watching a repo  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: WatchInfo
@@ -14857,7 +14857,7 @@ class RepositoryApi(object):
     def user_current_delete_subscription(self, owner, repo, **kwargs):  # noqa: E501
         """Unwatch a repo  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: None
@@ -14872,7 +14872,7 @@ class RepositoryApi(object):
     def user_current_delete_subscription_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Unwatch a repo  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: None
@@ -14940,7 +14940,7 @@ class RepositoryApi(object):
     def user_current_put_subscription(self, owner, repo, **kwargs):  # noqa: E501
         """Watch a repo  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: WatchInfo
@@ -14955,7 +14955,7 @@ class RepositoryApi(object):
     def user_current_put_subscription_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Watch a repo  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: WatchInfo
@@ -15027,7 +15027,7 @@ class RepositoryApi(object):
     def user_tracked_times(self, owner, repo, user, **kwargs):  # noqa: E501
         """List a user's tracked times in a repo  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str user: username of user (required)
@@ -15043,7 +15043,7 @@ class RepositoryApi(object):
     def user_tracked_times_with_http_info(self, owner, repo, user, **kwargs):  # noqa: E501
         """List a user's tracked times in a repo  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str user: username of user (required)

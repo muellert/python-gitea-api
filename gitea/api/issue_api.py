@@ -42,7 +42,7 @@ class IssueApi(object):
     def issue_add_label(self, owner, repo, index, **kwargs):  # noqa: E501
         """Add a label to an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -59,7 +59,7 @@ class IssueApi(object):
     def issue_add_label_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Add a label to an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -145,7 +145,7 @@ class IssueApi(object):
     def issue_add_subscription(self, owner, repo, index, user, **kwargs):  # noqa: E501
         """Subscribe user to issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -162,7 +162,7 @@ class IssueApi(object):
     def issue_add_subscription_with_http_info(self, owner, repo, index, user, **kwargs):  # noqa: E501
         """Subscribe user to issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -244,7 +244,7 @@ class IssueApi(object):
     def issue_add_time(self, owner, repo, index, **kwargs):  # noqa: E501
         """Add tracked time to a issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -261,7 +261,7 @@ class IssueApi(object):
     def issue_add_time_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Add tracked time to a issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -347,7 +347,7 @@ class IssueApi(object):
     def issue_check_subscription(self, owner, repo, index, **kwargs):  # noqa: E501
         """Check if user is subscribed to an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -363,7 +363,7 @@ class IssueApi(object):
     def issue_check_subscription_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Check if user is subscribed to an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -442,7 +442,7 @@ class IssueApi(object):
     def issue_clear_labels(self, owner, repo, index, **kwargs):  # noqa: E501
         """Remove all labels from an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -458,7 +458,7 @@ class IssueApi(object):
     def issue_clear_labels_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Remove all labels from an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -533,7 +533,7 @@ class IssueApi(object):
     def issue_create_comment(self, owner, repo, index, **kwargs):  # noqa: E501
         """Add a comment to an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -550,7 +550,7 @@ class IssueApi(object):
     def issue_create_comment_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Add a comment to an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -636,7 +636,7 @@ class IssueApi(object):
     def issue_create_issue(self, owner, repo, **kwargs):  # noqa: E501
         """Create an issue. If using deadline only the date will be taken into account, and time of day ignored.  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param CreateIssueOption body:
@@ -652,7 +652,7 @@ class IssueApi(object):
     def issue_create_issue_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Create an issue. If using deadline only the date will be taken into account, and time of day ignored.  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param CreateIssueOption body:
@@ -731,7 +731,7 @@ class IssueApi(object):
     def issue_create_issue_attachment(self, attachment, owner, repo, index, **kwargs):  # noqa: E501
         """Create an issue attachment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str attachment: (required)
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
@@ -749,7 +749,7 @@ class IssueApi(object):
     def issue_create_issue_attachment_with_http_info(self, attachment, owner, repo, index, **kwargs):  # noqa: E501
         """Create an issue attachment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str attachment: (required)
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
@@ -842,7 +842,7 @@ class IssueApi(object):
     def issue_create_issue_blocking(self, owner, repo, index, **kwargs):  # noqa: E501
         """Block the issue given in the body by the issue in path  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str index: index of the issue (required)
@@ -859,7 +859,7 @@ class IssueApi(object):
     def issue_create_issue_blocking_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Block the issue given in the body by the issue in path  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str index: index of the issue (required)
@@ -945,7 +945,7 @@ class IssueApi(object):
     def issue_create_issue_comment_attachment(self, attachment, owner, repo, id, **kwargs):  # noqa: E501
         """Create a comment attachment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str attachment: (required)
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
@@ -963,7 +963,7 @@ class IssueApi(object):
     def issue_create_issue_comment_attachment_with_http_info(self, attachment, owner, repo, id, **kwargs):  # noqa: E501
         """Create a comment attachment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str attachment: (required)
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
@@ -1056,7 +1056,7 @@ class IssueApi(object):
     def issue_create_issue_dependencies(self, owner, repo, index, **kwargs):  # noqa: E501
         """Make the issue in the url depend on the issue in the form.  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str index: index of the issue (required)
@@ -1073,7 +1073,7 @@ class IssueApi(object):
     def issue_create_issue_dependencies_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Make the issue in the url depend on the issue in the form.  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str index: index of the issue (required)
@@ -1159,7 +1159,7 @@ class IssueApi(object):
     def issue_create_label(self, owner, repo, **kwargs):  # noqa: E501
         """Create a label  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param CreateLabelOption body:
@@ -1175,7 +1175,7 @@ class IssueApi(object):
     def issue_create_label_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Create a label  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param CreateLabelOption body:
@@ -1254,7 +1254,7 @@ class IssueApi(object):
     def issue_create_milestone(self, owner, repo, **kwargs):  # noqa: E501
         """Create a milestone  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param CreateMilestoneOption body:
@@ -1270,7 +1270,7 @@ class IssueApi(object):
     def issue_create_milestone_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Create a milestone  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param CreateMilestoneOption body:
@@ -1349,7 +1349,7 @@ class IssueApi(object):
     def issue_delete(self, owner, repo, index, **kwargs):  # noqa: E501
         """Delete an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of issue to delete (required)
@@ -1365,7 +1365,7 @@ class IssueApi(object):
     def issue_delete_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Delete an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of issue to delete (required)
@@ -1440,7 +1440,7 @@ class IssueApi(object):
     def issue_delete_comment(self, owner, repo, id, **kwargs):  # noqa: E501
         """Delete a comment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of comment to delete (required)
@@ -1456,7 +1456,7 @@ class IssueApi(object):
     def issue_delete_comment_with_http_info(self, owner, repo, id, **kwargs):  # noqa: E501
         """Delete a comment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of comment to delete (required)
@@ -1531,7 +1531,7 @@ class IssueApi(object):
     def issue_delete_comment_deprecated(self, owner, repo, index, id, **kwargs):  # noqa: E501
         """Delete a comment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: this parameter is ignored (required)
@@ -1548,7 +1548,7 @@ class IssueApi(object):
     def issue_delete_comment_deprecated_with_http_info(self, owner, repo, index, id, **kwargs):  # noqa: E501
         """Delete a comment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: this parameter is ignored (required)
@@ -1630,7 +1630,7 @@ class IssueApi(object):
     def issue_delete_comment_reaction(self, owner, repo, id, **kwargs):  # noqa: E501
         """Remove a reaction from a comment of an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the comment to edit (required)
@@ -1647,7 +1647,7 @@ class IssueApi(object):
     def issue_delete_comment_reaction_with_http_info(self, owner, repo, id, **kwargs):  # noqa: E501
         """Remove a reaction from a comment of an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the comment to edit (required)
@@ -1729,7 +1729,7 @@ class IssueApi(object):
     def issue_delete_issue_attachment(self, owner, repo, index, attachment_id, **kwargs):  # noqa: E501
         """Delete an issue attachment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -1746,7 +1746,7 @@ class IssueApi(object):
     def issue_delete_issue_attachment_with_http_info(self, owner, repo, index, attachment_id, **kwargs):  # noqa: E501
         """Delete an issue attachment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -1828,7 +1828,7 @@ class IssueApi(object):
     def issue_delete_issue_comment_attachment(self, owner, repo, id, attachment_id, **kwargs):  # noqa: E501
         """Delete a comment attachment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the comment (required)
@@ -1845,7 +1845,7 @@ class IssueApi(object):
     def issue_delete_issue_comment_attachment_with_http_info(self, owner, repo, id, attachment_id, **kwargs):  # noqa: E501
         """Delete a comment attachment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the comment (required)
@@ -1927,7 +1927,7 @@ class IssueApi(object):
     def issue_delete_issue_reaction(self, owner, repo, index, **kwargs):  # noqa: E501
         """Remove a reaction from an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -1944,7 +1944,7 @@ class IssueApi(object):
     def issue_delete_issue_reaction_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Remove a reaction from an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -2026,7 +2026,7 @@ class IssueApi(object):
     def issue_delete_label(self, owner, repo, id, **kwargs):  # noqa: E501
         """Delete a label  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the label to delete (required)
@@ -2042,7 +2042,7 @@ class IssueApi(object):
     def issue_delete_label_with_http_info(self, owner, repo, id, **kwargs):  # noqa: E501
         """Delete a label  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the label to delete (required)
@@ -2117,7 +2117,7 @@ class IssueApi(object):
     def issue_delete_milestone(self, owner, repo, id, **kwargs):  # noqa: E501
         """Delete a milestone  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str id: the milestone to delete, identified by ID and if not available by name (required)
@@ -2133,7 +2133,7 @@ class IssueApi(object):
     def issue_delete_milestone_with_http_info(self, owner, repo, id, **kwargs):  # noqa: E501
         """Delete a milestone  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str id: the milestone to delete, identified by ID and if not available by name (required)
@@ -2208,7 +2208,7 @@ class IssueApi(object):
     def issue_delete_stop_watch(self, owner, repo, index, **kwargs):  # noqa: E501
         """Delete an issue's existing stopwatch.  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue to stop the stopwatch on (required)
@@ -2224,7 +2224,7 @@ class IssueApi(object):
     def issue_delete_stop_watch_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Delete an issue's existing stopwatch.  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue to stop the stopwatch on (required)
@@ -2299,7 +2299,7 @@ class IssueApi(object):
     def issue_delete_subscription(self, owner, repo, index, user, **kwargs):  # noqa: E501
         """Unsubscribe user from issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -2316,7 +2316,7 @@ class IssueApi(object):
     def issue_delete_subscription_with_http_info(self, owner, repo, index, user, **kwargs):  # noqa: E501
         """Unsubscribe user from issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -2398,7 +2398,7 @@ class IssueApi(object):
     def issue_delete_time(self, owner, repo, index, id, **kwargs):  # noqa: E501
         """Delete specific tracked time  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -2415,7 +2415,7 @@ class IssueApi(object):
     def issue_delete_time_with_http_info(self, owner, repo, index, id, **kwargs):  # noqa: E501
         """Delete specific tracked time  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -2497,7 +2497,7 @@ class IssueApi(object):
     def issue_edit_comment(self, owner, repo, id, **kwargs):  # noqa: E501
         """Edit a comment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the comment to edit (required)
@@ -2514,7 +2514,7 @@ class IssueApi(object):
     def issue_edit_comment_with_http_info(self, owner, repo, id, **kwargs):  # noqa: E501
         """Edit a comment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the comment to edit (required)
@@ -2600,7 +2600,7 @@ class IssueApi(object):
     def issue_edit_comment_deprecated(self, owner, repo, index, id, **kwargs):  # noqa: E501
         """Edit a comment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: this parameter is ignored (required)
@@ -2618,7 +2618,7 @@ class IssueApi(object):
     def issue_edit_comment_deprecated_with_http_info(self, owner, repo, index, id, **kwargs):  # noqa: E501
         """Edit a comment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: this parameter is ignored (required)
@@ -2711,7 +2711,7 @@ class IssueApi(object):
     def issue_edit_issue(self, owner, repo, index, **kwargs):  # noqa: E501
         """Edit an issue. If using deadline only the date will be taken into account, and time of day ignored.  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue to edit (required)
@@ -2728,7 +2728,7 @@ class IssueApi(object):
     def issue_edit_issue_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Edit an issue. If using deadline only the date will be taken into account, and time of day ignored.  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue to edit (required)
@@ -2814,7 +2814,7 @@ class IssueApi(object):
     def issue_edit_issue_attachment(self, owner, repo, index, attachment_id, **kwargs):  # noqa: E501
         """Edit an issue attachment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -2832,7 +2832,7 @@ class IssueApi(object):
     def issue_edit_issue_attachment_with_http_info(self, owner, repo, index, attachment_id, **kwargs):  # noqa: E501
         """Edit an issue attachment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -2925,7 +2925,7 @@ class IssueApi(object):
     def issue_edit_issue_comment_attachment(self, owner, repo, id, attachment_id, **kwargs):  # noqa: E501
         """Edit a comment attachment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the comment (required)
@@ -2943,7 +2943,7 @@ class IssueApi(object):
     def issue_edit_issue_comment_attachment_with_http_info(self, owner, repo, id, attachment_id, **kwargs):  # noqa: E501
         """Edit a comment attachment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the comment (required)
@@ -3036,7 +3036,7 @@ class IssueApi(object):
     def issue_edit_issue_deadline(self, owner, repo, index, **kwargs):  # noqa: E501
         """Set an issue deadline. If set to null, the deadline is deleted. If using deadline only the date will be taken into account, and time of day ignored.  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue to create or update a deadline on (required)
@@ -3053,7 +3053,7 @@ class IssueApi(object):
     def issue_edit_issue_deadline_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Set an issue deadline. If set to null, the deadline is deleted. If using deadline only the date will be taken into account, and time of day ignored.  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue to create or update a deadline on (required)
@@ -3139,7 +3139,7 @@ class IssueApi(object):
     def issue_edit_label(self, owner, repo, id, **kwargs):  # noqa: E501
         """Update a label  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the label to edit (required)
@@ -3156,7 +3156,7 @@ class IssueApi(object):
     def issue_edit_label_with_http_info(self, owner, repo, id, **kwargs):  # noqa: E501
         """Update a label  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the label to edit (required)
@@ -3242,7 +3242,7 @@ class IssueApi(object):
     def issue_edit_milestone(self, owner, repo, id, **kwargs):  # noqa: E501
         """Update a milestone  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str id: the milestone to edit, identified by ID and if not available by name (required)
@@ -3259,7 +3259,7 @@ class IssueApi(object):
     def issue_edit_milestone_with_http_info(self, owner, repo, id, **kwargs):  # noqa: E501
         """Update a milestone  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str id: the milestone to edit, identified by ID and if not available by name (required)
@@ -3345,7 +3345,7 @@ class IssueApi(object):
     def issue_get_comment(self, owner, repo, id, **kwargs):  # noqa: E501
         """Get a comment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the comment (required)
@@ -3361,7 +3361,7 @@ class IssueApi(object):
     def issue_get_comment_with_http_info(self, owner, repo, id, **kwargs):  # noqa: E501
         """Get a comment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the comment (required)
@@ -3440,7 +3440,7 @@ class IssueApi(object):
     def issue_get_comment_reactions(self, owner, repo, id, **kwargs):  # noqa: E501
         """Get a list of reactions from a comment of an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the comment to edit (required)
@@ -3456,7 +3456,7 @@ class IssueApi(object):
     def issue_get_comment_reactions_with_http_info(self, owner, repo, id, **kwargs):  # noqa: E501
         """Get a list of reactions from a comment of an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the comment to edit (required)
@@ -3535,7 +3535,7 @@ class IssueApi(object):
     def issue_get_comments(self, owner, repo, index, **kwargs):  # noqa: E501
         """List all comments on an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -3553,7 +3553,7 @@ class IssueApi(object):
     def issue_get_comments_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """List all comments on an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -3638,7 +3638,7 @@ class IssueApi(object):
     def issue_get_comments_and_timeline(self, owner, repo, index, **kwargs):  # noqa: E501
         """List all comments and events on an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -3658,7 +3658,7 @@ class IssueApi(object):
     def issue_get_comments_and_timeline_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """List all comments and events on an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -3749,7 +3749,7 @@ class IssueApi(object):
     def issue_get_issue(self, owner, repo, index, **kwargs):  # noqa: E501
         """Get an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue to get (required)
@@ -3765,7 +3765,7 @@ class IssueApi(object):
     def issue_get_issue_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Get an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue to get (required)
@@ -3844,7 +3844,7 @@ class IssueApi(object):
     def issue_get_issue_attachment(self, owner, repo, index, attachment_id, **kwargs):  # noqa: E501
         """Get an issue attachment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -3861,7 +3861,7 @@ class IssueApi(object):
     def issue_get_issue_attachment_with_http_info(self, owner, repo, index, attachment_id, **kwargs):  # noqa: E501
         """Get an issue attachment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -3947,7 +3947,7 @@ class IssueApi(object):
     def issue_get_issue_comment_attachment(self, owner, repo, id, attachment_id, **kwargs):  # noqa: E501
         """Get a comment attachment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the comment (required)
@@ -3964,7 +3964,7 @@ class IssueApi(object):
     def issue_get_issue_comment_attachment_with_http_info(self, owner, repo, id, attachment_id, **kwargs):  # noqa: E501
         """Get a comment attachment  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the comment (required)
@@ -4050,7 +4050,7 @@ class IssueApi(object):
     def issue_get_issue_reactions(self, owner, repo, index, **kwargs):  # noqa: E501
         """Get a list reactions of an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -4068,7 +4068,7 @@ class IssueApi(object):
     def issue_get_issue_reactions_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Get a list reactions of an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -4153,7 +4153,7 @@ class IssueApi(object):
     def issue_get_label(self, owner, repo, id, **kwargs):  # noqa: E501
         """Get a single label  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the label to get (required)
@@ -4169,7 +4169,7 @@ class IssueApi(object):
     def issue_get_label_with_http_info(self, owner, repo, id, **kwargs):  # noqa: E501
         """Get a single label  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the label to get (required)
@@ -4248,7 +4248,7 @@ class IssueApi(object):
     def issue_get_labels(self, owner, repo, index, **kwargs):  # noqa: E501
         """Get an issue's labels  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -4264,7 +4264,7 @@ class IssueApi(object):
     def issue_get_labels_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Get an issue's labels  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -4343,7 +4343,7 @@ class IssueApi(object):
     def issue_get_milestone(self, owner, repo, id, **kwargs):  # noqa: E501
         """Get a milestone  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str id: the milestone to get, identified by ID and if not available by name (required)
@@ -4359,7 +4359,7 @@ class IssueApi(object):
     def issue_get_milestone_with_http_info(self, owner, repo, id, **kwargs):  # noqa: E501
         """Get a milestone  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str id: the milestone to get, identified by ID and if not available by name (required)
@@ -4438,7 +4438,7 @@ class IssueApi(object):
     def issue_get_milestones_list(self, owner, repo, **kwargs):  # noqa: E501
         """Get all of a repository's opened milestones  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str state: Milestone state, Recognized values are open, closed and all. Defaults to \"open\"
@@ -4457,7 +4457,7 @@ class IssueApi(object):
     def issue_get_milestones_list_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Get all of a repository's opened milestones  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str state: Milestone state, Recognized values are open, closed and all. Defaults to \"open\"
@@ -4541,7 +4541,7 @@ class IssueApi(object):
     def issue_get_repo_comments(self, owner, repo, **kwargs):  # noqa: E501
         """List all comments in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param datetime since: if provided, only comments updated since the provided time are returned.
@@ -4560,7 +4560,7 @@ class IssueApi(object):
     def issue_get_repo_comments_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """List all comments in a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param datetime since: if provided, only comments updated since the provided time are returned.
@@ -4644,7 +4644,7 @@ class IssueApi(object):
     def issue_list_blocks(self, owner, repo, index, **kwargs):  # noqa: E501
         """List issues that are blocked by this issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str index: index of the issue (required)
@@ -4662,7 +4662,7 @@ class IssueApi(object):
     def issue_list_blocks_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """List issues that are blocked by this issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str index: index of the issue (required)
@@ -4747,7 +4747,7 @@ class IssueApi(object):
     def issue_list_issue_attachments(self, owner, repo, index, **kwargs):  # noqa: E501
         """List issue's attachments  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -4763,7 +4763,7 @@ class IssueApi(object):
     def issue_list_issue_attachments_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """List issue's attachments  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -4842,7 +4842,7 @@ class IssueApi(object):
     def issue_list_issue_comment_attachments(self, owner, repo, id, **kwargs):  # noqa: E501
         """List comment's attachments  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the comment (required)
@@ -4858,7 +4858,7 @@ class IssueApi(object):
     def issue_list_issue_comment_attachments_with_http_info(self, owner, repo, id, **kwargs):  # noqa: E501
         """List comment's attachments  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the comment (required)
@@ -4950,7 +4950,7 @@ class IssueApi(object):
     def issue_list_issue_dependencies_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """List an issue's dependencies, i.e all issues that block this issue.  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str index: index of the issue (required)
@@ -5035,7 +5035,7 @@ class IssueApi(object):
     def issue_list_issues(self, owner, repo, **kwargs):  # noqa: E501
         """List a repository's issues  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str state: whether issue is open or closed
@@ -5062,7 +5062,7 @@ class IssueApi(object):
     def issue_list_issues_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """List a repository's issues  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str state: whether issue is open or closed
@@ -5170,7 +5170,7 @@ class IssueApi(object):
     def issue_list_labels(self, owner, repo, **kwargs):  # noqa: E501
         """Get all of a repository's labels  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int page: page number of results to return (1-based)
@@ -5187,7 +5187,7 @@ class IssueApi(object):
     def issue_list_labels_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Get all of a repository's labels  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int page: page number of results to return (1-based)
@@ -5265,7 +5265,7 @@ class IssueApi(object):
     def issue_post_comment_reaction(self, owner, repo, id, **kwargs):  # noqa: E501
         """Add a reaction to a comment of an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the comment to edit (required)
@@ -5282,7 +5282,7 @@ class IssueApi(object):
     def issue_post_comment_reaction_with_http_info(self, owner, repo, id, **kwargs):  # noqa: E501
         """Add a reaction to a comment of an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int id: id of the comment to edit (required)
@@ -5368,7 +5368,7 @@ class IssueApi(object):
     def issue_post_issue_reaction(self, owner, repo, index, **kwargs):  # noqa: E501
         """Add a reaction to an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -5385,7 +5385,7 @@ class IssueApi(object):
     def issue_post_issue_reaction_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Add a reaction to an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -5471,7 +5471,7 @@ class IssueApi(object):
     def issue_remove_issue_blocking(self, owner, repo, index, **kwargs):  # noqa: E501
         """Unblock the issue given in the body by the issue in path  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str index: index of the issue (required)
@@ -5488,7 +5488,7 @@ class IssueApi(object):
     def issue_remove_issue_blocking_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Unblock the issue given in the body by the issue in path  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str index: index of the issue (required)
@@ -5574,7 +5574,7 @@ class IssueApi(object):
     def issue_remove_issue_dependencies(self, owner, repo, index, **kwargs):  # noqa: E501
         """Remove an issue dependency  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str index: index of the issue (required)
@@ -5591,7 +5591,7 @@ class IssueApi(object):
     def issue_remove_issue_dependencies_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Remove an issue dependency  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str index: index of the issue (required)
@@ -5677,7 +5677,7 @@ class IssueApi(object):
     def issue_remove_label(self, owner, repo, index, id, **kwargs):  # noqa: E501
         """Remove a label from an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -5694,7 +5694,7 @@ class IssueApi(object):
     def issue_remove_label_with_http_info(self, owner, repo, index, id, **kwargs):  # noqa: E501
         """Remove a label from an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -5776,7 +5776,7 @@ class IssueApi(object):
     def issue_replace_labels(self, owner, repo, index, **kwargs):  # noqa: E501
         """Replace an issue's labels  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -5793,7 +5793,7 @@ class IssueApi(object):
     def issue_replace_labels_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Replace an issue's labels  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -5879,7 +5879,7 @@ class IssueApi(object):
     def issue_reset_time(self, owner, repo, index, **kwargs):  # noqa: E501
         """Reset a tracked time of an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue to add tracked time to (required)
@@ -5895,7 +5895,7 @@ class IssueApi(object):
     def issue_reset_time_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Reset a tracked time of an issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue to add tracked time to (required)
@@ -5970,7 +5970,7 @@ class IssueApi(object):
     def issue_search_issues(self, **kwargs):  # noqa: E501
         """Search for issues across the repositories that the user has access to  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str state: whether issue is open or closed
         :param str labels: comma separated list of labels. Fetch only issues that have any of this labels. Non existent labels are discarded
         :param str milestones: comma separated list of milestone names. Fetch only issues that have any of this milestones. Non existent are discarded
@@ -6000,7 +6000,7 @@ class IssueApi(object):
     def issue_search_issues_with_http_info(self, **kwargs):  # noqa: E501
         """Search for issues across the repositories that the user has access to  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str state: whether issue is open or closed
         :param str labels: comma separated list of labels. Fetch only issues that have any of this labels. Non existent labels are discarded
         :param str milestones: comma separated list of milestone names. Fetch only issues that have any of this milestones. Non existent are discarded
@@ -6109,7 +6109,7 @@ class IssueApi(object):
     def issue_start_stop_watch(self, owner, repo, index, **kwargs):  # noqa: E501
         """Start stopwatch on an issue.  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue to create the stopwatch on (required)
@@ -6125,7 +6125,7 @@ class IssueApi(object):
     def issue_start_stop_watch_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Start stopwatch on an issue.  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue to create the stopwatch on (required)
@@ -6200,7 +6200,7 @@ class IssueApi(object):
     def issue_stop_stop_watch(self, owner, repo, index, **kwargs):  # noqa: E501
         """Stop an issue's existing stopwatch.  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue to stop the stopwatch on (required)
@@ -6216,7 +6216,7 @@ class IssueApi(object):
     def issue_stop_stop_watch_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Stop an issue's existing stopwatch.  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue to stop the stopwatch on (required)
@@ -6291,7 +6291,7 @@ class IssueApi(object):
     def issue_subscriptions(self, owner, repo, index, **kwargs):  # noqa: E501
         """Get users who subscribed on an issue.  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -6309,7 +6309,7 @@ class IssueApi(object):
     def issue_subscriptions_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Get users who subscribed on an issue.  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -6394,7 +6394,7 @@ class IssueApi(object):
     def issue_tracked_times(self, owner, repo, index, **kwargs):  # noqa: E501
         """List an issue's tracked times  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -6415,7 +6415,7 @@ class IssueApi(object):
     def issue_tracked_times_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """List an issue's tracked times  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of the issue (required)
@@ -6509,7 +6509,7 @@ class IssueApi(object):
     def move_issue_pin(self, owner, repo, index, position, **kwargs):  # noqa: E501
         """Moves the Pin to the given Position  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of issue (required)
@@ -6526,7 +6526,7 @@ class IssueApi(object):
     def move_issue_pin_with_http_info(self, owner, repo, index, position, **kwargs):  # noqa: E501
         """Moves the Pin to the given Position  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of issue (required)
@@ -6608,7 +6608,7 @@ class IssueApi(object):
     def pin_issue(self, owner, repo, index, **kwargs):  # noqa: E501
         """Pin an Issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of issue to pin (required)
@@ -6624,7 +6624,7 @@ class IssueApi(object):
     def pin_issue_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Pin an Issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of issue to pin (required)
@@ -6699,7 +6699,7 @@ class IssueApi(object):
     def unpin_issue(self, owner, repo, index, **kwargs):  # noqa: E501
         """Unpin an Issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of issue to unpin (required)
@@ -6715,7 +6715,7 @@ class IssueApi(object):
     def unpin_issue_with_http_info(self, owner, repo, index, **kwargs):  # noqa: E501
         """Unpin an Issue  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param int index: index of issue to unpin (required)

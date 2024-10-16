@@ -42,7 +42,7 @@ class MiscellaneousApi(object):
     def get_gitignore_template_info(self, name, **kwargs):  # noqa: E501
         """Returns information about a gitignore template  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str name: name of the template (required)
         :return: GitignoreTemplateInfo
         """
@@ -56,7 +56,7 @@ class MiscellaneousApi(object):
     def get_gitignore_template_info_with_http_info(self, name, **kwargs):  # noqa: E501
         """Returns information about a gitignore template  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str name: name of the template (required)
         :return: GitignoreTemplateInfo
         """
@@ -121,7 +121,7 @@ class MiscellaneousApi(object):
     def get_label_template_info(self, name, **kwargs):  # noqa: E501
         """Returns all labels in a template  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str name: name of the template (required)
         :return: list[LabelTemplate]
         """
@@ -135,7 +135,7 @@ class MiscellaneousApi(object):
     def get_label_template_info_with_http_info(self, name, **kwargs):  # noqa: E501
         """Returns all labels in a template  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str name: name of the template (required)
         :return: list[LabelTemplate]
         """
@@ -200,7 +200,7 @@ class MiscellaneousApi(object):
     def get_license_template_info(self, name, **kwargs):  # noqa: E501
         """Returns information about a license template  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str name: name of the license (required)
         :return: LicenseTemplateInfo
         """
@@ -214,7 +214,7 @@ class MiscellaneousApi(object):
     def get_license_template_info_with_http_info(self, name, **kwargs):  # noqa: E501
         """Returns information about a license template  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str name: name of the license (required)
         :return: LicenseTemplateInfo
         """
@@ -279,7 +279,7 @@ class MiscellaneousApi(object):
     def get_node_info(self, **kwargs):  # noqa: E501
         """Returns the nodeinfo of the Gitea application  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: NodeInfo
         """
         kwargs['_return_http_data_only'] = True
@@ -292,7 +292,7 @@ class MiscellaneousApi(object):
     def get_node_info_with_http_info(self, **kwargs):  # noqa: E501
         """Returns the nodeinfo of the Gitea application  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: NodeInfo
         """
 
@@ -350,7 +350,7 @@ class MiscellaneousApi(object):
     def get_signing_key(self, **kwargs):  # noqa: E501
         """Get default signing-key.gpg  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: str
         """
         kwargs['_return_http_data_only'] = True
@@ -363,7 +363,7 @@ class MiscellaneousApi(object):
     def get_signing_key_with_http_info(self, **kwargs):  # noqa: E501
         """Get default signing-key.gpg  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: str
         """
 
@@ -421,7 +421,7 @@ class MiscellaneousApi(object):
     def get_version(self, **kwargs):  # noqa: E501
         """Returns the version of the Gitea application  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: ServerVersion
         """
         kwargs['_return_http_data_only'] = True
@@ -434,7 +434,7 @@ class MiscellaneousApi(object):
     def get_version_with_http_info(self, **kwargs):  # noqa: E501
         """Returns the version of the Gitea application  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: ServerVersion
         """
 
@@ -492,7 +492,7 @@ class MiscellaneousApi(object):
     def list_gitignores_templates(self, **kwargs):  # noqa: E501
         """Returns a list of all gitignore templates  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: list[str]
         """
         kwargs['_return_http_data_only'] = True
@@ -505,7 +505,7 @@ class MiscellaneousApi(object):
     def list_gitignores_templates_with_http_info(self, **kwargs):  # noqa: E501
         """Returns a list of all gitignore templates  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: list[str]
         """
 
@@ -563,7 +563,7 @@ class MiscellaneousApi(object):
     def list_label_templates(self, **kwargs):  # noqa: E501
         """Returns a list of all label templates  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: list[str]
         """
         kwargs['_return_http_data_only'] = True
@@ -576,7 +576,7 @@ class MiscellaneousApi(object):
     def list_label_templates_with_http_info(self, **kwargs):  # noqa: E501
         """Returns a list of all label templates  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: list[str]
         """
 
@@ -634,7 +634,7 @@ class MiscellaneousApi(object):
     def list_license_templates(self, **kwargs):  # noqa: E501
         """Returns a list of all license templates  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: list[LicensesTemplateListEntry]
         """
         kwargs['_return_http_data_only'] = True
@@ -647,7 +647,7 @@ class MiscellaneousApi(object):
     def list_license_templates_with_http_info(self, **kwargs):  # noqa: E501
         """Returns a list of all license templates  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: list[LicensesTemplateListEntry]
         """
 
@@ -705,7 +705,7 @@ class MiscellaneousApi(object):
     def render_markdown(self, **kwargs):  # noqa: E501
         """Render a markdown document as HTML  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param MarkdownOption body:
         :return: str
         """
@@ -719,7 +719,7 @@ class MiscellaneousApi(object):
     def render_markdown_with_http_info(self, **kwargs):  # noqa: E501
         """Render a markdown document as HTML  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param MarkdownOption body:
         :return: str
         """
@@ -784,7 +784,7 @@ class MiscellaneousApi(object):
     def render_markdown_raw(self, body, **kwargs):  # noqa: E501
         """Render raw markdown as HTML  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str body: Request body to render (required)
         :return: str
         """
@@ -798,7 +798,7 @@ class MiscellaneousApi(object):
     def render_markdown_raw_with_http_info(self, body, **kwargs):  # noqa: E501
         """Render raw markdown as HTML  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str body: Request body to render (required)
         :return: str
         """
@@ -867,7 +867,7 @@ class MiscellaneousApi(object):
     def render_markup(self, **kwargs):  # noqa: E501
         """Render a markup document as HTML  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param MarkupOption body:
         :return: str
         """
@@ -881,7 +881,7 @@ class MiscellaneousApi(object):
     def render_markup_with_http_info(self, **kwargs):  # noqa: E501
         """Render a markup document as HTML  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param MarkupOption body:
         :return: str
         """

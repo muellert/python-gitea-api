@@ -42,7 +42,7 @@ class PackageApi(object):
     def delete_package(self, owner, type, name, version, **kwargs):  # noqa: E501
         """Delete a package  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the package (required)
         :param str type: type of the package (required)
         :param str name: name of the package (required)
@@ -59,7 +59,7 @@ class PackageApi(object):
     def delete_package_with_http_info(self, owner, type, name, version, **kwargs):  # noqa: E501
         """Delete a package  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the package (required)
         :param str type: type of the package (required)
         :param str name: name of the package (required)
@@ -141,7 +141,7 @@ class PackageApi(object):
     def get_package(self, owner, type, name, version, **kwargs):  # noqa: E501
         """Gets a package  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the package (required)
         :param str type: type of the package (required)
         :param str name: name of the package (required)
@@ -158,7 +158,7 @@ class PackageApi(object):
     def get_package_with_http_info(self, owner, type, name, version, **kwargs):  # noqa: E501
         """Gets a package  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the package (required)
         :param str type: type of the package (required)
         :param str name: name of the package (required)
@@ -244,7 +244,7 @@ class PackageApi(object):
     def list_package_files(self, owner, type, name, version, **kwargs):  # noqa: E501
         """Gets all files of a package  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the package (required)
         :param str type: type of the package (required)
         :param str name: name of the package (required)
@@ -261,7 +261,7 @@ class PackageApi(object):
     def list_package_files_with_http_info(self, owner, type, name, version, **kwargs):  # noqa: E501
         """Gets all files of a package  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the package (required)
         :param str type: type of the package (required)
         :param str name: name of the package (required)
@@ -347,7 +347,7 @@ class PackageApi(object):
     def list_packages(self, owner, **kwargs):  # noqa: E501
         """Gets all packages of an owner  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the packages (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -365,7 +365,7 @@ class PackageApi(object):
     def list_packages_with_http_info(self, owner, **kwargs):  # noqa: E501
         """Gets all packages of an owner  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the packages (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results

@@ -42,7 +42,7 @@ class ActivitypubApi(object):
     def activitypub_person(self, user_id, **kwargs):  # noqa: E501
         """Returns the Person actor for a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int user_id: user ID of the user (required)
         :return: ActivityPub
         """
@@ -56,7 +56,7 @@ class ActivitypubApi(object):
     def activitypub_person_with_http_info(self, user_id, **kwargs):  # noqa: E501
         """Returns the Person actor for a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int user_id: user ID of the user (required)
         :return: ActivityPub
         """
@@ -121,7 +121,7 @@ class ActivitypubApi(object):
     def activitypub_person_inbox(self, user_id, **kwargs):  # noqa: E501
         """Send to the inbox  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int user_id: user ID of the user (required)
         :return: None
         """
@@ -135,7 +135,7 @@ class ActivitypubApi(object):
     def activitypub_person_inbox_with_http_info(self, user_id, **kwargs):  # noqa: E501
         """Send to the inbox  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int user_id: user ID of the user (required)
         :return: None
         """

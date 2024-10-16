@@ -37,7 +37,7 @@ class OrganizationApi(object):
     def create_org_repo(self, org, **kwargs):  # noqa: E501
         """Create a repository in an organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of organization (required)
         :param CreateRepoOption body:
         :return: Repository
@@ -52,7 +52,7 @@ class OrganizationApi(object):
     def create_org_repo_with_http_info(self, org, **kwargs):  # noqa: E501
         """Create a repository in an organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of organization (required)
         :param CreateRepoOption body:
         :return: Repository
@@ -124,7 +124,7 @@ class OrganizationApi(object):
     def create_org_repo_deprecated(self, org, **kwargs):  # noqa: E501
         """Create a repository in an organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of organization (required)
         :param CreateRepoOption body:
         :return: Repository
@@ -139,7 +139,7 @@ class OrganizationApi(object):
     def create_org_repo_deprecated_with_http_info(self, org, **kwargs):  # noqa: E501
         """Create a repository in an organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of organization (required)
         :param CreateRepoOption body:
         :return: Repository
@@ -211,7 +211,7 @@ class OrganizationApi(object):
     def create_org_variable(self, org, variablename, **kwargs):  # noqa: E501
         """Create an org-level variable  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param str variablename: name of the variable (required)
         :param CreateVariableOption body:
@@ -227,7 +227,7 @@ class OrganizationApi(object):
     def create_org_variable_with_http_info(self, org, variablename, **kwargs):  # noqa: E501
         """Create an org-level variable  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param str variablename: name of the variable (required)
         :param CreateVariableOption body:
@@ -302,7 +302,7 @@ class OrganizationApi(object):
     def delete_org_secret(self, org, secretname, **kwargs):  # noqa: E501
         """Delete a secret in an organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of organization (required)
         :param str secretname: name of the secret (required)
         :return: None
@@ -317,7 +317,7 @@ class OrganizationApi(object):
     def delete_org_secret_with_http_info(self, org, secretname, **kwargs):  # noqa: E501
         """Delete a secret in an organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of organization (required)
         :param str secretname: name of the secret (required)
         :return: None
@@ -385,7 +385,7 @@ class OrganizationApi(object):
     def delete_org_variable(self, org, variablename, **kwargs):  # noqa: E501
         """Delete an org-level variable  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param str variablename: name of the variable (required)
         :return: ActionVariable
@@ -400,7 +400,7 @@ class OrganizationApi(object):
     def delete_org_variable_with_http_info(self, org, variablename, **kwargs):  # noqa: E501
         """Delete an org-level variable  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param str variablename: name of the variable (required)
         :return: ActionVariable
@@ -472,7 +472,7 @@ class OrganizationApi(object):
     def get_org_variable(self, org, variablename, **kwargs):  # noqa: E501
         """Get an org-level variable  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param str variablename: name of the variable (required)
         :return: ActionVariable
@@ -487,7 +487,7 @@ class OrganizationApi(object):
     def get_org_variable_with_http_info(self, org, variablename, **kwargs):  # noqa: E501
         """Get an org-level variable  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param str variablename: name of the variable (required)
         :return: ActionVariable
@@ -559,7 +559,7 @@ class OrganizationApi(object):
     def get_org_variables_list(self, org, **kwargs):  # noqa: E501
         """Get an org-level variables list  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -575,7 +575,7 @@ class OrganizationApi(object):
     def get_org_variables_list_with_http_info(self, org, **kwargs):  # noqa: E501
         """Get an org-level variables list  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -646,7 +646,7 @@ class OrganizationApi(object):
     def org_add_team_member(self, id, username, **kwargs):  # noqa: E501
         """Add a team member  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the team (required)
         :param str username: username of the user to add (required)
         :return: None
@@ -661,7 +661,7 @@ class OrganizationApi(object):
     def org_add_team_member_with_http_info(self, id, username, **kwargs):  # noqa: E501
         """Add a team member  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the team (required)
         :param str username: username of the user to add (required)
         :return: None
@@ -729,7 +729,7 @@ class OrganizationApi(object):
     def org_add_team_repository(self, id, org, repo, **kwargs):  # noqa: E501
         """Add a repository to a team  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the team (required)
         :param str org: organization that owns the repo to add (required)
         :param str repo: name of the repo to add (required)
@@ -745,7 +745,7 @@ class OrganizationApi(object):
     def org_add_team_repository_with_http_info(self, id, org, repo, **kwargs):  # noqa: E501
         """Add a repository to a team  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the team (required)
         :param str org: organization that owns the repo to add (required)
         :param str repo: name of the repo to add (required)
@@ -820,7 +820,7 @@ class OrganizationApi(object):
     def org_conceal_member(self, org, username, **kwargs):  # noqa: E501
         """Conceal a user's membership  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param str username: username of the user (required)
         :return: None
@@ -835,7 +835,7 @@ class OrganizationApi(object):
     def org_conceal_member_with_http_info(self, org, username, **kwargs):  # noqa: E501
         """Conceal a user's membership  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param str username: username of the user (required)
         :return: None
@@ -903,7 +903,7 @@ class OrganizationApi(object):
     def org_create(self, body, **kwargs):  # noqa: E501
         """Create an organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateOrgOption body: (required)
         :return: Organization
         """
@@ -917,7 +917,7 @@ class OrganizationApi(object):
     def org_create_with_http_info(self, body, **kwargs):  # noqa: E501
         """Create an organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateOrgOption body: (required)
         :return: Organization
         """
@@ -986,7 +986,7 @@ class OrganizationApi(object):
     def org_create_hook(self, body, org, **kwargs):  # noqa: E501
         """Create a hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateHookOption body: (required)
         :param str org: name of the organization (required)
         :return: Hook
@@ -1001,7 +1001,7 @@ class OrganizationApi(object):
     def org_create_hook_with_http_info(self, body, org, **kwargs):  # noqa: E501
         """Create a hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateHookOption body: (required)
         :param str org: name of the organization (required)
         :return: Hook
@@ -1077,7 +1077,7 @@ class OrganizationApi(object):
     def org_create_label(self, org, **kwargs):  # noqa: E501
         """Create a label for an organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param CreateLabelOption body:
         :return: Label
@@ -1092,7 +1092,7 @@ class OrganizationApi(object):
     def org_create_label_with_http_info(self, org, **kwargs):  # noqa: E501
         """Create a label for an organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param CreateLabelOption body:
         :return: Label
@@ -1164,7 +1164,7 @@ class OrganizationApi(object):
     def org_create_team(self, org, **kwargs):  # noqa: E501
         """Create a team  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param CreateTeamOption body:
         :return: Team
@@ -1179,7 +1179,7 @@ class OrganizationApi(object):
     def org_create_team_with_http_info(self, org, **kwargs):  # noqa: E501
         """Create a team  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param CreateTeamOption body:
         :return: Team
@@ -1251,7 +1251,7 @@ class OrganizationApi(object):
     def org_delete(self, org, **kwargs):  # noqa: E501
         """Delete an organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: organization that is to be deleted (required)
         :return: None
         """
@@ -1265,7 +1265,7 @@ class OrganizationApi(object):
     def org_delete_with_http_info(self, org, **kwargs):  # noqa: E501
         """Delete an organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: organization that is to be deleted (required)
         :return: None
         """
@@ -1326,7 +1326,7 @@ class OrganizationApi(object):
     def org_delete_avatar(self, org, **kwargs):  # noqa: E501
         """Delete Avatar  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :return: None
         """
@@ -1340,7 +1340,7 @@ class OrganizationApi(object):
     def org_delete_avatar_with_http_info(self, org, **kwargs):  # noqa: E501
         """Delete Avatar  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :return: None
         """
@@ -1401,7 +1401,7 @@ class OrganizationApi(object):
     def org_delete_hook(self, org, id, **kwargs):  # noqa: E501
         """Delete a hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int id: id of the hook to delete (required)
         :return: None
@@ -1416,7 +1416,7 @@ class OrganizationApi(object):
     def org_delete_hook_with_http_info(self, org, id, **kwargs):  # noqa: E501
         """Delete a hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int id: id of the hook to delete (required)
         :return: None
@@ -1484,7 +1484,7 @@ class OrganizationApi(object):
     def org_delete_label(self, org, id, **kwargs):  # noqa: E501
         """Delete a label  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int id: id of the label to delete (required)
         :return: None
@@ -1499,7 +1499,7 @@ class OrganizationApi(object):
     def org_delete_label_with_http_info(self, org, id, **kwargs):  # noqa: E501
         """Delete a label  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int id: id of the label to delete (required)
         :return: None
@@ -1567,7 +1567,7 @@ class OrganizationApi(object):
     def org_delete_member(self, org, username, **kwargs):  # noqa: E501
         """Remove a member from an organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param str username: username of the user (required)
         :return: None
@@ -1582,7 +1582,7 @@ class OrganizationApi(object):
     def org_delete_member_with_http_info(self, org, username, **kwargs):  # noqa: E501
         """Remove a member from an organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param str username: username of the user (required)
         :return: None
@@ -1650,7 +1650,7 @@ class OrganizationApi(object):
     def org_delete_team(self, id, **kwargs):  # noqa: E501
         """Delete a team  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the team to delete (required)
         :return: None
         """
@@ -1664,7 +1664,7 @@ class OrganizationApi(object):
     def org_delete_team_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete a team  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the team to delete (required)
         :return: None
         """
@@ -1725,7 +1725,7 @@ class OrganizationApi(object):
     def org_edit(self, body, org, **kwargs):  # noqa: E501
         """Edit an organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param EditOrgOption body: (required)
         :param str org: name of the organization to edit (required)
         :return: Organization
@@ -1740,7 +1740,7 @@ class OrganizationApi(object):
     def org_edit_with_http_info(self, body, org, **kwargs):  # noqa: E501
         """Edit an organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param EditOrgOption body: (required)
         :param str org: name of the organization to edit (required)
         :return: Organization
@@ -1816,7 +1816,7 @@ class OrganizationApi(object):
     def org_edit_hook(self, org, id, **kwargs):  # noqa: E501
         """Update a hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int id: id of the hook to update (required)
         :param EditHookOption body:
@@ -1832,7 +1832,7 @@ class OrganizationApi(object):
     def org_edit_hook_with_http_info(self, org, id, **kwargs):  # noqa: E501
         """Update a hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int id: id of the hook to update (required)
         :param EditHookOption body:
@@ -1911,7 +1911,7 @@ class OrganizationApi(object):
     def org_edit_label(self, org, id, **kwargs):  # noqa: E501
         """Update a label  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int id: id of the label to edit (required)
         :param EditLabelOption body:
@@ -1927,7 +1927,7 @@ class OrganizationApi(object):
     def org_edit_label_with_http_info(self, org, id, **kwargs):  # noqa: E501
         """Update a label  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int id: id of the label to edit (required)
         :param EditLabelOption body:
@@ -2006,7 +2006,7 @@ class OrganizationApi(object):
     def org_edit_team(self, id, **kwargs):  # noqa: E501
         """Edit a team  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the team to edit (required)
         :param EditTeamOption body:
         :return: Team
@@ -2021,7 +2021,7 @@ class OrganizationApi(object):
     def org_edit_team_with_http_info(self, id, **kwargs):  # noqa: E501
         """Edit a team  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the team to edit (required)
         :param EditTeamOption body:
         :return: Team
@@ -2093,7 +2093,7 @@ class OrganizationApi(object):
     def org_get(self, org, **kwargs):  # noqa: E501
         """Get an organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization to get (required)
         :return: Organization
         """
@@ -2107,7 +2107,7 @@ class OrganizationApi(object):
     def org_get_with_http_info(self, org, **kwargs):  # noqa: E501
         """Get an organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization to get (required)
         :return: Organization
         """
@@ -2172,7 +2172,7 @@ class OrganizationApi(object):
     def org_get_all(self, **kwargs):  # noqa: E501
         """Get list of organizations  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Organization]
@@ -2187,7 +2187,7 @@ class OrganizationApi(object):
     def org_get_all_with_http_info(self, **kwargs):  # noqa: E501
         """Get list of organizations  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Organization]
@@ -2251,7 +2251,7 @@ class OrganizationApi(object):
     def org_get_hook(self, org, id, **kwargs):  # noqa: E501
         """Get a hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int id: id of the hook to get (required)
         :return: Hook
@@ -2266,7 +2266,7 @@ class OrganizationApi(object):
     def org_get_hook_with_http_info(self, org, id, **kwargs):  # noqa: E501
         """Get a hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int id: id of the hook to get (required)
         :return: Hook
@@ -2338,7 +2338,7 @@ class OrganizationApi(object):
     def org_get_label(self, org, id, **kwargs):  # noqa: E501
         """Get a single label  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int id: id of the label to get (required)
         :return: Label
@@ -2353,7 +2353,7 @@ class OrganizationApi(object):
     def org_get_label_with_http_info(self, org, id, **kwargs):  # noqa: E501
         """Get a single label  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int id: id of the label to get (required)
         :return: Label
@@ -2425,7 +2425,7 @@ class OrganizationApi(object):
     def org_get_runner_registration_token(self, org, **kwargs):  # noqa: E501
         """Get an organization's actions runner registration token  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :return: None
         """
@@ -2439,7 +2439,7 @@ class OrganizationApi(object):
     def org_get_runner_registration_token_with_http_info(self, org, **kwargs):  # noqa: E501
         """Get an organization's actions runner registration token  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :return: None
         """
@@ -2500,7 +2500,7 @@ class OrganizationApi(object):
     def org_get_team(self, id, **kwargs):  # noqa: E501
         """Get a team  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the team to get (required)
         :return: Team
         """
@@ -2514,7 +2514,7 @@ class OrganizationApi(object):
     def org_get_team_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a team  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the team to get (required)
         :return: Team
         """
@@ -2579,7 +2579,7 @@ class OrganizationApi(object):
     def org_get_user_permissions(self, username, org, **kwargs):  # noqa: E501
         """Get user permissions in organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param str org: name of the organization (required)
         :return: OrganizationPermissions
@@ -2594,7 +2594,7 @@ class OrganizationApi(object):
     def org_get_user_permissions_with_http_info(self, username, org, **kwargs):  # noqa: E501
         """Get user permissions in organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param str org: name of the organization (required)
         :return: OrganizationPermissions
@@ -2666,7 +2666,7 @@ class OrganizationApi(object):
     def org_is_member(self, org, username, **kwargs):  # noqa: E501
         """Check if a user is a member of an organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param str username: username of the user (required)
         :return: None
@@ -2681,7 +2681,7 @@ class OrganizationApi(object):
     def org_is_member_with_http_info(self, org, username, **kwargs):  # noqa: E501
         """Check if a user is a member of an organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param str username: username of the user (required)
         :return: None
@@ -2749,7 +2749,7 @@ class OrganizationApi(object):
     def org_is_public_member(self, org, username, **kwargs):  # noqa: E501
         """Check if a user is a public member of an organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param str username: username of the user (required)
         :return: None
@@ -2764,7 +2764,7 @@ class OrganizationApi(object):
     def org_is_public_member_with_http_info(self, org, username, **kwargs):  # noqa: E501
         """Check if a user is a public member of an organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param str username: username of the user (required)
         :return: None
@@ -2832,7 +2832,7 @@ class OrganizationApi(object):
     def org_list_actions_secrets(self, org, **kwargs):  # noqa: E501
         """List an organization's actions secrets  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -2848,7 +2848,7 @@ class OrganizationApi(object):
     def org_list_actions_secrets_with_http_info(self, org, **kwargs):  # noqa: E501
         """List an organization's actions secrets  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -2919,7 +2919,7 @@ class OrganizationApi(object):
     def org_list_activity_feeds(self, org, **kwargs):  # noqa: E501
         """List an organization's activity feeds  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the org (required)
         :param date _date: the date of the activities to be found
         :param int page: page number of results to return (1-based)
@@ -2936,7 +2936,7 @@ class OrganizationApi(object):
     def org_list_activity_feeds_with_http_info(self, org, **kwargs):  # noqa: E501
         """List an organization's activity feeds  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the org (required)
         :param date _date: the date of the activities to be found
         :param int page: page number of results to return (1-based)
@@ -3010,7 +3010,7 @@ class OrganizationApi(object):
     def org_list_current_user_orgs(self, **kwargs):  # noqa: E501
         """List the current user's organizations  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Organization]
@@ -3025,7 +3025,7 @@ class OrganizationApi(object):
     def org_list_current_user_orgs_with_http_info(self, **kwargs):  # noqa: E501
         """List the current user's organizations  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Organization]
@@ -3089,7 +3089,7 @@ class OrganizationApi(object):
     def org_list_hooks(self, org, **kwargs):  # noqa: E501
         """List an organization's webhooks  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -3105,7 +3105,7 @@ class OrganizationApi(object):
     def org_list_hooks_with_http_info(self, org, **kwargs):  # noqa: E501
         """List an organization's webhooks  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -3176,7 +3176,7 @@ class OrganizationApi(object):
     def org_list_labels(self, org, **kwargs):  # noqa: E501
         """List an organization's labels  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -3192,7 +3192,7 @@ class OrganizationApi(object):
     def org_list_labels_with_http_info(self, org, **kwargs):  # noqa: E501
         """List an organization's labels  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -3263,7 +3263,7 @@ class OrganizationApi(object):
     def org_list_members(self, org, **kwargs):  # noqa: E501
         """List an organization's members  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -3279,7 +3279,7 @@ class OrganizationApi(object):
     def org_list_members_with_http_info(self, org, **kwargs):  # noqa: E501
         """List an organization's members  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -3350,7 +3350,7 @@ class OrganizationApi(object):
     def org_list_public_members(self, org, **kwargs):  # noqa: E501
         """List an organization's public members  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -3366,7 +3366,7 @@ class OrganizationApi(object):
     def org_list_public_members_with_http_info(self, org, **kwargs):  # noqa: E501
         """List an organization's public members  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -3437,7 +3437,7 @@ class OrganizationApi(object):
     def org_list_repos(self, org, **kwargs):  # noqa: E501
         """List an organization's repos  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -3453,7 +3453,7 @@ class OrganizationApi(object):
     def org_list_repos_with_http_info(self, org, **kwargs):  # noqa: E501
         """List an organization's repos  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -3524,7 +3524,7 @@ class OrganizationApi(object):
     def org_list_team_activity_feeds(self, id, **kwargs):  # noqa: E501
         """List a team's activity feeds  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the team (required)
         :param date _date: the date of the activities to be found
         :param int page: page number of results to return (1-based)
@@ -3541,7 +3541,7 @@ class OrganizationApi(object):
     def org_list_team_activity_feeds_with_http_info(self, id, **kwargs):  # noqa: E501
         """List a team's activity feeds  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the team (required)
         :param date _date: the date of the activities to be found
         :param int page: page number of results to return (1-based)
@@ -3615,7 +3615,7 @@ class OrganizationApi(object):
     def org_list_team_member(self, id, username, **kwargs):  # noqa: E501
         """List a particular member of team  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the team (required)
         :param str username: username of the member to list (required)
         :return: User
@@ -3630,7 +3630,7 @@ class OrganizationApi(object):
     def org_list_team_member_with_http_info(self, id, username, **kwargs):  # noqa: E501
         """List a particular member of team  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the team (required)
         :param str username: username of the member to list (required)
         :return: User
@@ -3702,7 +3702,7 @@ class OrganizationApi(object):
     def org_list_team_members(self, id, **kwargs):  # noqa: E501
         """List a team's members  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the team (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -3718,7 +3718,7 @@ class OrganizationApi(object):
     def org_list_team_members_with_http_info(self, id, **kwargs):  # noqa: E501
         """List a team's members  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the team (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -3789,7 +3789,7 @@ class OrganizationApi(object):
     def org_list_team_repo(self, id, org, repo, **kwargs):  # noqa: E501
         """List a particular repo of team  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the team (required)
         :param str org: organization that owns the repo to list (required)
         :param str repo: name of the repo to list (required)
@@ -3805,7 +3805,7 @@ class OrganizationApi(object):
     def org_list_team_repo_with_http_info(self, id, org, repo, **kwargs):  # noqa: E501
         """List a particular repo of team  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the team (required)
         :param str org: organization that owns the repo to list (required)
         :param str repo: name of the repo to list (required)
@@ -3884,7 +3884,7 @@ class OrganizationApi(object):
     def org_list_team_repos(self, id, **kwargs):  # noqa: E501
         """List a team's repos  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the team (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -3900,7 +3900,7 @@ class OrganizationApi(object):
     def org_list_team_repos_with_http_info(self, id, **kwargs):  # noqa: E501
         """List a team's repos  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the team (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -3971,7 +3971,7 @@ class OrganizationApi(object):
     def org_list_teams(self, org, **kwargs):  # noqa: E501
         """List an organization's teams  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -3987,7 +3987,7 @@ class OrganizationApi(object):
     def org_list_teams_with_http_info(self, org, **kwargs):  # noqa: E501
         """List an organization's teams  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -4058,7 +4058,7 @@ class OrganizationApi(object):
     def org_list_user_orgs(self, username, **kwargs):  # noqa: E501
         """List a user's organizations  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -4074,7 +4074,7 @@ class OrganizationApi(object):
     def org_list_user_orgs_with_http_info(self, username, **kwargs):  # noqa: E501
         """List a user's organizations  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -4145,7 +4145,7 @@ class OrganizationApi(object):
     def org_publicize_member(self, org, username, **kwargs):  # noqa: E501
         """Publicize a user's membership  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param str username: username of the user (required)
         :return: None
@@ -4160,7 +4160,7 @@ class OrganizationApi(object):
     def org_publicize_member_with_http_info(self, org, username, **kwargs):  # noqa: E501
         """Publicize a user's membership  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param str username: username of the user (required)
         :return: None
@@ -4228,7 +4228,7 @@ class OrganizationApi(object):
     def org_remove_team_member(self, id, username, **kwargs):  # noqa: E501
         """Remove a team member  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the team (required)
         :param str username: username of the user to remove (required)
         :return: None
@@ -4243,7 +4243,7 @@ class OrganizationApi(object):
     def org_remove_team_member_with_http_info(self, id, username, **kwargs):  # noqa: E501
         """Remove a team member  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the team (required)
         :param str username: username of the user to remove (required)
         :return: None
@@ -4312,7 +4312,7 @@ class OrganizationApi(object):
         """Remove a repository from a team  # noqa: E501
 
         This does not delete the repository, it only removes the repository from the team.  # noqa: E501
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the team (required)
         :param str org: organization that owns the repo to remove (required)
         :param str repo: name of the repo to remove (required)
@@ -4329,7 +4329,7 @@ class OrganizationApi(object):
         """Remove a repository from a team  # noqa: E501
 
         This does not delete the repository, it only removes the repository from the team.  # noqa: E501
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the team (required)
         :param str org: organization that owns the repo to remove (required)
         :param str repo: name of the repo to remove (required)
@@ -4404,7 +4404,7 @@ class OrganizationApi(object):
     def org_update_avatar(self, org, **kwargs):  # noqa: E501
         """Update Avatar  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param UpdateUserAvatarOption body:
         :return: None
@@ -4419,7 +4419,7 @@ class OrganizationApi(object):
     def org_update_avatar_with_http_info(self, org, **kwargs):  # noqa: E501
         """Update Avatar  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param UpdateUserAvatarOption body:
         :return: None
@@ -4487,7 +4487,7 @@ class OrganizationApi(object):
     def organization_block_user(self, org, username, **kwargs):  # noqa: E501
         """Block a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param str username: user to block (required)
         :param str note: optional note for the block
@@ -4503,7 +4503,7 @@ class OrganizationApi(object):
     def organization_block_user_with_http_info(self, org, username, **kwargs):  # noqa: E501
         """Block a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param str username: user to block (required)
         :param str note: optional note for the block
@@ -4574,7 +4574,7 @@ class OrganizationApi(object):
     def organization_check_user_block(self, org, username, **kwargs):  # noqa: E501
         """Check if a user is blocked by the organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param str username: user to check (required)
         :return: None
@@ -4589,7 +4589,7 @@ class OrganizationApi(object):
     def organization_check_user_block_with_http_info(self, org, username, **kwargs):  # noqa: E501
         """Check if a user is blocked by the organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param str username: user to check (required)
         :return: None
@@ -4657,7 +4657,7 @@ class OrganizationApi(object):
     def organization_list_blocks(self, org, **kwargs):  # noqa: E501
         """List users blocked by the organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -4673,7 +4673,7 @@ class OrganizationApi(object):
     def organization_list_blocks_with_http_info(self, org, **kwargs):  # noqa: E501
         """List users blocked by the organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -4744,7 +4744,7 @@ class OrganizationApi(object):
     def organization_unblock_user(self, org, username, **kwargs):  # noqa: E501
         """Unblock a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param str username: user to unblock (required)
         :return: None
@@ -4759,7 +4759,7 @@ class OrganizationApi(object):
     def organization_unblock_user_with_http_info(self, org, username, **kwargs):  # noqa: E501
         """Unblock a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param str username: user to unblock (required)
         :return: None
@@ -4827,7 +4827,7 @@ class OrganizationApi(object):
     def team_search(self, org, **kwargs):  # noqa: E501
         """Search for teams within an organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param str q: keywords to search
         :param bool include_desc: include search within team description (defaults to true)
@@ -4845,7 +4845,7 @@ class OrganizationApi(object):
     def team_search_with_http_info(self, org, **kwargs):  # noqa: E501
         """Search for teams within an organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param str q: keywords to search
         :param bool include_desc: include search within team description (defaults to true)
@@ -4922,7 +4922,7 @@ class OrganizationApi(object):
     def update_org_secret(self, org, secretname, **kwargs):  # noqa: E501
         """Create or Update a secret value in an organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of organization (required)
         :param str secretname: name of the secret (required)
         :param CreateOrUpdateSecretOption body:
@@ -4938,7 +4938,7 @@ class OrganizationApi(object):
     def update_org_secret_with_http_info(self, org, secretname, **kwargs):  # noqa: E501
         """Create or Update a secret value in an organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of organization (required)
         :param str secretname: name of the secret (required)
         :param CreateOrUpdateSecretOption body:
@@ -5013,7 +5013,7 @@ class OrganizationApi(object):
     def update_org_variable(self, org, variablename, **kwargs):  # noqa: E501
         """Update an org-level variable  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param str variablename: name of the variable (required)
         :param UpdateVariableOption body:
@@ -5029,7 +5029,7 @@ class OrganizationApi(object):
     def update_org_variable_with_http_info(self, org, variablename, **kwargs):  # noqa: E501
         """Update an org-level variable  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str org: name of the organization (required)
         :param str variablename: name of the variable (required)
         :param UpdateVariableOption body:

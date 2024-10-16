@@ -42,7 +42,7 @@ class AdminApi(object):
     def admin_add_user_badges(self, username, **kwargs):  # noqa: E501
         """Add a badge to a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param UserBadgeOption body:
         :return: None
@@ -57,7 +57,7 @@ class AdminApi(object):
     def admin_add_user_badges_with_http_info(self, username, **kwargs):  # noqa: E501
         """Add a badge to a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param UserBadgeOption body:
         :return: None
@@ -125,7 +125,7 @@ class AdminApi(object):
     def admin_adopt_repository(self, owner, repo, **kwargs):  # noqa: E501
         """Adopt unadopted files as a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: None
@@ -140,7 +140,7 @@ class AdminApi(object):
     def admin_adopt_repository_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Adopt unadopted files as a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: None
@@ -208,7 +208,7 @@ class AdminApi(object):
     def admin_create_hook(self, body, **kwargs):  # noqa: E501
         """Create a hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateHookOption body: (required)
         :return: Hook
         """
@@ -222,7 +222,7 @@ class AdminApi(object):
     def admin_create_hook_with_http_info(self, body, **kwargs):  # noqa: E501
         """Create a hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateHookOption body: (required)
         :return: Hook
         """
@@ -291,7 +291,7 @@ class AdminApi(object):
     def admin_create_org(self, body, username, **kwargs):  # noqa: E501
         """Create an organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateOrgOption body: (required)
         :param str username: username of the user that will own the created organization (required)
         :return: Organization
@@ -306,7 +306,7 @@ class AdminApi(object):
     def admin_create_org_with_http_info(self, body, username, **kwargs):  # noqa: E501
         """Create an organization  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateOrgOption body: (required)
         :param str username: username of the user that will own the created organization (required)
         :return: Organization
@@ -382,7 +382,7 @@ class AdminApi(object):
     def admin_create_public_key(self, username, **kwargs):  # noqa: E501
         """Add a public key on behalf of a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of the user (required)
         :param CreateKeyOption body:
         :return: PublicKey
@@ -397,7 +397,7 @@ class AdminApi(object):
     def admin_create_public_key_with_http_info(self, username, **kwargs):  # noqa: E501
         """Add a public key on behalf of a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of the user (required)
         :param CreateKeyOption body:
         :return: PublicKey
@@ -469,7 +469,7 @@ class AdminApi(object):
     def admin_create_repo(self, body, username, **kwargs):  # noqa: E501
         """Create a repository on behalf of a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateRepoOption body: (required)
         :param str username: username of the user. This user will own the created repository (required)
         :return: Repository
@@ -484,7 +484,7 @@ class AdminApi(object):
     def admin_create_repo_with_http_info(self, body, username, **kwargs):  # noqa: E501
         """Create a repository on behalf of a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateRepoOption body: (required)
         :param str username: username of the user. This user will own the created repository (required)
         :return: Repository
@@ -560,7 +560,7 @@ class AdminApi(object):
     def admin_create_user(self, **kwargs):  # noqa: E501
         """Create a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateUserOption body:
         :return: User
         """
@@ -574,7 +574,7 @@ class AdminApi(object):
     def admin_create_user_with_http_info(self, **kwargs):  # noqa: E501
         """Create a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateUserOption body:
         :return: User
         """
@@ -639,7 +639,7 @@ class AdminApi(object):
     def admin_cron_list(self, **kwargs):  # noqa: E501
         """List cron tasks  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Cron]
@@ -654,7 +654,7 @@ class AdminApi(object):
     def admin_cron_list_with_http_info(self, **kwargs):  # noqa: E501
         """List cron tasks  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Cron]
@@ -718,7 +718,7 @@ class AdminApi(object):
     def admin_cron_run(self, task, **kwargs):  # noqa: E501
         """Run cron task  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str task: task to run (required)
         :return: None
         """
@@ -732,7 +732,7 @@ class AdminApi(object):
     def admin_cron_run_with_http_info(self, task, **kwargs):  # noqa: E501
         """Run cron task  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str task: task to run (required)
         :return: None
         """
@@ -793,7 +793,7 @@ class AdminApi(object):
     def admin_delete_hook(self, id, **kwargs):  # noqa: E501
         """Delete a hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the hook to delete (required)
         :return: None
         """
@@ -807,7 +807,7 @@ class AdminApi(object):
     def admin_delete_hook_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete a hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the hook to delete (required)
         :return: None
         """
@@ -868,7 +868,7 @@ class AdminApi(object):
     def admin_delete_unadopted_repository(self, owner, repo, **kwargs):  # noqa: E501
         """Delete unadopted files  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: None
@@ -883,7 +883,7 @@ class AdminApi(object):
     def admin_delete_unadopted_repository_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Delete unadopted files  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: None
@@ -951,7 +951,7 @@ class AdminApi(object):
     def admin_delete_user(self, username, **kwargs):  # noqa: E501
         """Delete a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user to delete (required)
         :param bool purge: purge the user from the system completely
         :return: None
@@ -966,7 +966,7 @@ class AdminApi(object):
     def admin_delete_user_with_http_info(self, username, **kwargs):  # noqa: E501
         """Delete a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user to delete (required)
         :param bool purge: purge the user from the system completely
         :return: None
@@ -1030,7 +1030,7 @@ class AdminApi(object):
     def admin_delete_user_badges(self, username, **kwargs):  # noqa: E501
         """Remove a badge from a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param UserBadgeOption body:
         :return: None
@@ -1045,7 +1045,7 @@ class AdminApi(object):
     def admin_delete_user_badges_with_http_info(self, username, **kwargs):  # noqa: E501
         """Remove a badge from a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param UserBadgeOption body:
         :return: None
@@ -1113,7 +1113,7 @@ class AdminApi(object):
     def admin_delete_user_public_key(self, username, id, **kwargs):  # noqa: E501
         """Delete a user's public key  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param int id: id of the key to delete (required)
         :return: None
@@ -1128,7 +1128,7 @@ class AdminApi(object):
     def admin_delete_user_public_key_with_http_info(self, username, id, **kwargs):  # noqa: E501
         """Delete a user's public key  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param int id: id of the key to delete (required)
         :return: None
@@ -1196,7 +1196,7 @@ class AdminApi(object):
     def admin_edit_hook(self, id, **kwargs):  # noqa: E501
         """Update a hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the hook to update (required)
         :param EditHookOption body:
         :return: Hook
@@ -1211,7 +1211,7 @@ class AdminApi(object):
     def admin_edit_hook_with_http_info(self, id, **kwargs):  # noqa: E501
         """Update a hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the hook to update (required)
         :param EditHookOption body:
         :return: Hook
@@ -1283,7 +1283,7 @@ class AdminApi(object):
     def admin_edit_user(self, username, **kwargs):  # noqa: E501
         """Edit an existing user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user to edit (required)
         :param EditUserOption body:
         :return: User
@@ -1298,7 +1298,7 @@ class AdminApi(object):
     def admin_edit_user_with_http_info(self, username, **kwargs):  # noqa: E501
         """Edit an existing user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user to edit (required)
         :param EditUserOption body:
         :return: User
@@ -1370,7 +1370,7 @@ class AdminApi(object):
     def admin_get_all_emails(self, **kwargs):  # noqa: E501
         """List all emails  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Email]
@@ -1385,7 +1385,7 @@ class AdminApi(object):
     def admin_get_all_emails_with_http_info(self, **kwargs):  # noqa: E501
         """List all emails  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Email]
@@ -1449,7 +1449,7 @@ class AdminApi(object):
     def admin_get_all_orgs(self, **kwargs):  # noqa: E501
         """List all organizations  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Organization]
@@ -1464,7 +1464,7 @@ class AdminApi(object):
     def admin_get_all_orgs_with_http_info(self, **kwargs):  # noqa: E501
         """List all organizations  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Organization]
@@ -1528,7 +1528,7 @@ class AdminApi(object):
     def admin_get_hook(self, id, **kwargs):  # noqa: E501
         """Get a hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the hook to get (required)
         :return: Hook
         """
@@ -1542,7 +1542,7 @@ class AdminApi(object):
     def admin_get_hook_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the hook to get (required)
         :return: Hook
         """
@@ -1607,7 +1607,7 @@ class AdminApi(object):
     def admin_get_runner_registration_token(self, **kwargs):  # noqa: E501
         """Get an global actions runner registration token  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: None
         """
         kwargs['_return_http_data_only'] = True
@@ -1620,7 +1620,7 @@ class AdminApi(object):
     def admin_get_runner_registration_token_with_http_info(self, **kwargs):  # noqa: E501
         """Get an global actions runner registration token  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: None
         """
 
@@ -1674,7 +1674,7 @@ class AdminApi(object):
     def admin_list_hooks(self, **kwargs):  # noqa: E501
         """List system's webhooks  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Hook]
@@ -1689,7 +1689,7 @@ class AdminApi(object):
     def admin_list_hooks_with_http_info(self, **kwargs):  # noqa: E501
         """List system's webhooks  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Hook]
@@ -1753,7 +1753,7 @@ class AdminApi(object):
     def admin_list_user_badges(self, username, **kwargs):  # noqa: E501
         """List a user's badges  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :return: list[Badge]
         """
@@ -1767,7 +1767,7 @@ class AdminApi(object):
     def admin_list_user_badges_with_http_info(self, username, **kwargs):  # noqa: E501
         """List a user's badges  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :return: list[Badge]
         """
@@ -1832,7 +1832,7 @@ class AdminApi(object):
     def admin_rename_user(self, body, username, **kwargs):  # noqa: E501
         """Rename a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param RenameUserOption body: (required)
         :param str username: existing username of user (required)
         :return: None
@@ -1847,7 +1847,7 @@ class AdminApi(object):
     def admin_rename_user_with_http_info(self, body, username, **kwargs):  # noqa: E501
         """Rename a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param RenameUserOption body: (required)
         :param str username: existing username of user (required)
         :return: None
@@ -1919,7 +1919,7 @@ class AdminApi(object):
     def admin_search_emails(self, **kwargs):  # noqa: E501
         """Search all emails  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str q: keyword
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -1935,7 +1935,7 @@ class AdminApi(object):
     def admin_search_emails_with_http_info(self, **kwargs):  # noqa: E501
         """Search all emails  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str q: keyword
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -2002,7 +2002,7 @@ class AdminApi(object):
     def admin_search_users(self, **kwargs):  # noqa: E501
         """Search users according filter conditions  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int source_id: ID of the user's login source to search for
         :param str login_name: user's login name to search for
         :param int page: page number of results to return (1-based)
@@ -2019,7 +2019,7 @@ class AdminApi(object):
     def admin_search_users_with_http_info(self, **kwargs):  # noqa: E501
         """Search users according filter conditions  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int source_id: ID of the user's login source to search for
         :param str login_name: user's login name to search for
         :param int page: page number of results to return (1-based)
@@ -2089,7 +2089,7 @@ class AdminApi(object):
     def admin_unadopted_list(self, **kwargs):  # noqa: E501
         """List unadopted repositories  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :param str pattern: pattern of repositories to search for
@@ -2105,7 +2105,7 @@ class AdminApi(object):
     def admin_unadopted_list_with_http_info(self, **kwargs):  # noqa: E501
         """List unadopted repositories  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :param str pattern: pattern of repositories to search for

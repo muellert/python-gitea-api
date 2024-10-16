@@ -42,7 +42,7 @@ class UserApi(object):
     def create_current_user_repo(self, **kwargs):  # noqa: E501
         """Create a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateRepoOption body:
         :return: Repository
         """
@@ -56,7 +56,7 @@ class UserApi(object):
     def create_current_user_repo_with_http_info(self, **kwargs):  # noqa: E501
         """Create a repository  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateRepoOption body:
         :return: Repository
         """
@@ -121,7 +121,7 @@ class UserApi(object):
     def create_user_variable(self, variablename, **kwargs):  # noqa: E501
         """Create a user-level variable  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str variablename: name of the variable (required)
         :param CreateVariableOption body:
         :return: None
@@ -136,7 +136,7 @@ class UserApi(object):
     def create_user_variable_with_http_info(self, variablename, **kwargs):  # noqa: E501
         """Create a user-level variable  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str variablename: name of the variable (required)
         :param CreateVariableOption body:
         :return: None
@@ -204,7 +204,7 @@ class UserApi(object):
     def delete_user_secret(self, secretname, **kwargs):  # noqa: E501
         """Delete a secret in a user scope  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str secretname: name of the secret (required)
         :return: None
         """
@@ -218,7 +218,7 @@ class UserApi(object):
     def delete_user_secret_with_http_info(self, secretname, **kwargs):  # noqa: E501
         """Delete a secret in a user scope  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str secretname: name of the secret (required)
         :return: None
         """
@@ -279,7 +279,7 @@ class UserApi(object):
     def delete_user_variable(self, variablename, **kwargs):  # noqa: E501
         """Delete a user-level variable which is created by current doer  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str variablename: name of the variable (required)
         :return: None
         """
@@ -293,7 +293,7 @@ class UserApi(object):
     def delete_user_variable_with_http_info(self, variablename, **kwargs):  # noqa: E501
         """Delete a user-level variable which is created by current doer  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str variablename: name of the variable (required)
         :return: None
         """
@@ -354,7 +354,7 @@ class UserApi(object):
     def get_user_settings(self, **kwargs):  # noqa: E501
         """Get user settings  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: list[UserSettings]
         """
         kwargs['_return_http_data_only'] = True
@@ -367,7 +367,7 @@ class UserApi(object):
     def get_user_settings_with_http_info(self, **kwargs):  # noqa: E501
         """Get user settings  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: list[UserSettings]
         """
 
@@ -425,7 +425,7 @@ class UserApi(object):
     def get_user_variable(self, variablename, **kwargs):  # noqa: E501
         """Get a user-level variable which is created by current doer  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str variablename: name of the variable (required)
         :return: ActionVariable
         """
@@ -439,7 +439,7 @@ class UserApi(object):
     def get_user_variable_with_http_info(self, variablename, **kwargs):  # noqa: E501
         """Get a user-level variable which is created by current doer  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str variablename: name of the variable (required)
         :return: ActionVariable
         """
@@ -504,7 +504,7 @@ class UserApi(object):
     def get_user_variables_list(self, **kwargs):  # noqa: E501
         """Get the user-level list of variables which is created by current doer  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[ActionVariable]
@@ -519,7 +519,7 @@ class UserApi(object):
     def get_user_variables_list_with_http_info(self, **kwargs):  # noqa: E501
         """Get the user-level list of variables which is created by current doer  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[ActionVariable]
@@ -583,7 +583,7 @@ class UserApi(object):
     def get_verification_token(self, **kwargs):  # noqa: E501
         """Get a Token to verify  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: str
         """
         kwargs['_return_http_data_only'] = True
@@ -596,7 +596,7 @@ class UserApi(object):
     def get_verification_token_with_http_info(self, **kwargs):  # noqa: E501
         """Get a Token to verify  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: str
         """
 
@@ -654,7 +654,7 @@ class UserApi(object):
     def update_user_secret(self, secretname, **kwargs):  # noqa: E501
         """Create or Update a secret value in a user scope  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str secretname: name of the secret (required)
         :param CreateOrUpdateSecretOption body:
         :return: None
@@ -669,7 +669,7 @@ class UserApi(object):
     def update_user_secret_with_http_info(self, secretname, **kwargs):  # noqa: E501
         """Create or Update a secret value in a user scope  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str secretname: name of the secret (required)
         :param CreateOrUpdateSecretOption body:
         :return: None
@@ -737,7 +737,7 @@ class UserApi(object):
     def update_user_settings(self, **kwargs):  # noqa: E501
         """Update user settings  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param UserSettingsOptions body:
         :return: list[UserSettings]
         """
@@ -751,7 +751,7 @@ class UserApi(object):
     def update_user_settings_with_http_info(self, **kwargs):  # noqa: E501
         """Update user settings  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param UserSettingsOptions body:
         :return: list[UserSettings]
         """
@@ -816,7 +816,7 @@ class UserApi(object):
     def update_user_variable(self, variablename, **kwargs):  # noqa: E501
         """Update a user-level variable which is created by current doer  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str variablename: name of the variable (required)
         :param UpdateVariableOption body:
         :return: None
@@ -831,7 +831,7 @@ class UserApi(object):
     def update_user_variable_with_http_info(self, variablename, **kwargs):  # noqa: E501
         """Update a user-level variable which is created by current doer  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str variablename: name of the variable (required)
         :param UpdateVariableOption body:
         :return: None
@@ -899,7 +899,7 @@ class UserApi(object):
     def user_add_email(self, **kwargs):  # noqa: E501
         """Add email addresses  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateEmailOption body:
         :return: list[Email]
         """
@@ -913,7 +913,7 @@ class UserApi(object):
     def user_add_email_with_http_info(self, **kwargs):  # noqa: E501
         """Add email addresses  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateEmailOption body:
         :return: list[Email]
         """
@@ -978,7 +978,7 @@ class UserApi(object):
     def user_block_user(self, username, **kwargs):  # noqa: E501
         """Block a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: user to block (required)
         :param str note: optional note for the block
         :return: None
@@ -993,7 +993,7 @@ class UserApi(object):
     def user_block_user_with_http_info(self, username, **kwargs):  # noqa: E501
         """Block a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: user to block (required)
         :param str note: optional note for the block
         :return: None
@@ -1057,7 +1057,7 @@ class UserApi(object):
     def user_check_following(self, username, target, **kwargs):  # noqa: E501
         """Check if one user is following another user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of following user (required)
         :param str target: username of followed user (required)
         :return: None
@@ -1072,7 +1072,7 @@ class UserApi(object):
     def user_check_following_with_http_info(self, username, target, **kwargs):  # noqa: E501
         """Check if one user is following another user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of following user (required)
         :param str target: username of followed user (required)
         :return: None
@@ -1140,7 +1140,7 @@ class UserApi(object):
     def user_check_user_block(self, username, **kwargs):  # noqa: E501
         """Check if a user is blocked by the authenticated user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: user to check (required)
         :return: None
         """
@@ -1154,7 +1154,7 @@ class UserApi(object):
     def user_check_user_block_with_http_info(self, username, **kwargs):  # noqa: E501
         """Check if a user is blocked by the authenticated user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: user to check (required)
         :return: None
         """
@@ -1215,7 +1215,7 @@ class UserApi(object):
     def user_create_hook(self, body, **kwargs):  # noqa: E501
         """Create a hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateHookOption body: (required)
         :return: Hook
         """
@@ -1229,7 +1229,7 @@ class UserApi(object):
     def user_create_hook_with_http_info(self, body, **kwargs):  # noqa: E501
         """Create a hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateHookOption body: (required)
         :return: Hook
         """
@@ -1298,7 +1298,7 @@ class UserApi(object):
     def user_create_o_auth2_application(self, body, **kwargs):  # noqa: E501
         """creates a new OAuth2 application  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateOAuth2ApplicationOptions body: (required)
         :return: OAuth2Application
         """
@@ -1312,7 +1312,7 @@ class UserApi(object):
     def user_create_o_auth2_application_with_http_info(self, body, **kwargs):  # noqa: E501
         """creates a new OAuth2 application  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateOAuth2ApplicationOptions body: (required)
         :return: OAuth2Application
         """
@@ -1381,7 +1381,7 @@ class UserApi(object):
     def user_create_token(self, username, **kwargs):  # noqa: E501
         """Create an access token  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param CreateAccessTokenOption body:
         :return: AccessToken
@@ -1396,7 +1396,7 @@ class UserApi(object):
     def user_create_token_with_http_info(self, username, **kwargs):  # noqa: E501
         """Create an access token  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param CreateAccessTokenOption body:
         :return: AccessToken
@@ -1468,7 +1468,7 @@ class UserApi(object):
     def user_current_check_following(self, username, **kwargs):  # noqa: E501
         """Check whether a user is followed by the authenticated user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of followed user (required)
         :return: None
         """
@@ -1482,7 +1482,7 @@ class UserApi(object):
     def user_current_check_following_with_http_info(self, username, **kwargs):  # noqa: E501
         """Check whether a user is followed by the authenticated user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of followed user (required)
         :return: None
         """
@@ -1543,7 +1543,7 @@ class UserApi(object):
     def user_current_check_starring(self, owner, repo, **kwargs):  # noqa: E501
         """Whether the authenticated is starring the repo  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: None
@@ -1558,7 +1558,7 @@ class UserApi(object):
     def user_current_check_starring_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Whether the authenticated is starring the repo  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :return: None
@@ -1626,7 +1626,7 @@ class UserApi(object):
     def user_current_delete_follow(self, username, **kwargs):  # noqa: E501
         """Unfollow a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user to unfollow (required)
         :return: None
         """
@@ -1640,7 +1640,7 @@ class UserApi(object):
     def user_current_delete_follow_with_http_info(self, username, **kwargs):  # noqa: E501
         """Unfollow a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user to unfollow (required)
         :return: None
         """
@@ -1701,7 +1701,7 @@ class UserApi(object):
     def user_current_delete_gpg_key(self, id, **kwargs):  # noqa: E501
         """Remove a GPG key  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of key to delete (required)
         :return: None
         """
@@ -1715,7 +1715,7 @@ class UserApi(object):
     def user_current_delete_gpg_key_with_http_info(self, id, **kwargs):  # noqa: E501
         """Remove a GPG key  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of key to delete (required)
         :return: None
         """
@@ -1776,7 +1776,7 @@ class UserApi(object):
     def user_current_delete_key(self, id, **kwargs):  # noqa: E501
         """Delete a public key  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of key to delete (required)
         :return: None
         """
@@ -1790,7 +1790,7 @@ class UserApi(object):
     def user_current_delete_key_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete a public key  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of key to delete (required)
         :return: None
         """
@@ -1851,7 +1851,7 @@ class UserApi(object):
     def user_current_delete_star(self, owner, repo, **kwargs):  # noqa: E501
         """Unstar the given repo  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo to unstar (required)
         :param str repo: name of the repo to unstar (required)
         :return: None
@@ -1866,7 +1866,7 @@ class UserApi(object):
     def user_current_delete_star_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Unstar the given repo  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo to unstar (required)
         :param str repo: name of the repo to unstar (required)
         :return: None
@@ -1934,7 +1934,7 @@ class UserApi(object):
     def user_current_get_gpg_key(self, id, **kwargs):  # noqa: E501
         """Get a GPG key  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of key to get (required)
         :return: GPGKey
         """
@@ -1948,7 +1948,7 @@ class UserApi(object):
     def user_current_get_gpg_key_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a GPG key  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of key to get (required)
         :return: GPGKey
         """
@@ -2013,7 +2013,7 @@ class UserApi(object):
     def user_current_get_key(self, id, **kwargs):  # noqa: E501
         """Get a public key  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of key to get (required)
         :return: PublicKey
         """
@@ -2027,7 +2027,7 @@ class UserApi(object):
     def user_current_get_key_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a public key  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of key to get (required)
         :return: PublicKey
         """
@@ -2092,7 +2092,7 @@ class UserApi(object):
     def user_current_list_followers(self, **kwargs):  # noqa: E501
         """List the authenticated user's followers  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
@@ -2107,7 +2107,7 @@ class UserApi(object):
     def user_current_list_followers_with_http_info(self, **kwargs):  # noqa: E501
         """List the authenticated user's followers  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
@@ -2171,7 +2171,7 @@ class UserApi(object):
     def user_current_list_following(self, **kwargs):  # noqa: E501
         """List the users that the authenticated user is following  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
@@ -2186,7 +2186,7 @@ class UserApi(object):
     def user_current_list_following_with_http_info(self, **kwargs):  # noqa: E501
         """List the users that the authenticated user is following  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
@@ -2250,7 +2250,7 @@ class UserApi(object):
     def user_current_list_gpg_keys(self, **kwargs):  # noqa: E501
         """List the authenticated user's GPG keys  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[GPGKey]
@@ -2265,7 +2265,7 @@ class UserApi(object):
     def user_current_list_gpg_keys_with_http_info(self, **kwargs):  # noqa: E501
         """List the authenticated user's GPG keys  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[GPGKey]
@@ -2329,7 +2329,7 @@ class UserApi(object):
     def user_current_list_keys(self, **kwargs):  # noqa: E501
         """List the authenticated user's public keys  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str fingerprint: fingerprint of the key
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -2345,7 +2345,7 @@ class UserApi(object):
     def user_current_list_keys_with_http_info(self, **kwargs):  # noqa: E501
         """List the authenticated user's public keys  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str fingerprint: fingerprint of the key
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -2412,7 +2412,7 @@ class UserApi(object):
     def user_current_list_repos(self, **kwargs):  # noqa: E501
         """List the repos that the authenticated user owns  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Repository]
@@ -2427,7 +2427,7 @@ class UserApi(object):
     def user_current_list_repos_with_http_info(self, **kwargs):  # noqa: E501
         """List the repos that the authenticated user owns  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Repository]
@@ -2491,7 +2491,7 @@ class UserApi(object):
     def user_current_list_starred(self, **kwargs):  # noqa: E501
         """The repos that the authenticated user has starred  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Repository]
@@ -2506,7 +2506,7 @@ class UserApi(object):
     def user_current_list_starred_with_http_info(self, **kwargs):  # noqa: E501
         """The repos that the authenticated user has starred  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Repository]
@@ -2570,7 +2570,7 @@ class UserApi(object):
     def user_current_list_subscriptions(self, **kwargs):  # noqa: E501
         """List repositories watched by the authenticated user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Repository]
@@ -2585,7 +2585,7 @@ class UserApi(object):
     def user_current_list_subscriptions_with_http_info(self, **kwargs):  # noqa: E501
         """List repositories watched by the authenticated user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Repository]
@@ -2649,7 +2649,7 @@ class UserApi(object):
     def user_current_post_gpg_key(self, **kwargs):  # noqa: E501
         """Create a GPG key  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateGPGKeyOption body:
         :return: GPGKey
         """
@@ -2663,7 +2663,7 @@ class UserApi(object):
     def user_current_post_gpg_key_with_http_info(self, **kwargs):  # noqa: E501
         """Create a GPG key  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateGPGKeyOption body:
         :return: GPGKey
         """
@@ -2728,7 +2728,7 @@ class UserApi(object):
     def user_current_post_key(self, **kwargs):  # noqa: E501
         """Create a public key  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateKeyOption body:
         :return: PublicKey
         """
@@ -2742,7 +2742,7 @@ class UserApi(object):
     def user_current_post_key_with_http_info(self, **kwargs):  # noqa: E501
         """Create a public key  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateKeyOption body:
         :return: PublicKey
         """
@@ -2807,7 +2807,7 @@ class UserApi(object):
     def user_current_put_follow(self, username, **kwargs):  # noqa: E501
         """Follow a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user to follow (required)
         :return: None
         """
@@ -2821,7 +2821,7 @@ class UserApi(object):
     def user_current_put_follow_with_http_info(self, username, **kwargs):  # noqa: E501
         """Follow a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user to follow (required)
         :return: None
         """
@@ -2882,7 +2882,7 @@ class UserApi(object):
     def user_current_put_star(self, owner, repo, **kwargs):  # noqa: E501
         """Star the given repo  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo to star (required)
         :param str repo: name of the repo to star (required)
         :return: None
@@ -2897,7 +2897,7 @@ class UserApi(object):
     def user_current_put_star_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """Star the given repo  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo to star (required)
         :param str repo: name of the repo to star (required)
         :return: None
@@ -2965,7 +2965,7 @@ class UserApi(object):
     def user_current_tracked_times(self, **kwargs):  # noqa: E501
         """List the current user's tracked times  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :param datetime since: Only show times updated after the given time. This is a timestamp in RFC 3339 format
@@ -2982,7 +2982,7 @@ class UserApi(object):
     def user_current_tracked_times_with_http_info(self, **kwargs):  # noqa: E501
         """List the current user's tracked times  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :param datetime since: Only show times updated after the given time. This is a timestamp in RFC 3339 format
@@ -3052,7 +3052,7 @@ class UserApi(object):
     def user_delete_access_token(self, username, token, **kwargs):  # noqa: E501
         """delete an access token  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param str token: token to be deleted, identified by ID and if not available by name (required)
         :return: None
@@ -3067,7 +3067,7 @@ class UserApi(object):
     def user_delete_access_token_with_http_info(self, username, token, **kwargs):  # noqa: E501
         """delete an access token  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param str token: token to be deleted, identified by ID and if not available by name (required)
         :return: None
@@ -3135,7 +3135,7 @@ class UserApi(object):
     def user_delete_avatar(self, **kwargs):  # noqa: E501
         """Delete Avatar  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: None
         """
         kwargs['_return_http_data_only'] = True
@@ -3148,7 +3148,7 @@ class UserApi(object):
     def user_delete_avatar_with_http_info(self, **kwargs):  # noqa: E501
         """Delete Avatar  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: None
         """
 
@@ -3202,7 +3202,7 @@ class UserApi(object):
     def user_delete_email(self, **kwargs):  # noqa: E501
         """Delete email addresses  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param DeleteEmailOption body:
         :return: None
         """
@@ -3216,7 +3216,7 @@ class UserApi(object):
     def user_delete_email_with_http_info(self, **kwargs):  # noqa: E501
         """Delete email addresses  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param DeleteEmailOption body:
         :return: None
         """
@@ -3277,7 +3277,7 @@ class UserApi(object):
     def user_delete_hook(self, id, **kwargs):  # noqa: E501
         """Delete a hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the hook to delete (required)
         :return: None
         """
@@ -3291,7 +3291,7 @@ class UserApi(object):
     def user_delete_hook_with_http_info(self, id, **kwargs):  # noqa: E501
         """Delete a hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the hook to delete (required)
         :return: None
         """
@@ -3352,7 +3352,7 @@ class UserApi(object):
     def user_delete_o_auth2_application(self, id, **kwargs):  # noqa: E501
         """delete an OAuth2 Application  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: token to be deleted (required)
         :return: None
         """
@@ -3366,7 +3366,7 @@ class UserApi(object):
     def user_delete_o_auth2_application_with_http_info(self, id, **kwargs):  # noqa: E501
         """delete an OAuth2 Application  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: token to be deleted (required)
         :return: None
         """
@@ -3427,7 +3427,7 @@ class UserApi(object):
     def user_edit_hook(self, id, **kwargs):  # noqa: E501
         """Update a hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the hook to update (required)
         :param EditHookOption body:
         :return: Hook
@@ -3442,7 +3442,7 @@ class UserApi(object):
     def user_edit_hook_with_http_info(self, id, **kwargs):  # noqa: E501
         """Update a hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the hook to update (required)
         :param EditHookOption body:
         :return: Hook
@@ -3514,7 +3514,7 @@ class UserApi(object):
     def user_get(self, username, **kwargs):  # noqa: E501
         """Get a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user to get (required)
         :return: User
         """
@@ -3528,7 +3528,7 @@ class UserApi(object):
     def user_get_with_http_info(self, username, **kwargs):  # noqa: E501
         """Get a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user to get (required)
         :return: User
         """
@@ -3593,7 +3593,7 @@ class UserApi(object):
     def user_get_current(self, **kwargs):  # noqa: E501
         """Get the authenticated user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: User
         """
         kwargs['_return_http_data_only'] = True
@@ -3606,7 +3606,7 @@ class UserApi(object):
     def user_get_current_with_http_info(self, **kwargs):  # noqa: E501
         """Get the authenticated user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: User
         """
 
@@ -3664,7 +3664,7 @@ class UserApi(object):
     def user_get_heatmap_data(self, username, **kwargs):  # noqa: E501
         """Get a user's heatmap  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user to get (required)
         :return: list[UserHeatmapData]
         """
@@ -3678,7 +3678,7 @@ class UserApi(object):
     def user_get_heatmap_data_with_http_info(self, username, **kwargs):  # noqa: E501
         """Get a user's heatmap  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user to get (required)
         :return: list[UserHeatmapData]
         """
@@ -3743,7 +3743,7 @@ class UserApi(object):
     def user_get_hook(self, id, **kwargs):  # noqa: E501
         """Get a hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the hook to get (required)
         :return: Hook
         """
@@ -3757,7 +3757,7 @@ class UserApi(object):
     def user_get_hook_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get a hook  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: id of the hook to get (required)
         :return: Hook
         """
@@ -3822,7 +3822,7 @@ class UserApi(object):
     def user_get_o_auth2_application(self, id, **kwargs):  # noqa: E501
         """get an OAuth2 Application  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: Application ID to be found (required)
         :return: OAuth2Application
         """
@@ -3836,7 +3836,7 @@ class UserApi(object):
     def user_get_o_auth2_application_with_http_info(self, id, **kwargs):  # noqa: E501
         """get an OAuth2 Application  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int id: Application ID to be found (required)
         :return: OAuth2Application
         """
@@ -3901,7 +3901,7 @@ class UserApi(object):
     def user_get_oauth2_application(self, **kwargs):  # noqa: E501
         """List the authenticated user's oauth2 applications  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[OAuth2Application]
@@ -3916,7 +3916,7 @@ class UserApi(object):
     def user_get_oauth2_application_with_http_info(self, **kwargs):  # noqa: E501
         """List the authenticated user's oauth2 applications  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[OAuth2Application]
@@ -3980,7 +3980,7 @@ class UserApi(object):
     def user_get_runner_registration_token(self, **kwargs):  # noqa: E501
         """Get an user's actions runner registration token  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: None
         """
         kwargs['_return_http_data_only'] = True
@@ -3993,7 +3993,7 @@ class UserApi(object):
     def user_get_runner_registration_token_with_http_info(self, **kwargs):  # noqa: E501
         """Get an user's actions runner registration token  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: None
         """
 
@@ -4047,7 +4047,7 @@ class UserApi(object):
     def user_get_stop_watches(self, **kwargs):  # noqa: E501
         """Get list of all existing stopwatches  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[StopWatch]
@@ -4062,7 +4062,7 @@ class UserApi(object):
     def user_get_stop_watches_with_http_info(self, **kwargs):  # noqa: E501
         """Get list of all existing stopwatches  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[StopWatch]
@@ -4126,7 +4126,7 @@ class UserApi(object):
     def user_get_tokens(self, username, **kwargs):  # noqa: E501
         """List the authenticated user's access tokens  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -4142,7 +4142,7 @@ class UserApi(object):
     def user_get_tokens_with_http_info(self, username, **kwargs):  # noqa: E501
         """List the authenticated user's access tokens  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -4213,7 +4213,7 @@ class UserApi(object):
     def user_list_activity_feeds(self, username, **kwargs):  # noqa: E501
         """List a user's activity feeds  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param bool only_performed_by: if true, only show actions performed by the requested user
         :param date _date: the date of the activities to be found
@@ -4231,7 +4231,7 @@ class UserApi(object):
     def user_list_activity_feeds_with_http_info(self, username, **kwargs):  # noqa: E501
         """List a user's activity feeds  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param bool only_performed_by: if true, only show actions performed by the requested user
         :param date _date: the date of the activities to be found
@@ -4308,7 +4308,7 @@ class UserApi(object):
     def user_list_blocks(self, **kwargs):  # noqa: E501
         """List users blocked by the authenticated user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
@@ -4323,7 +4323,7 @@ class UserApi(object):
     def user_list_blocks_with_http_info(self, **kwargs):  # noqa: E501
         """List users blocked by the authenticated user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[User]
@@ -4387,7 +4387,7 @@ class UserApi(object):
     def user_list_emails(self, **kwargs):  # noqa: E501
         """List the authenticated user's email addresses  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: list[Email]
         """
         kwargs['_return_http_data_only'] = True
@@ -4400,7 +4400,7 @@ class UserApi(object):
     def user_list_emails_with_http_info(self, **kwargs):  # noqa: E501
         """List the authenticated user's email addresses  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: list[Email]
         """
 
@@ -4458,7 +4458,7 @@ class UserApi(object):
     def user_list_followers(self, username, **kwargs):  # noqa: E501
         """List the given user's followers  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -4474,7 +4474,7 @@ class UserApi(object):
     def user_list_followers_with_http_info(self, username, **kwargs):  # noqa: E501
         """List the given user's followers  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -4545,7 +4545,7 @@ class UserApi(object):
     def user_list_following(self, username, **kwargs):  # noqa: E501
         """List the users that the given user is following  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -4561,7 +4561,7 @@ class UserApi(object):
     def user_list_following_with_http_info(self, username, **kwargs):  # noqa: E501
         """List the users that the given user is following  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -4632,7 +4632,7 @@ class UserApi(object):
     def user_list_gpg_keys(self, username, **kwargs):  # noqa: E501
         """List the given user's GPG keys  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -4648,7 +4648,7 @@ class UserApi(object):
     def user_list_gpg_keys_with_http_info(self, username, **kwargs):  # noqa: E501
         """List the given user's GPG keys  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -4719,7 +4719,7 @@ class UserApi(object):
     def user_list_hooks(self, **kwargs):  # noqa: E501
         """List the authenticated user's webhooks  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Hook]
@@ -4734,7 +4734,7 @@ class UserApi(object):
     def user_list_hooks_with_http_info(self, **kwargs):  # noqa: E501
         """List the authenticated user's webhooks  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Hook]
@@ -4798,7 +4798,7 @@ class UserApi(object):
     def user_list_keys(self, username, **kwargs):  # noqa: E501
         """List the given user's public keys  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param str fingerprint: fingerprint of the key
         :param int page: page number of results to return (1-based)
@@ -4815,7 +4815,7 @@ class UserApi(object):
     def user_list_keys_with_http_info(self, username, **kwargs):  # noqa: E501
         """List the given user's public keys  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param str fingerprint: fingerprint of the key
         :param int page: page number of results to return (1-based)
@@ -4889,7 +4889,7 @@ class UserApi(object):
     def user_list_repos(self, username, **kwargs):  # noqa: E501
         """List the repos owned by the given user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -4905,7 +4905,7 @@ class UserApi(object):
     def user_list_repos_with_http_info(self, username, **kwargs):  # noqa: E501
         """List the repos owned by the given user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -4976,7 +4976,7 @@ class UserApi(object):
     def user_list_starred(self, username, **kwargs):  # noqa: E501
         """The repos that the given user has starred  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -4992,7 +4992,7 @@ class UserApi(object):
     def user_list_starred_with_http_info(self, username, **kwargs):  # noqa: E501
         """The repos that the given user has starred  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of user (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -5063,7 +5063,7 @@ class UserApi(object):
     def user_list_subscriptions(self, username, **kwargs):  # noqa: E501
         """List the repositories watched by a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of the user (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -5079,7 +5079,7 @@ class UserApi(object):
     def user_list_subscriptions_with_http_info(self, username, **kwargs):  # noqa: E501
         """List the repositories watched by a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: username of the user (required)
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
@@ -5150,7 +5150,7 @@ class UserApi(object):
     def user_list_teams(self, **kwargs):  # noqa: E501
         """List all the teams a user belongs to  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Team]
@@ -5165,7 +5165,7 @@ class UserApi(object):
     def user_list_teams_with_http_info(self, **kwargs):  # noqa: E501
         """List all the teams a user belongs to  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param int page: page number of results to return (1-based)
         :param int limit: page size of results
         :return: list[Team]
@@ -5229,7 +5229,7 @@ class UserApi(object):
     def user_search(self, **kwargs):  # noqa: E501
         """Search for users  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str q: keyword
         :param int uid: ID of the user to search for
         :param int page: page number of results to return (1-based)
@@ -5246,7 +5246,7 @@ class UserApi(object):
     def user_search_with_http_info(self, **kwargs):  # noqa: E501
         """Search for users  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str q: keyword
         :param int uid: ID of the user to search for
         :param int page: page number of results to return (1-based)
@@ -5316,7 +5316,7 @@ class UserApi(object):
     def user_unblock_user(self, username, **kwargs):  # noqa: E501
         """Unblock a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: user to unblock (required)
         :return: None
         """
@@ -5330,7 +5330,7 @@ class UserApi(object):
     def user_unblock_user_with_http_info(self, username, **kwargs):  # noqa: E501
         """Unblock a user  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str username: user to unblock (required)
         :return: None
         """
@@ -5391,7 +5391,7 @@ class UserApi(object):
     def user_update_avatar(self, **kwargs):  # noqa: E501
         """Update Avatar  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param UpdateUserAvatarOption body:
         :return: None
         """
@@ -5405,7 +5405,7 @@ class UserApi(object):
     def user_update_avatar_with_http_info(self, **kwargs):  # noqa: E501
         """Update Avatar  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param UpdateUserAvatarOption body:
         :return: None
         """
@@ -5466,7 +5466,7 @@ class UserApi(object):
     def user_update_o_auth2_application(self, body, id, **kwargs):  # noqa: E501
         """update an OAuth2 Application, this includes regenerating the client secret  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateOAuth2ApplicationOptions body: (required)
         :param int id: application to be updated (required)
         :return: OAuth2Application
@@ -5481,7 +5481,7 @@ class UserApi(object):
     def user_update_o_auth2_application_with_http_info(self, body, id, **kwargs):  # noqa: E501
         """update an OAuth2 Application, this includes regenerating the client secret  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param CreateOAuth2ApplicationOptions body: (required)
         :param int id: application to be updated (required)
         :return: OAuth2Application
@@ -5557,7 +5557,7 @@ class UserApi(object):
     def user_verify_gpg_key(self, **kwargs):  # noqa: E501
         """Verify a GPG key  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: GPGKey
         """
         kwargs['_return_http_data_only'] = True
@@ -5570,7 +5570,7 @@ class UserApi(object):
     def user_verify_gpg_key_with_http_info(self, **kwargs):  # noqa: E501
         """Verify a GPG key  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: GPGKey
         """
 

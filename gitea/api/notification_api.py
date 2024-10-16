@@ -42,7 +42,7 @@ class NotificationApi(object):
     def notify_get_list(self, **kwargs):  # noqa: E501
         """List users's notification threads  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param bool all: If true, show notifications marked as read. Default value is false
         :param list[str] status_types: Show notifications with the provided status types. Options are: unread, read and/or pinned. Defaults to unread & pinned.
         :param list[str] subject_type: filter notifications by subject type
@@ -62,7 +62,7 @@ class NotificationApi(object):
     def notify_get_list_with_http_info(self, **kwargs):  # noqa: E501
         """List users's notification threads  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param bool all: If true, show notifications marked as read. Default value is false
         :param list[str] status_types: Show notifications with the provided status types. Options are: unread, read and/or pinned. Defaults to unread & pinned.
         :param list[str] subject_type: filter notifications by subject type
@@ -143,7 +143,7 @@ class NotificationApi(object):
     def notify_get_repo_list(self, owner, repo, **kwargs):  # noqa: E501
         """List users's notification threads on a specific repo  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param bool all: If true, show notifications marked as read. Default value is false
@@ -165,7 +165,7 @@ class NotificationApi(object):
     def notify_get_repo_list_with_http_info(self, owner, repo, **kwargs):  # noqa: E501
         """List users's notification threads on a specific repo  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param bool all: If true, show notifications marked as read. Default value is false
@@ -260,7 +260,7 @@ class NotificationApi(object):
     def notify_get_thread(self, id, **kwargs):  # noqa: E501
         """Get notification thread by ID  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str id: id of notification thread (required)
         :return: NotificationThread
         """
@@ -274,7 +274,7 @@ class NotificationApi(object):
     def notify_get_thread_with_http_info(self, id, **kwargs):  # noqa: E501
         """Get notification thread by ID  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :param str id: id of notification thread (required)
         :return: NotificationThread
         """
@@ -339,7 +339,7 @@ class NotificationApi(object):
     def notify_new_available(self, **kwargs):  # noqa: E501
         """Check if unread notifications exist  # noqa: E501
 
-        :param async_req bool
+        :param async_req: bool
         :return: NotificationCount
         """
         kwargs['_return_http_data_only'] = True
@@ -357,7 +357,7 @@ class NotificationApi(object):
         >>> thread = api.notify_new_available_with_http_info(async_req=True)
         >>> result = thread.get()
 
-        :param async_req bool
+        :param async_req: bool
         :return: NotificationCount
         """
 
@@ -420,7 +420,7 @@ class NotificationApi(object):
         >>> thread = api.notify_read_list(async_req=True)
         >>> result = thread.get()
 
-        :param async_req bool
+        :param async_req: bool
         :param datetime last_read_at: Describes the last point that notifications were checked. Anything updated since this time will not be updated.
         :param str all: If true, mark all notifications on this repo. Default value is false
         :param list[str] status_types: Mark notifications with the provided status types. Options are: unread, read and/or pinned. Defaults to unread.
@@ -442,7 +442,7 @@ class NotificationApi(object):
         >>> thread = api.notify_read_list_with_http_info(async_req=True)
         >>> result = thread.get()
 
-        :param async_req bool
+        :param async_req: bool
         :param datetime last_read_at: Describes the last point that notifications were checked. Anything updated since this time will not be updated.
         :param str all: If true, mark all notifications on this repo. Default value is false
         :param list[str] status_types: Mark notifications with the provided status types. Options are: unread, read and/or pinned. Defaults to unread.
@@ -518,7 +518,7 @@ class NotificationApi(object):
         >>> thread = api.notify_read_repo_list(owner, repo, async_req=True)
         >>> result = thread.get()
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str all: If true, mark all notifications on this repo. Default value is false
@@ -542,7 +542,7 @@ class NotificationApi(object):
         >>> thread = api.notify_read_repo_list_with_http_info(owner, repo, async_req=True)
         >>> result = thread.get()
 
-        :param async_req bool
+        :param async_req: bool
         :param str owner: owner of the repo (required)
         :param str repo: name of the repo (required)
         :param str all: If true, mark all notifications on this repo. Default value is false
@@ -632,7 +632,7 @@ class NotificationApi(object):
         >>> thread = api.notify_read_thread(id, async_req=True)
         >>> result = thread.get()
 
-        :param async_req bool
+        :param async_req: bool
         :param str id: id of notification thread (required)
         :param str to_status: Status to mark notifications as
         :return: NotificationThread
@@ -652,7 +652,7 @@ class NotificationApi(object):
         >>> thread = api.notify_read_thread_with_http_info(id, async_req=True)
         >>> result = thread.get()
 
-        :param async_req bool
+        :param async_req: bool
         :param str id: id of notification thread (required)
         :param str to_status: Status to mark notifications as
         :return: NotificationThread
